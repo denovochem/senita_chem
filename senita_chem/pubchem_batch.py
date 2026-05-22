@@ -271,7 +271,7 @@ def direct_rest_lookup_by_inchikeys(inchikeys: List[str]) -> Dict[str, Dict]:
 
 def batch_lookup_by_inchikeys(
     inchikeys: List[str],
-    chunk_size: int = 1000,
+    chunk_size: int = 500,
     check_interval: int = 3,
     timeout: int = 120,
     rest_threshold: int = 50,
@@ -306,44 +306,67 @@ def batch_lookup_by_inchikeys(
         chunk_num = (i // chunk_size) + 1
         logger.info(f"Processing chunk {chunk_num} ({len(chunk)} InChIKeys)")
 
-        try:
-            xml_request = create_batch_cid_request_xml(chunk, "inchikey")
-            initial_response = send_xml_to_pubchem(xml_request)
-            if initial_response is None:
-                continue
+        # Retry logic for chunks with no request ID
+        max_retries = 3
+        for attempt in range(max_retries):
+            try:
+                xml_request = create_batch_cid_request_xml(chunk, "inchikey")
+                initial_response = send_xml_to_pubchem(xml_request)
+                if initial_response is None:
+                    if attempt < max_retries - 1:
+                        logger.warning(f"Chunk {chunk_num} attempt {attempt + 1} failed, retrying...")
+                        time.sleep(2 ** attempt)  # Exponential backoff
+                        continue
+                    break
 
-            root = ET.fromstring(initial_response)
-            req_id_elem = root.find(".//PCT-Waiting_reqid")
-            if req_id_elem is None:
-                logger.error(f"No request ID for chunk {chunk_num}")
-                continue
+                root = ET.fromstring(initial_response)
+                req_id_elem = root.find(".//PCT-Waiting_reqid")
+                if req_id_elem is None:
+                    logger.error(f"No request ID for chunk {chunk_num}, attempt {attempt + 1}")
+                    if attempt < max_retries - 1:
+                        logger.warning(f"Retrying chunk {chunk_num}...")
+                        time.sleep(2 ** attempt)  # Exponential backoff
+                        continue
+                    break
 
-            download_url = poll_request_status(req_id_elem.text, check_interval, timeout)
-            if download_url is None:
-                continue
+                download_url = poll_request_status(req_id_elem.text, check_interval, timeout)
+                if download_url is None:
+                    if attempt < max_retries - 1:
+                        logger.warning(f"Chunk {chunk_num} poll failed, retrying...")
+                        time.sleep(2 ** attempt)
+                        continue
+                    break
 
-            file_content = download_file_from_pubchem(download_url)
-            if file_content is None:
-                continue
+                file_content = download_file_from_pubchem(download_url)
+                if file_content is None:
+                    if attempt < max_retries - 1:
+                        logger.warning(f"Chunk {chunk_num} download failed, retrying...")
+                        time.sleep(2 ** attempt)
+                        continue
+                    break
 
-            identifier_to_cid = parse_cid_file(file_content)
-            if not identifier_to_cid:
-                continue
+                identifier_to_cid = parse_cid_file(file_content)
+                if not identifier_to_cid:
+                    break  # Empty result is valid, don't retry
 
-            cids = list(identifier_to_cid.values())
-            properties = fetch_properties_for_cids(cids)
-            synonyms = fetch_synonyms_for_cids(cids)
+                cids = list(identifier_to_cid.values())
+                properties = fetch_properties_for_cids(cids)
+                synonyms = fetch_synonyms_for_cids(cids)
 
-            for inchikey, cid in identifier_to_cid.items():
-                if cid in properties:
-                    record = properties[cid].copy()
-                    record["raw_synonyms"] = synonyms.get(cid, [])
-                    all_results[inchikey] = record
+                for inchikey, cid in identifier_to_cid.items():
+                    if cid in properties:
+                        record = properties[cid].copy()
+                        record["raw_synonyms"] = synonyms.get(cid, [])
+                        all_results[inchikey] = record
 
-            logger.info(f"Chunk {chunk_num} done: {len(properties)} results")
+                logger.info(f"Chunk {chunk_num} done: {len(properties)} results")
+                break  # Success, exit retry loop
 
-        except Exception as e:
-            logger.error(f"Error in chunk {chunk_num}: {e}", exc_info=True)
-            continue
+            except Exception as e:
+                logger.error(f"Error in chunk {chunk_num}, attempt {attempt + 1}: {e}", exc_info=True)
+                if attempt < max_retries - 1:
+                    time.sleep(2 ** attempt)
+                    continue
+                break
 
     return all_results
