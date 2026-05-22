@@ -1,0 +1,4 @@
+rdkit>=2023.9.1
+requests>=2.31.0
+tenacity>=8.2.0
+cholla-chem @ git+https://github.com/denovochem/cholla_chem.git
