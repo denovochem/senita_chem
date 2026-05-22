@@ -203,83 +203,93 @@ def fetch_properties_for_cids(cids: List[str]) -> Dict[str, Dict]:
 
 def direct_rest_lookup_by_inchikeys(inchikeys: List[str]) -> Dict[str, Dict]:
     """
-    Direct REST lookup for small batches (<50 compounds).
-    Faster than async PUG for small batches.
+    Direct REST lookup for any size batch, chunked at 50 (REST endpoint limit).
+    Always uses REST - bypasses PUG entirely for reliability.
     """
     if not inchikeys:
         return {}
-    
-    inchikey_list = ",".join(inchikeys[:50])  # REST endpoint limit
+
+    all_results: Dict[str, Dict] = {}
     property_list = ",".join(DEFAULT_REST_PROPERTIES)
-    
-    # Get properties
-    props_url = f"https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/inchikey/{inchikey_list}/property/{property_list}/JSON"
-    synonyms_url = f"https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/inchikey/{inchikey_list}/synonyms/JSON"
-    
-    results = {}
-    
-    try:
-        # Fetch properties
-        props_response = requests.get(props_url, timeout=60)
-        props_response.raise_for_status()
-        props_data = props_response.json()
-        
-        # Fetch synonyms
-        synonyms_response = requests.get(synonyms_url, timeout=60)
-        synonyms_response.raise_for_status()
-        synonyms_data = synonyms_response.json()
-        
-        # Process properties
-        for prop in props_data.get("PropertyTable", {}).get("Properties", []):
-            inchikey = prop.get("InChIKey", "")
-            if inchikey:
-                results[inchikey] = {
-                    "pubchem_cid": str(prop.get("CID", "")),
-                    "iupac_name": prop.get("IUPACName", ""),
-                    "preferred_name": prop.get("Title", ""),
-                    "canonical_smiles": prop.get("CanonicalSMILES", ""),
-                    "isomeric_smiles": prop.get("IsomericSMILES", ""),
-                    "inchi": prop.get("InChI", ""),
-                    "inchikey": inchikey,
-                    "formula": prop.get("MolecularFormula", ""),
-                }
-        
-        # Build CID -> InChIKey mapping from results
-        cid_to_inchikey = {
-            results[ik]["pubchem_cid"]: ik
-            for ik in results
-            if results[ik].get("pubchem_cid")
-        }
 
-        # Add synonyms (synonyms endpoint returns CID, not InChIKey)
-        for info in synonyms_data.get("InformationList", {}).get("Information", []):
-            cid = str(info.get("CID", ""))
-            if cid in cid_to_inchikey:
-                inchikey = cid_to_inchikey[cid]
-                results[inchikey]["raw_synonyms"] = info.get("Synonym", [])
+    # Chunk at 50 (REST endpoint limit)
+    for i in range(0, len(inchikeys), 50):
+        chunk = inchikeys[i : i + 50]
+        chunk_num = (i // 50) + 1
+        logger.info(f"REST chunk {chunk_num}: {len(chunk)} InChIKeys")
 
-        # Ensure all results have raw_synonyms
-        for inchikey in results:
-            if "raw_synonyms" not in results[inchikey]:
-                results[inchikey]["raw_synonyms"] = []
-                
-    except Exception as e:
-        logger.error(f"Error in direct REST lookup: {e}")
-    
-    return results
+        inchikey_list = ",".join(chunk)
+        props_url = f"https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/inchikey/{inchikey_list}/property/{property_list}/JSON"
+        synonyms_url = f"https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/inchikey/{inchikey_list}/synonyms/JSON"
+
+        try:
+            # Fetch properties
+            props_response = requests.get(props_url, timeout=60)
+            props_response.raise_for_status()
+            props_data = props_response.json()
+
+            # Fetch synonyms
+            synonyms_response = requests.get(synonyms_url, timeout=60)
+            synonyms_response.raise_for_status()
+            synonyms_data = synonyms_response.json()
+
+            # Process properties for this chunk
+            chunk_results: Dict[str, Dict] = {}
+            for prop in props_data.get("PropertyTable", {}).get("Properties", []):
+                inchikey = prop.get("InChIKey", "")
+                if inchikey:
+                    chunk_results[inchikey] = {
+                        "pubchem_cid": str(prop.get("CID", "")),
+                        "iupac_name": prop.get("IUPACName", ""),
+                        "preferred_name": prop.get("Title", ""),
+                        "canonical_smiles": prop.get("CanonicalSMILES", ""),
+                        "isomeric_smiles": prop.get("IsomericSMILES", ""),
+                        "inchi": prop.get("InChI", ""),
+                        "inchikey": inchikey,
+                        "formula": prop.get("MolecularFormula", ""),
+                    }
+
+            # Build CID -> InChIKey mapping from chunk results
+            cid_to_inchikey = {
+                chunk_results[ik]["pubchem_cid"]: ik
+                for ik in chunk_results
+                if chunk_results[ik].get("pubchem_cid")
+            }
+
+            # Add synonyms (synonyms endpoint returns CID, not InChIKey)
+            for info in synonyms_data.get("InformationList", {}).get("Information", []):
+                cid = str(info.get("CID", ""))
+                if cid in cid_to_inchikey:
+                    inchikey = cid_to_inchikey[cid]
+                    chunk_results[inchikey]["raw_synonyms"] = info.get("Synonym", [])
+
+            # Ensure all results have raw_synonyms
+            for inchikey in chunk_results:
+                if "raw_synonyms" not in chunk_results[inchikey]:
+                    chunk_results[inchikey]["raw_synonyms"] = []
+
+            # Merge chunk results into all_results
+            all_results.update(chunk_results)
+            logger.info(f"REST chunk {chunk_num} done: {len(chunk_results)} results")
+
+        except Exception as e:
+            logger.error(f"Error in REST chunk {chunk_num}: {e}")
+            continue
+
+    return all_results
 
 
 def batch_lookup_by_inchikeys(
     inchikeys: List[str],
-    chunk_size: int = 500,
+    chunk_size: int = 50,
     check_interval: int = 3,
     timeout: int = 120,
-    rest_threshold: int = 50,
+    rest_threshold: int = 999999,
 ) -> Dict[str, Dict]:
     """
     Main batch lookup: InChIKey list → PubChem properties + raw synonyms.
-    
-    Uses direct REST for small batches (< rest_threshold) and async PUG for larger batches.
+
+    Always uses direct REST (chunked at 50) - PUG path is disabled for reliability.
 
     Returns dict keyed by InChIKey:
     {
@@ -291,82 +301,5 @@ def batch_lookup_by_inchikeys(
     }
     """
     unique_keys = list(dict.fromkeys(inchikeys))
-    
-    # Use direct REST for small batches
-    if len(unique_keys) < rest_threshold:
-        logger.info(f"Using direct REST for {len(unique_keys)} InChIKeys")
-        return direct_rest_lookup_by_inchikeys(unique_keys)
-    
-    # Use async PUG for larger batches
-    logger.info(f"Using async PUG for {len(unique_keys)} InChIKeys")
-    all_results: Dict[str, Dict] = {}
-
-    for i in range(0, len(unique_keys), chunk_size):
-        chunk = unique_keys[i : i + chunk_size]
-        chunk_num = (i // chunk_size) + 1
-        logger.info(f"Processing chunk {chunk_num} ({len(chunk)} InChIKeys)")
-
-        # Retry logic for chunks with no request ID
-        max_retries = 3
-        for attempt in range(max_retries):
-            try:
-                xml_request = create_batch_cid_request_xml(chunk, "inchikey")
-                initial_response = send_xml_to_pubchem(xml_request)
-                if initial_response is None:
-                    if attempt < max_retries - 1:
-                        logger.warning(f"Chunk {chunk_num} attempt {attempt + 1} failed, retrying...")
-                        time.sleep(2 ** attempt)  # Exponential backoff
-                        continue
-                    break
-
-                root = ET.fromstring(initial_response)
-                req_id_elem = root.find(".//PCT-Waiting_reqid")
-                if req_id_elem is None:
-                    logger.error(f"No request ID for chunk {chunk_num}, attempt {attempt + 1}")
-                    if attempt < max_retries - 1:
-                        logger.warning(f"Retrying chunk {chunk_num}...")
-                        time.sleep(2 ** attempt)  # Exponential backoff
-                        continue
-                    break
-
-                download_url = poll_request_status(req_id_elem.text, check_interval, timeout)
-                if download_url is None:
-                    if attempt < max_retries - 1:
-                        logger.warning(f"Chunk {chunk_num} poll failed, retrying...")
-                        time.sleep(2 ** attempt)
-                        continue
-                    break
-
-                file_content = download_file_from_pubchem(download_url)
-                if file_content is None:
-                    if attempt < max_retries - 1:
-                        logger.warning(f"Chunk {chunk_num} download failed, retrying...")
-                        time.sleep(2 ** attempt)
-                        continue
-                    break
-
-                identifier_to_cid = parse_cid_file(file_content)
-                if not identifier_to_cid:
-                    break  # Empty result is valid, don't retry
-
-                cids = list(identifier_to_cid.values())
-                properties = fetch_properties_for_cids(cids)
-                synonyms = fetch_synonyms_for_cids(cids)
-
-                for inchikey, cid in identifier_to_cid.items():
-                    if cid in properties:
-                        record = properties[cid].copy()
-                        record["raw_synonyms"] = synonyms.get(cid, [])
-                        all_results[inchikey] = record
-
-                logger.info(f"Chunk {chunk_num} done: {len(properties)} results")
-                break  # Success, exit retry loop
-
-            except Exception as e:
-                logger.error(f"Error in chunk {chunk_num}, attempt {attempt + 1}: {e}", exc_info=True)
-                if attempt < max_retries - 1:
-                    time.sleep(2 ** attempt)
-                    continue
-                break
-
-    return all_results
+    logger.info(f"Using direct REST for {len(unique_keys)} InChIKeys (PUG disabled)")
+    return direct_rest_lookup_by_inchikeys(unique_keys)
