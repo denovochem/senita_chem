@@ -31,6 +31,9 @@ def enrich_compounds(
     # --- Step 1: RDKit pass ---
     rdkit_cache: Dict[str, Dict] = {}
     inchikey_to_inputs: Dict[str, List[Dict]] = {}
+    # Collect multi-fragment compounds for batch cholla_chem resolution
+    multi_fragment_names: List[str] = []
+    multi_fragment_compounds: List[Dict] = []
 
     for compound in compounds:
         smiles = compound.get("smiles", "")
@@ -49,27 +52,48 @@ def enrich_compounds(
 
         inchikey = props["inchikey"]
 
-        # Multi-fragment: attempt cholla_chem resolution by name
+        # Set enrichment source and input tracking
+        props.setdefault("enrichment_source", "pubchem")
+        props["input_smiles"] = smiles
+        props["input_name"] = name
+
+        # Collect multi-fragment compounds for batch resolution
         if props["is_multi_fragment"] and name:
-            try:
-                from cholla_chem import resolve_compounds_to_smiles
-                resolved = resolve_compounds_to_smiles(compounds_list=[name])
+            multi_fragment_names.append(name)
+            multi_fragment_compounds.append({
+                "original_inchikey": inchikey,
+                "original_smiles": smiles,
+                "original_name": name,
+            })
+
+        rdkit_cache[inchikey] = props
+        inchikey_to_inputs.setdefault(inchikey, []).append(compound)
+
+    # --- Step 1b: Batch cholla_chem resolution for multi-fragment compounds ---
+    if multi_fragment_names:
+        logger.info(f"Batch resolving {len(multi_fragment_names)} multi-fragment compounds with cholla_chem")
+        try:
+            from cholla_chem import resolve_compounds_to_smiles
+            resolved = resolve_compounds_to_smiles(compounds_list=multi_fragment_names)
+
+            for compound_info in multi_fragment_compounds:
+                name = compound_info["original_name"]
                 resolved_smiles = resolved.get(name)
                 if resolved_smiles:
                     resolved_props = compute_rdkit_properties(resolved_smiles)
                     if resolved_props and not resolved_props["is_multi_fragment"]:
-                        props = resolved_props
-                        props["input_smiles"] = smiles
-                        props["enrichment_source"] = "cholla_chem+pubchem"
-                        inchikey = props["inchikey"]
-            except Exception as e:
-                logger.warning(f"cholla_chem resolution failed for '{name}': {e}")
+                        # Update the cache with resolved SMILES
+                        original_inchikey = compound_info["original_inchikey"]
 
-        props.setdefault("enrichment_source", "pubchem")
-        props["input_smiles"] = smiles
-        props["input_name"] = name
-        rdkit_cache[inchikey] = props
-        inchikey_to_inputs.setdefault(inchikey, []).append(compound)
+                        resolved_props["input_smiles"] = compound_info["original_smiles"]
+                        resolved_props["input_name"] = name
+                        resolved_props["enrichment_source"] = "cholla_chem+pubchem"
+
+                        # Remove old multi-fragment entry and add resolved entry
+                        del rdkit_cache[original_inchikey]
+                        rdkit_cache[resolved_props["inchikey"]] = resolved_props
+        except Exception as e:
+            logger.warning(f"cholla_chem batch resolution failed: {e}")
 
     # --- Step 2: PubChem batch lookup ---
     all_inchikeys = list(rdkit_cache.keys())
