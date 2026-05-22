@@ -149,3 +149,5 @@ docs/superpowers/
 *.log
 temp/
 tmp/
+test_*.py
+debug_*.py

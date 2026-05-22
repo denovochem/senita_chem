@@ -71,13 +71,10 @@ def enrich_compounds(
         rdkit_cache[inchikey] = props
         inchikey_to_inputs.setdefault(inchikey, []).append(compound)
 
-    # --- Step 2: PubChem batch lookup (single-fragment only) ---
-    single_fragment_keys = [
-        ik for ik, props in rdkit_cache.items()
-        if not props.get("is_multi_fragment", False)
-    ]
+    # --- Step 2: PubChem batch lookup ---
+    all_inchikeys = list(rdkit_cache.keys())
 
-    pubchem_results = batch_lookup_by_inchikeys(single_fragment_keys)
+    pubchem_results = batch_lookup_by_inchikeys(all_inchikeys)
 
     # --- Step 3: Merge ---
     for inchikey, rdkit_props in rdkit_cache.items():

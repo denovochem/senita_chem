@@ -243,12 +243,20 @@ def direct_rest_lookup_by_inchikeys(inchikeys: List[str]) -> Dict[str, Dict]:
                     "formula": prop.get("MolecularFormula", ""),
                 }
         
-        # Add synonyms
+        # Build CID -> InChIKey mapping from results
+        cid_to_inchikey = {
+            results[ik]["pubchem_cid"]: ik
+            for ik in results
+            if results[ik].get("pubchem_cid")
+        }
+
+        # Add synonyms (synonyms endpoint returns CID, not InChIKey)
         for info in synonyms_data.get("InformationList", {}).get("Information", []):
-            inchikey = info.get("InChIKey", "")
-            if inchikey in results:
+            cid = str(info.get("CID", ""))
+            if cid in cid_to_inchikey:
+                inchikey = cid_to_inchikey[cid]
                 results[inchikey]["raw_synonyms"] = info.get("Synonym", [])
-        
+
         # Ensure all results have raw_synonyms
         for inchikey in results:
             if "raw_synonyms" not in results[inchikey]:

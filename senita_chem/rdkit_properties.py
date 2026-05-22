@@ -38,7 +38,7 @@ def compute_rdkit_properties(smiles: str) -> Optional[Dict]:
         "num_aliphatic_rings": rdMolDescriptors.CalcNumAliphaticRings(mol),
         "num_heterocycles": rdMolDescriptors.CalcNumHeterocycles(mol),
         "frac_csp3": round(rdMolDescriptors.CalcFractionCSP3(mol), 4),
-        "num_stereocenters": rdMolDescriptors.CalcNumStereocenters(mol),
+        "num_stereocenters": rdMolDescriptors.CalcNumAtomStereoCenters(mol),
         "num_defined_stereocenters": rdMolDescriptors.CalcNumAtomStereoCenters(mol),
         "num_undefined_stereocenters": rdMolDescriptors.CalcNumUnspecifiedAtomStereoCenters(mol),
         "formal_charge": Chem.GetFormalCharge(mol),
