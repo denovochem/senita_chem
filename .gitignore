@@ -146,6 +146,7 @@ Thumbs.db
 
 # Project specific
 docs/superpowers/
+docs/internal/
 *.log
 temp/
 tmp/
