@@ -1,5 +1,9 @@
 import logging
+import re
 from typing import Dict, List, Optional
+
+# InChIKey pattern: 14 uppercase letters, hyphen, 10 uppercase letters, hyphen, 1 uppercase letter
+INCHIKEY_PATTERN = re.compile(r"^[A-Z]{14}-[A-Z]{10}-[A-Z]$")
 
 from senita_chem.rdkit_properties import compute_rdkit_properties
 from senita_chem.pubchem_batch import batch_lookup_by_inchikeys
@@ -79,7 +83,8 @@ def enrich_compounds(
             for compound_info in multi_fragment_compounds:
                 name = compound_info["original_name"]
                 resolved_smiles = resolved.get(name)
-                if resolved_smiles:
+                # Guard: skip if resolved value looks like an InChIKey instead of SMILES
+                if resolved_smiles and not INCHIKEY_PATTERN.match(resolved_smiles):
                     resolved_props = compute_rdkit_properties(resolved_smiles)
                     if resolved_props and not resolved_props["is_multi_fragment"]:
                         # Update the cache with resolved SMILES
