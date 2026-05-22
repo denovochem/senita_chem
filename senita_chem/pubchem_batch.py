@@ -67,8 +67,9 @@ def create_batch_cid_request_xml(
         container = ET.SubElement(query_uids, "PCT-QueryUids_smiles")
         tag = "PCT-QueryUids_smiles_E"
     elif id_type_lower == "inchikey":
-        container = ET.SubElement(query_uids, "PCT-QueryUids_inchikeys")
-        tag = "PCT-QueryUids_inchikeys_E"
+        # InChIKeys must be passed as synonyms - PUG has no native InChIKey input type
+        container = ET.SubElement(query_uids, "PCT-QueryUids_synonyms")
+        tag = "PCT-QueryUids_synonyms_E"
     else:
         container = ET.SubElement(query_uids, "PCT-QueryUids_synonyms")
         tag = "PCT-QueryUids_synonyms_E"
