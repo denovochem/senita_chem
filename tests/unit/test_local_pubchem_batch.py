@@ -39,7 +39,7 @@ class TestBatchLookupByInchikeysSqlite:
         record = results["LFQSCWFLJHTTHZ-UHFFFAOYSA-N"]
         assert record["pubchem_cid"] == 702
         assert record["iupac_name"] == "ethanol"
-        assert record["label"] == "Ethanol"
+        assert record["preferred_name"] == "Ethanol"
         assert record["raw_synonyms"] == ["ethyl alcohol", "grain alcohol"]
 
         mock_connect.assert_called_once_with("/fake/db.sqlite")

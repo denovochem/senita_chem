@@ -18,10 +18,10 @@ def batch_lookup_by_inchikeys_sqlite(
 
     Returns:
         Dictionary mapping each InChIKey to a dict with keys:
-        - ``cid`` (int): PubChem CID
+        - ``pubchem_cid`` (int): PubChem CID
         - ``iupac_name`` (str | None): Preferred IUPAC name
-        - ``label`` (str | None): Preferred name / title
-        - ``synonyms`` (List[str]): List of synonym strings
+        - ``preferred_name`` (str | None): Preferred name / title
+        - ``raw_synonyms`` (List[str]): List of synonym strings
     """
     if not inchikeys:
         return {}
@@ -42,7 +42,7 @@ def batch_lookup_by_inchikeys_sqlite(
             results[inchikey] = {
                 "pubchem_cid": cid,
                 "iupac_name": iupac_name,
-                "label": title,
+                "preferred_name": title,
                 "raw_synonyms": [],
             }
 
