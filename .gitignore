@@ -22,3 +22,9 @@
 !senita_chem/rdkit_properties.py
 !senita_chem/synonym_cleaning.py
 !senita_chem/__init__.py
+
+!docs/
+!docs/index.md
+!docs/reference.md
+!docs/stylesheets/
+!docs/stylesheets/extra.css
