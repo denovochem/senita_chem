@@ -2,12 +2,16 @@ import logging
 import re
 from typing import Dict, List, Optional
 
+from senita_chem.local_pubchem_batch import batch_lookup_by_inchikeys_dict
+from senita_chem.pubchem_batch import batch_lookup_by_inchikeys
+from senita_chem.rdkit_properties import compute_rdkit_properties
+from senita_chem.synonym_cleaning import (
+    clean_synonyms_list,
+    get_cas_nos_from_synonyms_list,
+)
+
 # InChIKey pattern: 14 uppercase letters, hyphen, 10 uppercase letters, hyphen, 1 uppercase letter
 INCHIKEY_PATTERN = re.compile(r"^[A-Z]{14}-[A-Z]{10}-[A-Z]$")
-
-from senita_chem.rdkit_properties import compute_rdkit_properties
-from senita_chem.pubchem_batch import batch_lookup_by_inchikeys
-from senita_chem.synonym_cleaning import clean_synonyms_list, get_cas_nos_from_synonyms_list
 
 logger = logging.getLogger(__name__)
 
@@ -16,6 +20,7 @@ def enrich_compounds(
     compounds: Optional[List[Dict]] = None,
     inchikeys: Optional[List[str]] = None,
     max_synonyms: int = 75,
+    use_local_pubchem: bool = False,
 ) -> Dict[str, Dict]:
     """
     Main entry point. Accepts either:
@@ -30,7 +35,9 @@ def enrich_compounds(
     results: Dict[str, Dict] = {}
 
     if inchikeys:
-        compounds = [{"smiles": "", "name": "", "_inchikey_only": ik} for ik in inchikeys]
+        compounds = [
+            {"smiles": "", "name": "", "_inchikey_only": ik} for ik in inchikeys
+        ]
 
     # --- Step 1: RDKit pass ---
     rdkit_cache: Dict[str, Dict] = {}
@@ -45,7 +52,10 @@ def enrich_compounds(
         inchikey_only = compound.get("_inchikey_only")
 
         if inchikey_only:
-            rdkit_cache[inchikey_only] = {"inchikey": inchikey_only, "is_multi_fragment": False}
+            rdkit_cache[inchikey_only] = {
+                "inchikey": inchikey_only,
+                "is_multi_fragment": False,
+            }
             inchikey_to_inputs.setdefault(inchikey_only, []).append(compound)
             continue
 
@@ -64,20 +74,25 @@ def enrich_compounds(
         # Collect multi-fragment compounds for batch resolution
         if props["is_multi_fragment"] and name:
             multi_fragment_names.append(name)
-            multi_fragment_compounds.append({
-                "original_inchikey": inchikey,
-                "original_smiles": smiles,
-                "original_name": name,
-            })
+            multi_fragment_compounds.append(
+                {
+                    "original_inchikey": inchikey,
+                    "original_smiles": smiles,
+                    "original_name": name,
+                }
+            )
 
         rdkit_cache[inchikey] = props
         inchikey_to_inputs.setdefault(inchikey, []).append(compound)
 
     # --- Step 1b: Batch cholla_chem resolution for multi-fragment compounds ---
     if multi_fragment_names:
-        logger.info(f"Batch resolving {len(multi_fragment_names)} multi-fragment compounds with cholla_chem")
+        logger.info(
+            f"Batch resolving {len(multi_fragment_names)} multi-fragment compounds with cholla_chem"
+        )
         try:
             from cholla_chem import resolve_compounds_to_smiles
+
             resolved = resolve_compounds_to_smiles(compounds_list=multi_fragment_names)
 
             for compound_info in multi_fragment_compounds:
@@ -90,7 +105,9 @@ def enrich_compounds(
                         # Update the cache with resolved SMILES
                         original_inchikey = compound_info["original_inchikey"]
 
-                        resolved_props["input_smiles"] = compound_info["original_smiles"]
+                        resolved_props["input_smiles"] = compound_info[
+                            "original_smiles"
+                        ]
                         resolved_props["input_name"] = name
                         resolved_props["enrichment_source"] = "cholla_chem+pubchem"
 
@@ -103,7 +120,10 @@ def enrich_compounds(
     # --- Step 2: PubChem batch lookup ---
     all_inchikeys = list(rdkit_cache.keys())
 
-    pubchem_results = batch_lookup_by_inchikeys(all_inchikeys)
+    if use_local_pubchem:
+        pubchem_results = batch_lookup_by_inchikeys_dict(all_inchikeys)
+    else:
+        pubchem_results = batch_lookup_by_inchikeys(all_inchikeys)
 
     # --- Step 3: Merge ---
     for inchikey, rdkit_props in rdkit_cache.items():

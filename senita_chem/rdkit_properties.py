@@ -1,7 +1,11 @@
 from typing import Dict, Optional
+
 from rdkit import Chem
 from rdkit.Chem import Descriptors, rdMolDescriptors
-from rdkit.Chem.inchi import MolToInchi, InchiToInchiKey
+from rdkit.Chem.inchi import InchiToInchiKey, MolToInchi
+from rdkit.Chem.MolStandardize import rdMolStandardize
+
+TAUTOMER_ENUMERATOR = rdMolStandardize.TautomerEnumerator()
 
 
 def compute_rdkit_properties(smiles: str) -> Optional[Dict]:
@@ -11,6 +15,9 @@ def compute_rdkit_properties(smiles: str) -> Optional[Dict]:
     Returns None if the SMILES is invalid.
     """
     mol = Chem.MolFromSmiles(smiles)
+
+    mol = TAUTOMER_ENUMERATOR.Canonicalize(mol)
+
     if mol is None:
         return None
 
@@ -25,9 +32,9 @@ def compute_rdkit_properties(smiles: str) -> Optional[Dict]:
         "inchikey": inchikey,
         "is_multi_fragment": is_multi_fragment,
         "formula": rdMolDescriptors.CalcMolFormula(mol),
-        "mw": round(Descriptors.MolWt(mol), 4),
-        "mw_exact": round(Descriptors.ExactMolWt(mol), 4),
-        "logp": round(Descriptors.MolLogP(mol), 4),
+        "mw": round(Descriptors.MolWt(mol), 4),  # type: ignore[attr-defined]
+        "mw_exact": round(Descriptors.ExactMolWt(mol), 4),  # type: ignore[attr-defined]
+        "logp": round(Descriptors.MolLogP(mol), 4),  # type: ignore[attr-defined]
         "tpsa": round(rdMolDescriptors.CalcTPSA(mol), 4),
         "hba": rdMolDescriptors.CalcNumHBA(mol),
         "hbd": rdMolDescriptors.CalcNumHBD(mol),
@@ -40,6 +47,8 @@ def compute_rdkit_properties(smiles: str) -> Optional[Dict]:
         "frac_csp3": round(rdMolDescriptors.CalcFractionCSP3(mol), 4),
         "num_stereocenters": rdMolDescriptors.CalcNumAtomStereoCenters(mol),
         "num_defined_stereocenters": rdMolDescriptors.CalcNumAtomStereoCenters(mol),
-        "num_undefined_stereocenters": rdMolDescriptors.CalcNumUnspecifiedAtomStereoCenters(mol),
+        "num_undefined_stereocenters": rdMolDescriptors.CalcNumUnspecifiedAtomStereoCenters(
+            mol
+        ),
         "formal_charge": Chem.GetFormalCharge(mol),
     }

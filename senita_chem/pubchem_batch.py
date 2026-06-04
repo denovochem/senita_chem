@@ -77,9 +77,13 @@ def create_batch_cid_request_xml(
     for identifier in identifiers:
         ET.SubElement(container, tag).text = str(identifier)
 
-    ET.SubElement(id_exchange, "PCT-QueryIDExchange_operation-type").set("value", "same")
+    ET.SubElement(id_exchange, "PCT-QueryIDExchange_operation-type").set(
+        "value", "same"
+    )
     ET.SubElement(id_exchange, "PCT-QueryIDExchange_output-type").set("value", "cid")
-    ET.SubElement(id_exchange, "PCT-QueryIDExchange_output-method").set("value", "file-pair")
+    ET.SubElement(id_exchange, "PCT-QueryIDExchange_output-method").set(
+        "value", "file-pair"
+    )
     ET.SubElement(id_exchange, "PCT-QueryIDExchange_compression").set("value", "none")
 
     return ET.tostring(root, encoding="unicode")
@@ -130,7 +134,9 @@ def poll_request_status(
             return download_url_elem.text if download_url_elem is not None else None
         elif status == "error":
             error_elem = root.find(".//PCT-Status-Message_message")
-            logger.error(f"PubChem error: {error_elem.text if error_elem is not None else 'unknown'}")
+            logger.error(
+                f"PubChem error: {error_elem.text if error_elem is not None else 'unknown'}"
+            )
             return None
         else:
             logger.debug(f"Request {req_id} status: {status}, waiting...")
@@ -242,11 +248,11 @@ def direct_rest_lookup_by_inchikeys(inchikeys: List[str]) -> Dict[str, Dict]:
                         "pubchem_cid": str(prop.get("CID", "")),
                         "iupac_name": prop.get("IUPACName", ""),
                         "preferred_name": prop.get("Title", ""),
-                        "canonical_smiles": prop.get("CanonicalSMILES", ""),
-                        "isomeric_smiles": prop.get("IsomericSMILES", ""),
-                        "inchi": prop.get("InChI", ""),
-                        "inchikey": inchikey,
-                        "formula": prop.get("MolecularFormula", ""),
+                        "canonical_smiles_pubchem": prop.get("CanonicalSMILES", ""),
+                        "isomeric_smiles_pubchem": prop.get("IsomericSMILES", ""),
+                        "inchi_pubchem": prop.get("InChI", ""),
+                        "inchikey_pubchem": inchikey,
+                        "formula_pubchem": prop.get("MolecularFormula", ""),
                     }
 
             # Build CID -> InChIKey mapping from chunk results
