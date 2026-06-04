@@ -1,5 +1,3 @@
 rdkit>=2023.9.1
 requests>=2.31.0
-tenacity>=8.2.0
-cholla-chem
 sqlite3

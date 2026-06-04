@@ -118,6 +118,17 @@ Examples:
         default=75,
         help="Maximum number of synonyms to keep per compound (default: 75)",
     )
+    parser.add_argument(
+        "--pubchem-method",
+        choices=["local_db", "api"],
+        default="local_db",
+        help="PubChem lookup method: local_db or api (default: local_db)",
+    )
+    parser.add_argument(
+        "--db-path",
+        type=Path,
+        help="Path to local PubChem SQLite database (required for local_db)",
+    )
 
     # Logging options
     parser.add_argument(
@@ -150,10 +161,19 @@ Examples:
             compounds = None
             logging.info(f"Read {len(inchikeys)} InChIKeys from {args.inchikeys}")
 
+        # Validate db_path for local_db
+        if args.pubchem_method == "local_db" and not args.db_path:
+            logging.error("--db-path is required when --pubchem-method=local_db")
+            sys.exit(1)
+
         # Enrich compounds
         logging.info("Starting enrichment...")
         results = enrich_compounds(
-            compounds=compounds, inchikeys=inchikeys, max_synonyms=args.max_synonyms
+            compounds=compounds,
+            inchikeys=inchikeys,
+            max_synonyms=args.max_synonyms,
+            pubchem_method=args.pubchem_method,
+            db_path=str(args.db_path) if args.db_path else None,
         )
 
         # Output results

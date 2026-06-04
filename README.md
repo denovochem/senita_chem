@@ -1,4 +1,9 @@
 # senita_chem
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://gitHub.com/denovochem/senita_chem/graphs/commit-activity)
+[![License](https://img.shields.io/github/license/denovochem/senita_chem)](https://github.com/denovochem/senita_chem/blob/main/LICENSE)
+[![Run Tests](https://img.shields.io/github/actions/workflow/status/denovochem/senita_chem/tests.yml?logo=github&logoColor=%23ffffff&label=tests)](https://github.com/denovochem/senita_chem/actions/workflows/tests.yml)
+[![Build Docs](https://img.shields.io/github/actions/workflow/status/denovochem/senita_chem/docs.yml?logo=github&logoColor=%23ffffff&label=docs)](https://denovochem.github.io/senita_chem/)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/denovochem/senita_chem/blob/main/examples/example_notebook.ipynb)
 
 Batch enrichment of chemical compounds from SMILES, InChIKeys, or chemical names.
 
@@ -7,9 +12,9 @@ Batch enrichment of chemical compounds from SMILES, InChIKeys, or chemical names
 `senita_chem` is a pip-installable Python library and CLI tool for batch enrichment of chemical compounds. Given a list of SMILES strings, InChIKeys, or chemical names, it returns:
 
 - RDKit-computed physicochemical properties (local, zero network)
-- PubChem-sourced identity metadata: names, cleaned synonyms, CAS numbers (batched via PUG API)
+- PubChem-sourced identity metadata: names, cleaned synonyms, CAS numbers
 
-It is designed for scale — millions of compounds — using batched async PubChem requests, deduplication by InChIKey, local caching, and resumable processing.
+PubChem data can be retrieved via the public REST API or queried from a local SQLite database. Input compounds are deduplicated by InChIKey for efficient batch processing.
 
 ## Installation
 
@@ -24,12 +29,21 @@ pip install git+https://github.com/denovochem/senita_chem.git
 ```python
 from senita_chem import enrich_compounds
 
+# Via PubChem REST API
 results = enrich_compounds(
     compounds=[
         {"smiles": "COC(=O)c1ccc(Cc2ccccc2)cc1", "name": ""},
         {"smiles": "[Br-].[Br-].[Mg+2]", "name": "MgBr2"},
         {"smiles": "Fc1nc(F)c(F)c(SCc2ccccc2)c1F", "name": "4-(benzylthio)-2,3,5,6-tetrafluoropyridine"},
-    ]
+    ],
+    pubchem_method="api",
+)
+
+# Via local SQLite database
+results = enrich_compounds(
+    compounds=[{"smiles": "CCO", "name": "ethanol"}],
+    pubchem_method="local_db",
+    db_path="/path/to/pubchem.sqlite",
 )
 
 print(results)
@@ -38,14 +52,14 @@ print(results)
 ### Command Line
 
 ```bash
-# Single compound
-senita-chem "COC(=O)c1ccc(Cc2ccccc2)cc1"
+# Single compound via API
+senita-chem "COC(=O)c1ccc(Cc2ccccc2)cc1" --pubchem-method api
 
-# From file (one SMILES per line, optional tab-separated name)
-senita-chem --input smiles.txt --output results.json
+# From file via local SQLite database (default)
+senita-chem --input smiles.txt --output results.json --db-path /path/to/pubchem.sqlite
 
-# From InChIKey list
-senita-chem --inchikeys keys.txt --output results.json
+# From InChIKey list via API
+senita-chem --inchikeys keys.txt --output results.json --pubchem-method api
 ```
 
 ## Input Formats
@@ -60,7 +74,10 @@ compounds = [
 
 ### InChIKeys List
 ```python
-results = enrich_compounds(inchikeys=["UHOVQNZJYSORNB-UHFFFAOYSA-N"])
+results = enrich_compounds(
+    inchikeys=["UHOVQNZJYSORNB-UHFFFAOYSA-N"],
+    pubchem_method="api",
+)
 ```
 
 ### File Formats
@@ -130,23 +147,23 @@ Results are returned as a dictionary keyed by InChIKey:
 
 1. **RDKit pass** - Compute properties and detect multi-fragment compounds
 2. **Deduplication** - Group by InChIKey for efficient processing
-3. **PubChem lookup** - Batch async requests for single-fragment compounds
-4. **Multi-fragment resolution** - Use cholla_chem for named multi-fragment compounds
-5. **Merge results** - Combine RDKit and PubChem data
+3. **PubChem lookup** - Batch lookup via REST API or local SQLite database
+4. **Merge results** - Combine RDKit and PubChem data
 
 ## Dependencies
 
 - `rdkit>=2023.9.1` - Chemical informatics and property calculation
-- `requests>=2.31.0` - HTTP client for PubChem API
-- `tenacity>=8.2.0` - Retry logic for resilient API calls
-- `cholla_chem` - Name to SMILES resolution (for multi-fragment compounds)
+- `requests>=2.31.0` - HTTP client for PubChem REST API
+- `sqlite3` - Local PubChem SQLite database queries
 
 ## CLI Options
 
 ```
-usage: senita-chem [-h] [--input INPUT] [--inchikeys INCHIKEYS] 
-                   [--output OUTPUT] [--max-synonyms MAX_SYNONYMS] 
-                   [--verbose] [smiles]
+usage: senita-chem [-h] [--input INPUT] [--inchikeys INCHIKEYS]
+                   [--output OUTPUT] [--max-synonyms MAX_SYNONYMS]
+                   [--pubchem-method {local_db,api}] [--db-path DB_PATH]
+                   [--verbose]
+                   [smiles]
 
 Batch enrichment of chemical compounds using senita_chem
 
@@ -160,17 +177,11 @@ optional arguments:
   --output, -o OUTPUT   Output JSON file (default: stdout)
   --max-synonyms MAX_SYNONYMS
                         Maximum number of synonyms to keep per compound (default: 75)
+  --pubchem-method {local_db,api}
+                        PubChem lookup method: local_db or api (default: local_db)
+  --db-path DB_PATH     Path to local PubChem SQLite database (required for local_db)
   --verbose, -v         Enable verbose logging
 ```
-
-## Relationship to cholla_chem
-
-| Library | Direction | Input | Output |
-|---|---|---|---|
-| `cholla_chem` | Name → Structure | Chemical name | SMILES |
-| `senita_chem` | Structure → Identity | SMILES / InChIKey / Name | Properties + names + CAS |
-
-For multi-fragment SMILES (ionic compounds, mixtures) where the structure alone is ambiguous, `senita_chem` accepts an optional `name` alongside the SMILES and uses `cholla_chem` to resolve the name to a canonical single-fragment SMILES before performing the PubChem lookup.
 
 ## License
 

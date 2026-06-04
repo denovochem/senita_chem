@@ -1,9 +1,11 @@
 from typing import Dict, Optional
 
-from rdkit import Chem
+from rdkit import Chem, RDLogger
 from rdkit.Chem import Descriptors, rdMolDescriptors
 from rdkit.Chem.inchi import InchiToInchiKey, MolToInchi
 from rdkit.Chem.MolStandardize import rdMolStandardize
+
+RDLogger.DisableLog("rdApp.*")  # type: ignore[attr-defined]
 
 TAUTOMER_ENUMERATOR = rdMolStandardize.TautomerEnumerator()
 
@@ -14,16 +16,25 @@ def compute_rdkit_properties(smiles: str) -> Optional[Dict]:
 
     Returns None if the SMILES is invalid.
     """
-    mol = Chem.MolFromSmiles(smiles)
+    if not smiles or not smiles.strip():
+        return None
 
-    mol = TAUTOMER_ENUMERATOR.Canonicalize(mol)
+    mol = Chem.MolFromSmiles(smiles)
 
     if mol is None:
         return None
 
+    # Stereocenters must be captured before canonicalization strips them
+    num_stereocenters = rdMolDescriptors.CalcNumAtomStereoCenters(mol)
+    num_undefined_stereocenters = rdMolDescriptors.CalcNumUnspecifiedAtomStereoCenters(
+        mol
+    )
+
+    mol = TAUTOMER_ENUMERATOR.Canonicalize(mol)
+
     inchi = MolToInchi(mol)
     inchikey = InchiToInchiKey(inchi) if inchi else None
-    canonical_smiles = Chem.MolToSmiles(mol)
+    canonical_smiles = Chem.MolToSmiles(mol, isomericSmiles=True, canonical=True)
     is_multi_fragment = "." in canonical_smiles
 
     return {
@@ -45,10 +56,8 @@ def compute_rdkit_properties(smiles: str) -> Optional[Dict]:
         "num_aliphatic_rings": rdMolDescriptors.CalcNumAliphaticRings(mol),
         "num_heterocycles": rdMolDescriptors.CalcNumHeterocycles(mol),
         "frac_csp3": round(rdMolDescriptors.CalcFractionCSP3(mol), 4),
-        "num_stereocenters": rdMolDescriptors.CalcNumAtomStereoCenters(mol),
-        "num_defined_stereocenters": rdMolDescriptors.CalcNumAtomStereoCenters(mol),
-        "num_undefined_stereocenters": rdMolDescriptors.CalcNumUnspecifiedAtomStereoCenters(
-            mol
-        ),
+        "num_stereocenters": num_stereocenters,
+        "num_defined_stereocenters": num_stereocenters,
+        "num_undefined_stereocenters": num_undefined_stereocenters,
         "formal_charge": Chem.GetFormalCharge(mol),
     }
