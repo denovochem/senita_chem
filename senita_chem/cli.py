@@ -8,7 +8,7 @@ import json
 import logging
 import sys
 from pathlib import Path
-from typing import List, Dict
+from typing import Dict, List
 
 from senita_chem import enrich_compounds
 
@@ -26,42 +26,44 @@ def setup_logging(verbose: bool = False) -> None:
 def read_smiles_file(input_file: Path) -> List[Dict]:
     """
     Read SMILES from file.
-    
+
     Format: one SMILES per line, optional tab-separated name
     Example: "COC(=O)c1ccc(Cc2ccccc2)cc1\tmethyl 4-benzylbenzoate"
     """
     compounds = []
-    with open(input_file, 'r', encoding='utf-8') as f:
+    with open(input_file, "r", encoding="utf-8") as f:
         for line_num, line in enumerate(f, 1):
             line = line.strip()
-            if not line or line.startswith('#'):
+            if not line or line.startswith("#"):
                 continue
-                
-            parts = line.split('\t')
+
+            parts = line.split("\t")
             if len(parts) == 1:
                 smiles = parts[0].strip()
                 name = ""
             elif len(parts) == 2:
                 smiles, name = parts[0].strip(), parts[1].strip()
             else:
-                logging.warning(f"Line {line_num}: Too many tabs, using first two parts only")
+                logging.warning(
+                    f"Line {line_num}: Too many tabs, using first two parts only"
+                )
                 smiles, name = parts[0].strip(), parts[1].strip()
-                
+
             if smiles:
                 compounds.append({"smiles": smiles, "name": name})
             else:
                 logging.warning(f"Line {line_num}: Empty SMILES, skipping")
-                
+
     return compounds
 
 
 def read_inchikey_file(input_file: Path) -> List[str]:
     """Read InChIKeys from file (one per line)."""
     inchikeys = []
-    with open(input_file, 'r', encoding='utf-8') as f:
+    with open(input_file, "r", encoding="utf-8") as f:
         for line_num, line in enumerate(f, 1):
             line = line.strip()
-            if not line or line.startswith('#'):
+            if not line or line.startswith("#"):
                 continue
             inchikeys.append(line)
     return inchikeys
@@ -69,7 +71,7 @@ def read_inchikey_file(input_file: Path) -> List[str]:
 
 def write_results(results: Dict, output_file: Path) -> None:
     """Write results to JSON file."""
-    with open(output_file, 'w', encoding='utf-8') as f:
+    with open(output_file, "w", encoding="utf-8") as f:
         json.dump(results, f, indent=2, ensure_ascii=False)
 
 
@@ -88,54 +90,56 @@ Examples:
   
   # From InChIKey list
   senita-chem --inchikeys keys.txt --output results.json
-        """
+        """,
     )
-    
+
     # Input options
     input_group = parser.add_mutually_exclusive_group(required=True)
+    input_group.add_argument("smiles", nargs="?", help="Single SMILES string to enrich")
     input_group.add_argument(
-        "smiles",
-        nargs="?",
-        help="Single SMILES string to enrich"
-    )
-    input_group.add_argument(
-        "--input", "-i",
+        "--input",
+        "-i",
         type=Path,
-        help="Input file with SMILES (one per line, optional tab-separated name)"
+        help="Input file with SMILES (one per line, optional tab-separated name)",
     )
     input_group.add_argument(
-        "--inchikeys",
-        type=Path,
-        help="Input file with InChIKeys (one per line)"
+        "--inchikeys", type=Path, help="Input file with InChIKeys (one per line)"
     )
-    
+
     # Output options
     parser.add_argument(
-        "--output", "-o",
-        type=Path,
-        help="Output JSON file (default: stdout)"
+        "--output", "-o", type=Path, help="Output JSON file (default: stdout)"
     )
-    
+
     # Processing options
     parser.add_argument(
         "--max-synonyms",
         type=int,
         default=75,
-        help="Maximum number of synonyms to keep per compound (default: 75)"
+        help="Maximum number of synonyms to keep per compound (default: 75)",
     )
-    
+    parser.add_argument(
+        "--pubchem-method",
+        choices=["local_db", "api"],
+        default="local_db",
+        help="PubChem lookup method: local_db or api (default: local_db)",
+    )
+    parser.add_argument(
+        "--db-path",
+        type=Path,
+        help="Path to local PubChem SQLite database (required for local_db)",
+    )
+
     # Logging options
     parser.add_argument(
-        "--verbose", "-v",
-        action="store_true",
-        help="Enable verbose logging"
+        "--verbose", "-v", action="store_true", help="Enable verbose logging"
     )
-    
+
     args = parser.parse_args()
-    
+
     # Setup logging
     setup_logging(args.verbose)
-    
+
     try:
         # Get input data
         if args.smiles:
@@ -156,33 +160,44 @@ Examples:
             inchikeys = read_inchikey_file(args.inchikeys)
             compounds = None
             logging.info(f"Read {len(inchikeys)} InChIKeys from {args.inchikeys}")
-        
+
+        # Validate db_path for local_db
+        if args.pubchem_method == "local_db" and not args.db_path:
+            logging.error("--db-path is required when --pubchem-method=local_db")
+            sys.exit(1)
+
         # Enrich compounds
         logging.info("Starting enrichment...")
         results = enrich_compounds(
             compounds=compounds,
             inchikeys=inchikeys,
-            max_synonyms=args.max_synonyms
+            max_synonyms=args.max_synonyms,
+            pubchem_method=args.pubchem_method,
+            db_path=str(args.db_path) if args.db_path else None,
         )
-        
+
         # Output results
         if args.output:
             write_results(results, args.output)
             logging.info(f"Results written to {args.output}")
         else:
             print(json.dumps(results, indent=2, ensure_ascii=False))
-        
+
         # Summary
         successful = sum(1 for r in results.values() if r.get("pubchem_cid"))
-        rdkit_only = sum(1 for r in results.values() if r.get("enrichment_source") == "rdkit_only")
-        failed = sum(1 for r in results.values() if r.get("enrichment_source") == "failed")
-        
-        logging.info(f"Processing complete:")
+        rdkit_only = sum(
+            1 for r in results.values() if r.get("enrichment_source") == "rdkit_only"
+        )
+        failed = sum(
+            1 for r in results.values() if r.get("enrichment_source") == "failed"
+        )
+
+        logging.info("Processing complete:")
         logging.info(f"  Total compounds: {len(results)}")
         logging.info(f"  PubChem enriched: {successful}")
         logging.info(f"  RDKit only: {rdkit_only}")
         logging.info(f"  Failed: {failed}")
-        
+
     except KeyboardInterrupt:
         logging.info("Interrupted by user")
         sys.exit(1)

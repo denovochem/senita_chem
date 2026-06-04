@@ -1,21 +1,34 @@
 import logging
 import re
+from functools import lru_cache
 from typing import Dict, List, Optional
+
+from senita_chem.local_pubchem_batch import batch_lookup_by_inchikeys_sqlite
+from senita_chem.pubchem_batch import batch_lookup_by_inchikeys
+from senita_chem.rdkit_properties import compute_rdkit_properties
+from senita_chem.synonym_cleaning import (
+    clean_synonyms_list,
+    get_cas_nos_from_synonyms_list,
+)
 
 # InChIKey pattern: 14 uppercase letters, hyphen, 10 uppercase letters, hyphen, 1 uppercase letter
 INCHIKEY_PATTERN = re.compile(r"^[A-Z]{14}-[A-Z]{10}-[A-Z]$")
 
-from senita_chem.rdkit_properties import compute_rdkit_properties
-from senita_chem.pubchem_batch import batch_lookup_by_inchikeys
-from senita_chem.synonym_cleaning import clean_synonyms_list, get_cas_nos_from_synonyms_list
-
 logger = logging.getLogger(__name__)
+
+
+@lru_cache(maxsize=16384)
+def _cached_compute_rdkit_properties(smiles: str) -> Optional[Dict]:
+    """Compute RDKit properties with module-level LRU caching."""
+    return compute_rdkit_properties(smiles)
 
 
 def enrich_compounds(
     compounds: Optional[List[Dict]] = None,
     inchikeys: Optional[List[str]] = None,
     max_synonyms: int = 75,
+    pubchem_method: str = "local_db",
+    db_path: Optional[str] = None,
 ) -> Dict[str, Dict]:
     """
     Main entry point. Accepts either:
@@ -29,15 +42,17 @@ def enrich_compounds(
 
     results: Dict[str, Dict] = {}
 
-    if inchikeys:
-        compounds = [{"smiles": "", "name": "", "_inchikey_only": ik} for ik in inchikeys]
+    if inchikeys is not None:
+        compounds = [
+            {"smiles": "", "name": "", "_inchikey_only": ik} for ik in inchikeys
+        ]
+
+    if compounds is None:
+        raise ValueError("compounds must not be None after normalization.")
 
     # --- Step 1: RDKit pass ---
-    rdkit_cache: Dict[str, Dict] = {}
+    rdkit_batch: Dict[str, Dict] = {}
     inchikey_to_inputs: Dict[str, List[Dict]] = {}
-    # Collect multi-fragment compounds for batch cholla_chem resolution
-    multi_fragment_names: List[str] = []
-    multi_fragment_compounds: List[Dict] = []
 
     for compound in compounds:
         smiles = compound.get("smiles", "")
@@ -45,11 +60,14 @@ def enrich_compounds(
         inchikey_only = compound.get("_inchikey_only")
 
         if inchikey_only:
-            rdkit_cache[inchikey_only] = {"inchikey": inchikey_only, "is_multi_fragment": False}
+            rdkit_batch[inchikey_only] = {
+                "inchikey": inchikey_only,
+                "is_multi_fragment": False,
+            }
             inchikey_to_inputs.setdefault(inchikey_only, []).append(compound)
             continue
 
-        props = compute_rdkit_properties(smiles)
+        props = _cached_compute_rdkit_properties(smiles)
         if props is None:
             logger.warning(f"Invalid SMILES, skipping: {smiles[:60]}")
             continue
@@ -61,52 +79,25 @@ def enrich_compounds(
         props["input_smiles"] = smiles
         props["input_name"] = name
 
-        # Collect multi-fragment compounds for batch resolution
-        if props["is_multi_fragment"] and name:
-            multi_fragment_names.append(name)
-            multi_fragment_compounds.append({
-                "original_inchikey": inchikey,
-                "original_smiles": smiles,
-                "original_name": name,
-            })
-
-        rdkit_cache[inchikey] = props
+        rdkit_batch[inchikey] = props
         inchikey_to_inputs.setdefault(inchikey, []).append(compound)
 
-    # --- Step 1b: Batch cholla_chem resolution for multi-fragment compounds ---
-    if multi_fragment_names:
-        logger.info(f"Batch resolving {len(multi_fragment_names)} multi-fragment compounds with cholla_chem")
-        try:
-            from cholla_chem import resolve_compounds_to_smiles
-            resolved = resolve_compounds_to_smiles(compounds_list=multi_fragment_names)
-
-            for compound_info in multi_fragment_compounds:
-                name = compound_info["original_name"]
-                resolved_smiles = resolved.get(name)
-                # Guard: skip if resolved value looks like an InChIKey instead of SMILES
-                if resolved_smiles and not INCHIKEY_PATTERN.match(resolved_smiles):
-                    resolved_props = compute_rdkit_properties(resolved_smiles)
-                    if resolved_props and not resolved_props["is_multi_fragment"]:
-                        # Update the cache with resolved SMILES
-                        original_inchikey = compound_info["original_inchikey"]
-
-                        resolved_props["input_smiles"] = compound_info["original_smiles"]
-                        resolved_props["input_name"] = name
-                        resolved_props["enrichment_source"] = "cholla_chem+pubchem"
-
-                        # Remove old multi-fragment entry and add resolved entry
-                        del rdkit_cache[original_inchikey]
-                        rdkit_cache[resolved_props["inchikey"]] = resolved_props
-        except Exception as e:
-            logger.warning(f"cholla_chem batch resolution failed: {e}")
-
     # --- Step 2: PubChem batch lookup ---
-    all_inchikeys = list(rdkit_cache.keys())
+    all_inchikeys = list(rdkit_batch.keys())
 
-    pubchem_results = batch_lookup_by_inchikeys(all_inchikeys)
+    if pubchem_method == "local_db":
+        if db_path is None:
+            raise ValueError("db_path is required when pubchem_method='local_db'.")
+        pubchem_results = batch_lookup_by_inchikeys_sqlite(
+            all_inchikeys, db_path=db_path
+        )
+    elif pubchem_method == "api":
+        pubchem_results = batch_lookup_by_inchikeys(all_inchikeys)
+    else:
+        raise ValueError(f"Invalid pubchem_method: {pubchem_method}")
 
     # --- Step 3: Merge ---
-    for inchikey, rdkit_props in rdkit_cache.items():
+    for inchikey, rdkit_props in rdkit_batch.items():
         record = rdkit_props.copy()
         pubchem = pubchem_results.get(inchikey, {})
 

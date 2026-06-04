@@ -1,7 +1,13 @@
 from typing import Dict, Optional
-from rdkit import Chem
+
+from rdkit import Chem, RDLogger
 from rdkit.Chem import Descriptors, rdMolDescriptors
-from rdkit.Chem.inchi import MolToInchi, InchiToInchiKey
+from rdkit.Chem.inchi import InchiToInchiKey, MolToInchi
+from rdkit.Chem.MolStandardize import rdMolStandardize
+
+RDLogger.DisableLog("rdApp.*")  # type: ignore[attr-defined]
+
+TAUTOMER_ENUMERATOR = rdMolStandardize.TautomerEnumerator()
 
 
 def compute_rdkit_properties(smiles: str) -> Optional[Dict]:
@@ -10,13 +16,25 @@ def compute_rdkit_properties(smiles: str) -> Optional[Dict]:
 
     Returns None if the SMILES is invalid.
     """
+    if not smiles or not smiles.strip():
+        return None
+
     mol = Chem.MolFromSmiles(smiles)
+
     if mol is None:
         return None
 
+    # Stereocenters must be captured before canonicalization strips them
+    num_stereocenters = rdMolDescriptors.CalcNumAtomStereoCenters(mol)
+    num_undefined_stereocenters = rdMolDescriptors.CalcNumUnspecifiedAtomStereoCenters(
+        mol
+    )
+
+    mol = TAUTOMER_ENUMERATOR.Canonicalize(mol)
+
     inchi = MolToInchi(mol)
     inchikey = InchiToInchiKey(inchi) if inchi else None
-    canonical_smiles = Chem.MolToSmiles(mol)
+    canonical_smiles = Chem.MolToSmiles(mol, isomericSmiles=True, canonical=True)
     is_multi_fragment = "." in canonical_smiles
 
     return {
@@ -25,9 +43,9 @@ def compute_rdkit_properties(smiles: str) -> Optional[Dict]:
         "inchikey": inchikey,
         "is_multi_fragment": is_multi_fragment,
         "formula": rdMolDescriptors.CalcMolFormula(mol),
-        "mw": round(Descriptors.MolWt(mol), 4),
-        "mw_exact": round(Descriptors.ExactMolWt(mol), 4),
-        "logp": round(Descriptors.MolLogP(mol), 4),
+        "mw": round(Descriptors.MolWt(mol), 4),  # type: ignore[attr-defined]
+        "mw_exact": round(Descriptors.ExactMolWt(mol), 4),  # type: ignore[attr-defined]
+        "logp": round(Descriptors.MolLogP(mol), 4),  # type: ignore[attr-defined]
         "tpsa": round(rdMolDescriptors.CalcTPSA(mol), 4),
         "hba": rdMolDescriptors.CalcNumHBA(mol),
         "hbd": rdMolDescriptors.CalcNumHBD(mol),
@@ -38,8 +56,8 @@ def compute_rdkit_properties(smiles: str) -> Optional[Dict]:
         "num_aliphatic_rings": rdMolDescriptors.CalcNumAliphaticRings(mol),
         "num_heterocycles": rdMolDescriptors.CalcNumHeterocycles(mol),
         "frac_csp3": round(rdMolDescriptors.CalcFractionCSP3(mol), 4),
-        "num_stereocenters": rdMolDescriptors.CalcNumAtomStereoCenters(mol),
-        "num_defined_stereocenters": rdMolDescriptors.CalcNumAtomStereoCenters(mol),
-        "num_undefined_stereocenters": rdMolDescriptors.CalcNumUnspecifiedAtomStereoCenters(mol),
+        "num_stereocenters": num_stereocenters,
+        "num_defined_stereocenters": num_stereocenters,
+        "num_undefined_stereocenters": num_undefined_stereocenters,
         "formal_charge": Chem.GetFormalCharge(mol),
     }
