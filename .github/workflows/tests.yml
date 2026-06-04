@@ -21,11 +21,11 @@ jobs:
           python -m pip install --upgrade pip
           pip install ruff mypy
       - name: Ruff lint
-        run: ruff check .
+        run: ruff check senita_chem
       - name: Ruff format check
-        run: ruff format --check .
+        run: ruff format --check senita_chem
       - name: Type check with mypy
-        run: mypy .
+        run: mypy senita_chem
   test:
     runs-on: ubuntu-latest
 
