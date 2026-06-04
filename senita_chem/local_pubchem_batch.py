@@ -40,7 +40,7 @@ def batch_lookup_by_inchikeys_sqlite(
         results: Dict[str, Dict[str, Any]] = {}
         for cid, inchikey, iupac_name, title in compound_rows:
             results[inchikey] = {
-                "cid": cid,
+                "pubchem_cid": cid,
                 "iupac_name": iupac_name,
                 "label": title,
                 "raw_synonyms": [],

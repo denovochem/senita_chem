@@ -37,7 +37,7 @@ class TestBatchLookupByInchikeysSqlite:
 
         assert len(results) == 1
         record = results["LFQSCWFLJHTTHZ-UHFFFAOYSA-N"]
-        assert record["cid"] == 702
+        assert record["pubchem_cid"] == 702
         assert record["iupac_name"] == "ethanol"
         assert record["label"] == "Ethanol"
         assert record["raw_synonyms"] == ["ethyl alcohol", "grain alcohol"]
