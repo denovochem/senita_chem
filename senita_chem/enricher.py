@@ -27,7 +27,7 @@ def enrich_compounds(
     compounds: Optional[List[Dict]] = None,
     inchikeys: Optional[List[str]] = None,
     max_synonyms: int = 75,
-    pubchem_method: str = "local_db",
+    pubchem_method: str = "api",
     db_path: Optional[str] = None,
 ) -> Dict[str, Dict]:
     """
