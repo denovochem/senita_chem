@@ -43,6 +43,8 @@ def batch_lookup_by_inchikeys_sqlite(
                 f"WHERE inchikey IN ({placeholders})",
                 chunk,
             ).fetchall():
+                if title and title.startswith("CID"):
+                    title = iupac_name
                 results[inchikey] = {
                     "pubchem_cid": cid,
                     "iupac_name": iupac_name,

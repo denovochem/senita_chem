@@ -53,15 +53,13 @@ def direct_rest_lookup_by_inchikeys(inchikeys: List[str]) -> Dict[str, Dict]:
             for prop in props_data.get("PropertyTable", {}).get("Properties", []):
                 inchikey = prop.get("InChIKey", "")
                 if inchikey:
+                    title = prop.get("Title", "")
+                    if title and title.startswith("CID"):
+                        title = prop.get("IUPACName", "")
                     chunk_results[inchikey] = {
                         "pubchem_cid": str(prop.get("CID", "")),
                         "iupac_name": prop.get("IUPACName", ""),
-                        "preferred_name": prop.get("Title", ""),
-                        "canonical_smiles_pubchem": prop.get("CanonicalSMILES", ""),
-                        "isomeric_smiles_pubchem": prop.get("IsomericSMILES", ""),
-                        "inchi_pubchem": prop.get("InChI", ""),
-                        "inchikey_pubchem": inchikey,
-                        "formula_pubchem": prop.get("MolecularFormula", ""),
+                        "preferred_name": title,
                     }
 
             # Build CID -> InChIKey mapping from chunk results

@@ -120,3 +120,12 @@ def enrich_compounds(
         results[inchikey] = record
 
     return results
+
+
+# if __name__ == "__main__":
+#     results = enrich_compounds(
+#         inchikeys=["TYJJADVDDVDEDZ-UHFFFAOYSA-M"],
+#         pubchem_method="local_db",
+#         db_path="/home/csnbritt/projects/denovochem_projects/local_synonym_cas_project/pubchem.db",
+#     )
+#     print(results)
