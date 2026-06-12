@@ -94,7 +94,9 @@ def clean_synonyms_list(
         synonyms_list = [synonyms_list]
     if not synonyms_list:
         return []
+    synonyms_list = sorted(synonyms_list, key=len)
     cleaned = []
+    seen = set()
     for synonym in synonyms_list:
         if synonym_too_short(synonym):
             continue
@@ -116,6 +118,10 @@ def clean_synonyms_list(
             continue
         if contains_forbidden_terms(synonym):
             continue
+        normalized = "".join(ch.lower() for ch in synonym if ch.isalnum())
+        if normalized in seen:
+            continue
+        seen.add(normalized)
         cleaned.append(synonym)
         if len(cleaned) >= max_number_of_synonyms:
             break
