@@ -88,7 +88,7 @@ def contains_forbidden_terms(
 
 def clean_synonyms_list(
     synonyms_list: List[str] | str,
-    max_number_of_synonyms: int = 75,
+    max_number_of_synonyms: int = 150,
 ) -> List[str]:
     if isinstance(synonyms_list, str):
         synonyms_list = [synonyms_list]
@@ -117,7 +117,7 @@ def clean_synonyms_list(
         if contains_forbidden_terms(synonym):
             continue
         cleaned.append(synonym)
-    return list(set(cleaned))[:max_number_of_synonyms]
+    return list(dict.fromkeys(cleaned))[:max_number_of_synonyms]
 
 
 def get_cas_nos_from_synonyms_list(synonyms_list: List[str] | str) -> List[str]:

@@ -26,7 +26,7 @@ def _cached_compute_rdkit_properties(smiles: str) -> Optional[Dict]:
 def enrich_compounds(
     compounds: Optional[List[Dict]] = None,
     inchikeys: Optional[List[str]] = None,
-    max_synonyms: int = 75,
+    max_synonyms: int = 150,
     pubchem_method: str = "local_db",
     db_path: Optional[str] = None,
 ) -> Dict[str, Dict]:
