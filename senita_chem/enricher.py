@@ -27,7 +27,7 @@ def enrich_compounds(
     compounds: Optional[List[Dict]] = None,
     inchikeys: Optional[List[str]] = None,
     max_synonyms: int = 75,
-    pubchem_method: str = "local_db",
+    pubchem_method: str = "api",
     db_path: Optional[str] = None,
 ) -> Dict[str, Dict]:
     """
@@ -120,3 +120,12 @@ def enrich_compounds(
         results[inchikey] = record
 
     return results
+
+
+# if __name__ == "__main__":
+#     results = enrich_compounds(
+#         inchikeys=["TYJJADVDDVDEDZ-UHFFFAOYSA-M"],
+#         pubchem_method="local_db",
+#         db_path="/home/csnbritt/projects/denovochem_projects/local_synonym_cas_project/pubchem.db",
+#     )
+#     print(results)

@@ -26,37 +26,43 @@ def batch_lookup_by_inchikeys_sqlite(
     if not inchikeys:
         return {}
 
+    _CHUNK_SIZE = 999
+    chunks = [
+        inchikeys[i : i + _CHUNK_SIZE] for i in range(0, len(inchikeys), _CHUNK_SIZE)
+    ]
+
     conn = sqlite3.connect(str(db_path))
     try:
-        placeholders = ",".join("?" * len(inchikeys))
+        results: Dict[str, Dict[str, Any]] = {}
 
         # Fetch core compound data
-        compound_rows = conn.execute(
-            f"SELECT cid, inchikey, iupac_name, title FROM compounds "
-            f"WHERE inchikey IN ({placeholders})",
-            inchikeys,
-        ).fetchall()
-
-        results: Dict[str, Dict[str, Any]] = {}
-        for cid, inchikey, iupac_name, title in compound_rows:
-            results[inchikey] = {
-                "pubchem_cid": cid,
-                "iupac_name": iupac_name,
-                "preferred_name": title,
-                "raw_synonyms": [],
-            }
+        for chunk in chunks:
+            placeholders = ",".join("?" * len(chunk))
+            for cid, inchikey, iupac_name, title in conn.execute(
+                f"SELECT cid, inchikey, iupac_name, title FROM compounds "
+                f"WHERE inchikey IN ({placeholders})",
+                chunk,
+            ).fetchall():
+                if title and title.startswith("CID"):
+                    title = iupac_name
+                results[inchikey] = {
+                    "pubchem_cid": cid,
+                    "iupac_name": iupac_name,
+                    "preferred_name": title,
+                    "raw_synonyms": [],
+                }
 
         # Fetch synonyms for the matched InChIKeys
-        synonym_rows = conn.execute(
-            f"SELECT c.inchikey, s.synonym_text FROM compounds c "
-            f"JOIN synonyms s ON c.cid = s.cid "
-            f"WHERE c.inchikey IN ({placeholders})",
-            inchikeys,
-        ).fetchall()
-
-        for inchikey, synonym_text in synonym_rows:
-            if inchikey in results:
-                results[inchikey]["raw_synonyms"].append(synonym_text)
+        for chunk in chunks:
+            placeholders = ",".join("?" * len(chunk))
+            for inchikey, synonym_text in conn.execute(
+                f"SELECT c.inchikey, s.synonym_text FROM compounds c "
+                f"JOIN synonyms s ON c.cid = s.cid "
+                f"WHERE c.inchikey IN ({placeholders})",
+                chunk,
+            ).fetchall():
+                if inchikey in results:
+                    results[inchikey]["raw_synonyms"].append(synonym_text)
 
         return results
     finally:
