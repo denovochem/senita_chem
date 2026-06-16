@@ -7,7 +7,10 @@ from rdkit.Chem.MolStandardize import rdMolStandardize
 
 RDLogger.DisableLog("rdApp.*")  # type: ignore[attr-defined]
 
-TAUTOMER_ENUMERATOR = rdMolStandardize.TautomerEnumerator()
+_taut_opts = rdMolStandardize.TautomerEnumeratorOptions()
+_taut_opts.RemoveSp3Stereo = False
+_taut_opts.RemoveBondStereo = False
+TAUTOMER_ENUMERATOR = rdMolStandardize.TautomerEnumerator(_taut_opts)
 
 
 def compute_rdkit_properties(smiles: str) -> Optional[Dict]:
