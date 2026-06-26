@@ -126,7 +126,16 @@ def enrich_compounds(
             else:
                 record["enrichment_source"] = "failed"
 
-        record["common_names"] = enrichment_dict.get(inchikey, [])
+        common_names = enrichment_dict.get(inchikey, [])
+        preferred = record.get("preferred_name", "")
+        if preferred:
+            norm_preferred = preferred.lower().replace(" ", "")
+            common_names = [
+                cn
+                for cn in common_names
+                if cn.lower().replace(" ", "") != norm_preferred
+            ]
+        record["common_names"] = common_names
 
         results[inchikey] = record
 
