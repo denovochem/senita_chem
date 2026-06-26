@@ -39,6 +39,9 @@ include-package-data = true
 [tool.setuptools.packages.find]
 where = ["."]
 
+[tool.setuptools.package-data]
+senita_chem = ["data/*"]
+
 [tool.setuptools.dynamic]
 dependencies = {file = ["requirements.txt"]}
 

@@ -14,6 +14,7 @@
 !requirements.txt
 !mkdocs.yml
 !LICENSE
+!MANIFEST.in
 
 !examples/
 !examples/example_notebook.ipynb
@@ -42,3 +43,7 @@
 !tests/unit/test_rdkit_properties.py
 !tests/unit/test_synonym_cleaning.py
 !tests/integration/
+
+!senita_chem/data/
+!senita_chem/data/__init__.py
+!senita_chem/data/enrichment_dict.json
