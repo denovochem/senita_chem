@@ -126,7 +126,7 @@ def enrich_compounds(
             else:
                 record["enrichment_source"] = "failed"
 
-        record["most_common_names"] = enrichment_dict.get(inchikey, [])
+        record["common_names"] = enrichment_dict.get(inchikey, [])
 
         results[inchikey] = record
 
