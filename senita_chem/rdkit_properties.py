@@ -8,8 +8,8 @@ from rdkit.Chem.MolStandardize import rdMolStandardize
 RDLogger.DisableLog("rdApp.*")  # type: ignore[attr-defined]
 
 _taut_opts = rdMolStandardize.CleanupParameters()
-_taut_opts.tautomerRemoveSp3Stereo = False
-_taut_opts.tautomerRemoveBondStereo = False
+_taut_opts.tautomerRemoveSp3Stereo = False  # type: ignore[assignment]
+_taut_opts.tautomerRemoveBondStereo = False  # type: ignore[assignment]
 TAUTOMER_ENUMERATOR = rdMolStandardize.TautomerEnumerator(_taut_opts)
 
 

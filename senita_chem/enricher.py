@@ -1,6 +1,8 @@
+import json
 import logging
 import re
 from functools import lru_cache
+from importlib import resources
 from typing import Dict, List, Optional
 
 from senita_chem.local_pubchem_batch import batch_lookup_by_inchikeys_sqlite
@@ -39,6 +41,13 @@ def enrich_compounds(
     """
     if compounds is None and inchikeys is None:
         raise ValueError("Provide either compounds or inchikeys.")
+
+    with (
+        resources.files("senita_chem.data")
+        .joinpath("enrichment_dict.json")
+        .open("r") as fh
+    ):
+        enrichment_dict: Dict[str, List[str]] = json.load(fh)
 
     results: Dict[str, Dict] = {}
 
@@ -116,6 +125,8 @@ def enrich_compounds(
                 record["enrichment_source"] = "rdkit_only"
             else:
                 record["enrichment_source"] = "failed"
+
+        record["most_common_names"] = enrichment_dict.get(inchikey, [])
 
         results[inchikey] = record
 

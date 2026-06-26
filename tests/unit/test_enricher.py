@@ -1,6 +1,6 @@
 """Unit tests for senita_chem.enricher module."""
 
-from typing import Dict
+from typing import Dict, Iterator
 from unittest.mock import patch
 
 import pytest
@@ -9,7 +9,7 @@ from senita_chem.enricher import enrich_compounds
 
 
 @pytest.fixture(autouse=True)
-def clear_rdkit_cache() -> None:
+def clear_rdkit_cache() -> Iterator[None]:
     """Clear the module-level RDKit LRU cache between tests."""
     from senita_chem.enricher import _cached_compute_rdkit_properties
 
