@@ -19,7 +19,7 @@ INCHIKEY_PATTERN = re.compile(r"^[A-Z]{14}-[A-Z]{10}-[A-Z]$")
 logger = logging.getLogger(__name__)
 
 
-@lru_cache(maxsize=16384)
+@lru_cache(maxsize=65536)
 def _cached_compute_rdkit_properties(smiles: str) -> Optional[Dict]:
     """Compute RDKit properties with module-level LRU caching."""
     return compute_rdkit_properties(smiles)
@@ -140,12 +140,3 @@ def enrich_compounds(
         results[inchikey] = record
 
     return results
-
-
-# if __name__ == "__main__":
-#     results = enrich_compounds(
-#         inchikeys=["TYJJADVDDVDEDZ-UHFFFAOYSA-M"],
-#         pubchem_method="local_db",
-#         db_path="/home/csnbritt/projects/denovochem_projects/local_synonym_cas_project/pubchem.db",
-#     )
-#     print(results)
