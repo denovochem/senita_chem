@@ -259,8 +259,8 @@
         "Pd₂dba₃"
     ],
     "KZMGYPLQYOPHEL-UHFFFAOYSA-N": [
-        "BF₃\u2022OEt₂",
-        "BF₃\u2022Et₂O",
+        "BF₃•OEt₂",
+        "BF₃•Et₂O",
         "BF₃.OEt₂"
     ],
     "WFDIJRYMOXRFFG-UHFFFAOYSA-N": [
@@ -326,7 +326,7 @@
     "FPQQSJJWHUJYPU-UHFFFAOYSA-N": [
         "EDCI",
         "EDC.HCl",
-        "EDC\u00b7HCl"
+        "EDC·HCl"
     ],
     "YNHIGQDRGKUECZ-UHFFFAOYSA-N": [
         "Pd(PPh₃)₂Cl₂"
@@ -385,9 +385,9 @@
         "m-chloroperbenzoic acid"
     ],
     "VHUUQVKOLVNVRT-UHFFFAOYSA-N": [
-        "NH₃\u2022H₂O",
+        "NH₃•H₂O",
         "ammonia water",
-        "NH₃\u00b7H₂O"
+        "NH₃·H₂O"
     ],
     "NQRYJNQNLNOLGT-UHFFFAOYSA-N": [
         "piperidine"
@@ -401,7 +401,7 @@
     "QOSSAOTZNIDXMA-UHFFFAOYSA-N": [
         "DCC",
         "dicyclohexylcarbodiimide",
-        "N,N\u2019-dicyclohexylcarbodiimide"
+        "N,N’-dicyclohexylcarbodiimide"
     ],
     "SECXISVLQFMRJM-UHFFFAOYSA-N": [
         "NMP"
@@ -424,7 +424,7 @@
     "MZRVEZGGRBJDDB-UHFFFAOYSA-N": [
         "n-BuLi",
         "n-butyllithium",
-        "n\u2010BuLi"
+        "n‐BuLi"
     ],
     "CTSLXHKWHWQRSH-UHFFFAOYSA-N": [
         "oxalyl chloride",
@@ -459,7 +459,7 @@
         "i-Pr₂NH"
     ],
     "NWFNSTOSIVLCJA-UHFFFAOYSA-L": [
-        "Cu(OAc)₂\u2022H₂O",
+        "Cu(OAc)₂•H₂O",
         "Cu(OAc)₂.H₂O"
     ],
     "IJOOHPMOJXWVHK-UHFFFAOYSA-N": [
@@ -517,9 +517,9 @@
         "triflic anhydride"
     ],
     "KJIFKLIQANRMOU-UHFFFAOYSA-N": [
-        "TsOH\u2022H₂O",
+        "TsOH•H₂O",
         "p-toluenesulfonic acid monohydrate",
-        "p-TsOH\u2022H₂O"
+        "p-TsOH•H₂O"
     ],
     "NLKNQRATVPKPDG-UHFFFAOYSA-M": [
         "KI",
@@ -651,7 +651,7 @@
     ],
     "ROFVEXUMMXZLPA-UHFFFAOYSA-N": [
         "bpy",
-        "2,2\u2019-bipyridine",
+        "2,2’-bipyridine",
         "2,2'-bipyridine"
     ],
     "SQGYOTSLMSWVJD-UHFFFAOYSA-N": [
@@ -742,8 +742,8 @@
     ],
     "WTDHULULXKLSOZ-UHFFFAOYSA-N": [
         "hydroxylamine hydrochloride",
-        "NH₂OH\u00b7HCl",
-        "NH₂OH\u2022HCl"
+        "NH₂OH·HCl",
+        "NH₂OH•HCl"
     ],
     "SEDZOYHHAIAQIW-UHFFFAOYSA-N": [
         "TMSN₃",
@@ -778,7 +778,7 @@
         "TBDMSCl"
     ],
     "JZCCFEFSEZPSOG-UHFFFAOYSA-L": [
-        "CuSO₄\u20225H₂O",
+        "CuSO₄•5H₂O",
         "CuSO₄.5H₂O",
         "copper sulfate pentahydrate"
     ],
@@ -805,17 +805,17 @@
         "manganese"
     ],
     "DRGVLUZIGUIMLB-UHFFFAOYSA-N": [
-        "Rh2(OAc)₄"
+        "Rh₂(OAc)₄"
     ],
     "NKLCNNUWBJBICK-UHFFFAOYSA-N": [
         "Dess-Martin periodinane",
         "DMP",
-        "Dess\u2013Martin periodinane"
+        "Dess–Martin periodinane"
     ],
     "NXQGGXCHGDYOHB-UHFFFAOYSA-L": [
-        "[1,1\u2019-Bis(diphenylphosphino)ferrocene] dichloropalladium(II)",
+        "[1,1’-Bis(diphenylphosphino)ferrocene] dichloropalladium(II)",
         "[1,1'-bis(diphenylphosphino)ferrocene]-dichloropalladium(II)",
-        "1,1\u2019-bis(diphenylphosphino)ferrocene dichloropalladium(II)"
+        "1,1’-bis(diphenylphosphino)ferrocene dichloropalladium(II)"
     ],
     "SJRJJKPEHAURKC-UHFFFAOYSA-N": [
         "N-methylmorpholine",
@@ -853,7 +853,7 @@
     ],
     "TXRPHPUGYLSHCX-UHFFFAOYSA-N": [
         "Selectfluor",
-        "Selectfluor\u2122"
+        "Selectfluor™"
     ],
     "QGJOPFRUJISHPQ-UHFFFAOYSA-N": [
         "CS₂",
@@ -900,9 +900,9 @@
         "2-methyltetrahydrofuran"
     ],
     "LNAMMBFJMYMQTO-FNEBRGMMSA-N": [
-        "Pd₂(dba)₃\u2022CHCl₃",
+        "Pd₂(dba)₃•CHCl₃",
         "Pd₂(dba)₃.CHCl₃",
-        "Pd₂(dba)₃\u00b7CHCl₃"
+        "Pd₂(dba)₃·CHCl₃"
     ],
     "GDTBXPJZTBHREO-UHFFFAOYSA-N": [
         "Br₂",
@@ -945,7 +945,7 @@
     "TXNLQUKVUJITMX-UHFFFAOYSA-N": [
         "dtbpy",
         "4,4'-di-tert-butyl-2,2'-bipyridine",
-        "4,4\u2019-di-tert-butyl-2,2\u2019-bipyridine"
+        "4,4’-di-tert-butyl-2,2’-bipyridine"
     ],
     "CVDUGUOQTVTBJH-UHFFFAOYSA-N": [
         "NaBH₃CN",
@@ -1015,7 +1015,7 @@
     ],
     "BDNKZNFMNDZQMI-UHFFFAOYSA-N": [
         "DIC",
-        "N,N\u2019-diisopropylcarbodiimide",
+        "N,N’-diisopropylcarbodiimide",
         "diisopropylcarbodiimide"
     ],
     "LYCAIKOWRPUZTN-UHFFFAOYSA-N": [
@@ -1085,7 +1085,7 @@
         "potassium bicarbonate"
     ],
     "GLXDVVHUTZTUQK-UHFFFAOYSA-M": [
-        "LiOH\u2022H₂O",
+        "LiOH•H₂O",
         "LiOH.H₂O",
         "lithium hydroxide monohydrate"
     ],
@@ -1100,7 +1100,7 @@
     ],
     "LJCNRYVRMXRIQR-OLXYHTOASA-L": [
         "potassium sodium tartrate",
-        "Rochelle\u2019s salt",
+        "Rochelle’s salt",
         "sodium potassium tartrate"
     ],
     "NMCUIPGRVMDVDB-UHFFFAOYSA-L": [
@@ -1121,7 +1121,7 @@
     ],
     "PFKFTWBEEFSNDU-UHFFFAOYSA-N": [
         "CDI",
-        "1,1\u2019-carbonyldiimidazole",
+        "1,1’-carbonyldiimidazole",
         "carbonyldiimidazole"
     ],
     "NINIDFKCEFEMDL-UHFFFAOYSA-N": [
@@ -1142,7 +1142,7 @@
     ],
     "OKBMCNHOEMXPTM-UHFFFAOYSA-M": [
         "Oxone",
-        "Oxone\u2122"
+        "Oxone™"
     ],
     "IVSZLXZYQVIEFR-UHFFFAOYSA-N": [
         "m-xylene",
@@ -1229,7 +1229,7 @@
         "sodium metal"
     ],
     "OCMNCWNTDDVHFK-UHFFFAOYSA-L": [
-        "NiCl₂\u2022glyme",
+        "NiCl₂•glyme",
         "NiCl₂(DME)",
         "NiCl₂.glyme"
     ],
@@ -1282,14 +1282,14 @@
         "NiCl₂"
     ],
     "OBMUTUNJWNQIAJ-UHFFFAOYSA-N": [
-        "Rh2(esp)₂"
+        "Rh₂(esp)₂"
     ],
     "AHZJKOKFZJYCLG-UHFFFAOYSA-K": [
         "Yb(OTf)₃",
         "ytterbium triflate"
     ],
     "XGZVUEUWXADBQD-UHFFFAOYSA-L": [
-        "Li2CO₃",
+        "Li₂CO₃",
         "lithium carbonate"
     ],
     "MSXVEPNJUHWQHW-UHFFFAOYSA-N": [
@@ -1298,7 +1298,7 @@
         "t-amyl alcohol"
     ],
     "KZPYGQFFRCFCPP-UHFFFAOYSA-N": [
-        "1,1\u2019-bis(diphenylphosphino)ferrocene",
+        "1,1’-bis(diphenylphosphino)ferrocene",
         "1,1'-bis(diphenylphosphino)ferrocene",
         "bis(diphenylphosphino)ferrocene"
     ],
@@ -1381,7 +1381,7 @@
         "diethyl azodicarboxylate"
     ],
     "XMWRBQBLMFGWIX-UHFFFAOYSA-N": [
-        "C60"
+        "C₆₀"
     ],
     "DBGVGMSCBYYSLD-UHFFFAOYSA-N": [
         "Bu₃SnH",
@@ -1411,14 +1411,14 @@
         "Me₃Al"
     ],
     "DLFMLQBFBUZXHL-UHFFFAOYSA-L": [
-        "NiCl₂\u2022DME",
+        "NiCl₂•DME",
         "NiCl₂.dme"
     ],
     "OAKJQQAXSVQMHS-UHFFFAOYSA-N": [
         "hydrazine"
     ],
     "VHSVJTYBTJCDFL-UHFFFAOYSA-L": [
-        "NiBr₂\u2022glyme",
+        "NiBr₂•glyme",
         "NiBr₂(dme)",
         "NiBr₂.glyme"
     ],
@@ -1463,7 +1463,7 @@
     ],
     "KVKFRMCSXWQSNT-UHFFFAOYSA-N": [
         "DMEDA",
-        "N,N\u2019-dimethylethylenediamine",
+        "N,N’-dimethylethylenediamine",
         "N,N-dimethylethylenediamine"
     ],
     "LALRXNPLTWZJIJ-UHFFFAOYSA-N": [
@@ -1535,7 +1535,7 @@
         "1,2-diaminobenzene"
     ],
     "AWSZVVXTAVUESQ-UHFFFAOYSA-L": [
-        "NiBr₂\u2022DME",
+        "NiBr₂•DME",
         "NiBr₂.DME"
     ],
     "QMMFVYPAHWMCMS-UHFFFAOYSA-N": [
@@ -1573,7 +1573,7 @@
     ],
     "YMWUJEATGCHHMB-DICFDUPASA-N": [
         "CD₂Cl₂",
-        "dichloromethane-d2"
+        "dichloromethane-d₂"
     ],
     "BAVYZALUXZFZLV-UHFFFAOYSA-N": [
         "methylamine",
@@ -1659,7 +1659,7 @@
         "potassium hexafluorophosphate"
     ],
     "ZBYYWKJVSFHYJL-UHFFFAOYSA-L": [
-        "Co(OAc)₂\u20224H₂O",
+        "Co(OAc)₂•4H₂O",
         "Co(OAc)₂.4H₂O"
     ],
     "NHGXDBSUJJNIRV-UHFFFAOYSA-M": [
@@ -1683,7 +1683,7 @@
         "IBX"
     ],
     "JVBXVOWTABLYPX-UHFFFAOYSA-L": [
-        "Na₂S₂O4",
+        "Na₂S₂O₄",
         "sodium dithionite"
     ],
     "LJXTYJXBORAIHX-UHFFFAOYSA-N": [
@@ -1750,7 +1750,7 @@
         "i-PrOAc"
     ],
     "GNSKLFRGEWLPPA-UHFFFAOYSA-M": [
-        "KH2PO₄"
+        "KH₂PO₄"
     ],
     "CHQMHPLRPQMAMX-UHFFFAOYSA-L": [
         "Na₂S₂O₈",
@@ -1780,7 +1780,7 @@
     ],
     "PYLWMHQQBFSUBP-UHFFFAOYSA-N": [
         "fluorobenzene",
-        "C6H5F"
+        "C₆H₅F"
     ],
     "OKKJLVBELUTLKV-MZCSYVLQSA-N": [
         "Cd₃OD",
@@ -1790,7 +1790,7 @@
         "benzophenone"
     ],
     "NQXWGWZJXJUMQB-UHFFFAOYSA-K": [
-        "FeCl₃\u20226H₂O",
+        "FeCl₃•6H₂O",
         "FeCl₃.6H₂O"
     ],
     "QPFMBZIOSGYJDE-UHFFFAOYSA-N": [
@@ -1836,9 +1836,9 @@
         "NiI₂"
     ],
     "SNRCKKQHDUIRIY-UHFFFAOYSA-L": [
-        "Pd(dppf)Cl₂\u2022CH₂Cl₂",
+        "Pd(dppf)Cl₂•CH₂Cl₂",
         "PdCl₂(dppf).DCM",
-        "PdCl₂(dppf)\u00b7DCM"
+        "PdCl₂(dppf)·DCM"
     ],
     "SBZXBUIDTXKZTM-UHFFFAOYSA-N": [
         "diglyme"
@@ -1895,7 +1895,7 @@
     ],
     "VZOPRCCTKLAGPN-ZFJVMAEJSA-L": [
         "Rochelle salt",
-        "Rochelle\u2019s salt"
+        "Rochelle’s salt"
     ],
     "NDOPHXWIAZIXPR-UHFFFAOYSA-N": [
         "2-bromobenzaldehyde",
@@ -1972,8 +1972,8 @@
     ],
     "PJUPKRYGDFTMTM-UHFFFAOYSA-N": [
         "1-hydroxybenzotriazole hydrate",
-        "HOBt\u2022H₂O",
-        "HOBt\u00b7H₂O"
+        "HOBt•H₂O",
+        "HOBt·H₂O"
     ],
     "FAQYAMRNWDIXMY-UHFFFAOYSA-N": [
         "BCl₃",
@@ -2008,11 +2008,11 @@
         "p-bromoanisole"
     ],
     "AHSBSUVHXDIAEY-UHFFFAOYSA-K": [
-        "Mn(OAc)₃\u20222H₂O",
+        "Mn(OAc)₃•2H₂O",
         "Mn(OAc)₃.2H₂O"
     ],
     "PNEYBMLMFCGWSK-UHFFFAOYSA-N": [
-        "Al2O₃",
+        "Al₂O₃",
         "aluminum oxide"
     ],
     "ROSDSFDQCJNGOL-UHFFFAOYSA-N": [
@@ -2087,9 +2087,9 @@
         "HC(OEt)₃"
     ],
     "ILWRPSCZWQJDMK-UHFFFAOYSA-N": [
-        "Et₃N\u2022HCl",
+        "Et₃N•HCl",
         "triethylamine hydrochloride",
-        "Et₃N\u00b7HCl"
+        "Et₃N·HCl"
     ],
     "NYENCOMLZDQKNH-UHFFFAOYSA-K": [
         "bismuth triflate",
@@ -2103,7 +2103,7 @@
     "JWAZRIHNYRIHIV-UHFFFAOYSA-N": [
         "2-naphthol",
         "naphthalen-2-ol",
-        "\u03b2-naphthol"
+        "β-naphthol"
     ],
     "XJUZRXYOEPSWMB-UHFFFAOYSA-N": [
         "MOMCl",
@@ -2269,7 +2269,7 @@
         "indium bromide"
     ],
     "CFHGBZLNZZVTAY-UHFFFAOYSA-N": [
-        "Lawesson\u2019s reagent",
+        "Lawesson’s reagent",
         "Lawesson's reagent",
         "Lawesson reagent"
     ],
@@ -2278,9 +2278,9 @@
         "p-nitrobenzaldehyde"
     ],
     "MFJILWDEQCBYRL-HGQBGHRSSA-N": [
-        "Et₃N\u20223HF",
-        "Et₃N\u00b73HF",
-        "NEt₃\u20223HF"
+        "Et₃N•3HF",
+        "Et₃N·3HF",
+        "NEt₃•3HF"
     ],
     "CIWBSHSKHKDKBQ-JLAZNSOCSA-N": [
         "ascorbic acid",
@@ -2306,8 +2306,8 @@
         "ethyl 2-(diethoxyphosphoryl)acetate"
     ],
     "DBTNVRCCIDISMV-UHFFFAOYSA-L": [
-        "iPrMgCl\u2022LiCl",
-        "i-PrMgCl\u2022LiCl",
+        "iPrMgCl•LiCl",
+        "i-PrMgCl•LiCl",
         "isopropylmagnesium chloride lithium chloride complex"
     ],
     "FXLOVSHXALFLKQ-UHFFFAOYSA-N": [
@@ -2328,7 +2328,7 @@
         "but-3-en-2-one"
     ],
     "SZQUEWJRBJDHSM-UHFFFAOYSA-N": [
-        "Fe(NO₃)₃\u20229H₂O",
+        "Fe(NO₃)₃•9H₂O",
         "Fe(NO₃)₃.9H₂O"
     ],
     "NTMHWRHEGDRTPD-UHFFFAOYSA-N": [
@@ -2438,7 +2438,7 @@
         "alumina"
     ],
     "NQZFAUXPNWSLBI-UHFFFAOYSA-N": [
-        "Ru3(CO)₁₂"
+        "Ru₃(CO)₁₂"
     ],
     "YBBRCQOCSYXUOC-UHFFFAOYSA-N": [
         "SO₂Cl₂",
@@ -2460,7 +2460,7 @@
     "XNXVOSBNFZWHBV-UHFFFAOYSA-N": [
         "O-methylhydroxylamine hydrochloride",
         "methoxyamine hydrochloride",
-        "MeONH₂\u2022HCl"
+        "MeONH₂•HCl"
     ],
     "VTWRFRVMKPWCFL-UHFFFAOYSA-N": [
         "diethyl phosphite"
@@ -2504,8 +2504,8 @@
         "ethyl 2-bromo-2,2-difluoroacetate"
     ],
     "KHTJRUDVXXNFJZ-UHFFFAOYSA-L": [
-        "CuCN\u20222LiCl",
-        "CuCN\u00b72LiCl"
+        "CuCN•2LiCl",
+        "CuCN·2LiCl"
     ],
     "KCXMKQUNVWSEMD-UHFFFAOYSA-N": [
         "benzyl chloride",
@@ -2550,7 +2550,7 @@
         "N,N-dicyclohexylmethylamine"
     ],
     "RRSIMIHTHWYRRA-UHFFFAOYSA-L": [
-        "NiBr₂\u2022diglyme",
+        "NiBr₂•diglyme",
         "NiBr₂.diglyme"
     ],
     "CSJLBAMHHLJAAS-UHFFFAOYSA-N": [
@@ -2622,25 +2622,25 @@
         "dicobalt octacarbonyl"
     ],
     "MPTQRFCYZCXJFQ-UHFFFAOYSA-L": [
-        "CuCl₂\u20222H₂O",
+        "CuCl₂•2H₂O",
         "CuCl₂.2H₂O"
     ],
     "OBTWBSRJZRCYQV-UHFFFAOYSA-N": [
-        "SO₂F2",
+        "SO₂F₂",
         "sulfuryl fluoride"
     ],
     "VEPTXBCIDSFGBF-UHFFFAOYSA-M": [
-        "TBAF\u20223H₂O",
+        "TBAF•3H₂O",
         "TBAF.3H₂O",
-        "TBAF\u00b73H₂O"
+        "TBAF·3H₂O"
     ],
     "YNQLUTRBYVCPMQ-UHFFFAOYSA-N": [
         "ethylbenzene"
     ],
     "PMHQVHHXPFUNSP-UHFFFAOYSA-M": [
-        "CuBr\u2022SMe₂",
-        "CuBr\u2022Me₂S",
-        "CuBr\u00b7SMe₂"
+        "CuBr•SMe₂",
+        "CuBr•Me₂S",
+        "CuBr·SMe₂"
     ],
     "SBYHFKPVCBCYGV-UHFFFAOYSA-N": [
         "quinuclidine"
@@ -2675,7 +2675,7 @@
         "hex-1-ene"
     ],
     "GXHFUVWIGNLZSC-UHFFFAOYSA-N": [
-        "Meldrum\u2019s acid",
+        "Meldrum’s acid",
         "2,2-dimethyl-1,3-dioxane-4,6-dione"
     ],
     "ZBRJXVVKPBZPAN-UHFFFAOYSA-N": [
@@ -2697,7 +2697,7 @@
     ],
     "PAQZWJGSJMLPMG-UHFFFAOYSA-N": [
         "T3P",
-        "T3P\u2122",
+        "T3P™",
         "propylphosphonic anhydride"
     ],
     "KFZUDNZQQCWGKF-UHFFFAOYSA-M": [
@@ -2840,12 +2840,12 @@
         "Rh(nbd)₂BF₄"
     ],
     "SURQXAFEQWPFPV-UHFFFAOYSA-L": [
-        "FeSO₄\u20227H₂O",
+        "FeSO₄•7H₂O",
         "FeSO₄.7H₂O",
         "iron(II) sulfate heptahydrate"
     ],
     "FWPIDFUJEMBDLS-UHFFFAOYSA-L": [
-        "SnCl₂\u20222H₂O",
+        "SnCl₂•2H₂O",
         "SnCl₂.2H₂O",
         "tin(II) chloride dihydrate"
     ],
@@ -2906,7 +2906,7 @@
     ],
     "QBERHIJABFXGRZ-UHFFFAOYSA-M": [
         "RhCl(PPh₃)₃",
-        "Wilkinson\u2019s catalyst",
+        "Wilkinson’s catalyst",
         "chlorotris(triphenylphosphine)rhodium"
     ],
     "ZSWFCLXCOIISFI-UHFFFAOYSA-N": [
@@ -2915,7 +2915,7 @@
     "FCDPQMAOJARMTG-UHFFFAOYSA-L": [
         "Grubbs II catalyst",
         "Grubbs 2nd generation catalyst",
-        "Grubbs\u2019 second generation catalyst"
+        "Grubbs’ second generation catalyst"
     ],
     "MIOPJNTWMNEORI-GMSGAONNSA-N": [
         "camphorsulfonic acid",
@@ -2949,7 +2949,7 @@
     "WYECURVXVYPVAT-UHFFFAOYSA-N": [
         "4-bromoacetophenone",
         "1-(4-bromophenyl)ethan-1-one",
-        "4\u2019-bromoacetophenone"
+        "4’-bromoacetophenone"
     ],
     "WLJVXDMOQOGPHL-UHFFFAOYSA-N": [
         "phenylacetic acid",
@@ -3000,7 +3000,7 @@
         "(S,S)-Ph-BPE"
     ],
     "RMCYTHFAWCWRFA-UHFFFAOYSA-N": [
-        "BH₃\u2022THF"
+        "BH₃•THF"
     ],
     "XNNQFQFUQLJSQT-UHFFFAOYSA-N": [
         "BrCCl₃",
@@ -3144,9 +3144,9 @@
         "Et₂Zn"
     ],
     "BIXNGBXQRRXPLM-UHFFFAOYSA-K": [
-        "RuCl₃\u2022xH₂O",
+        "RuCl₃•xH₂O",
         "RuCl₃.xH₂O",
-        "RuCl₃\u2022H₂O"
+        "RuCl₃•H₂O"
     ],
     "UJOBWOGCFQCDNV-UHFFFAOYSA-N": [
         "carbazole",
@@ -3161,12 +3161,12 @@
         "isonitrile"
     ],
     "AVJBQMXODCVJCJ-UHFFFAOYSA-M": [
-        "IPr\u00b7HCl",
-        "IPr\u2022HCl",
+        "IPr·HCl",
+        "IPr•HCl",
         "IPr.HCl"
     ],
     "HVAPLSNCVYXFDQ-UHFFFAOYSA-N": [
-        "Togni\u2019s reagent",
+        "Togni’s reagent",
         "Togni reagent",
         "1-trifluoromethyl-1,3-dihydro-3,3-dimethyl-1,2-benziodoxole"
     ],
@@ -3273,8 +3273,8 @@
         "p-methoxybenzyl chloride"
     ],
     "RMHDLBZYPISZOI-UHFFFAOYSA-N": [
-        "BH₃\u2022SMe₂",
-        "BH₃\u2022Me₂S",
+        "BH₃•SMe₂",
+        "BH₃•Me₂S",
         "borane dimethyl sulfide"
     ],
     "BOTDANWDWHJENH-UHFFFAOYSA-N": [
@@ -3351,7 +3351,7 @@
         "noctane"
     ],
     "ABSOMGPQFXJESQ-UHFFFAOYSA-M": [
-        "CsOH\u2022H₂O",
+        "CsOH•H₂O",
         "CsOH.H₂O",
         "cesium hydroxide monohydrate"
     ],
@@ -3359,9 +3359,9 @@
         "PhLi"
     ],
     "LUHWPIQKXFBOQD-UHFFFAOYSA-N": [
-        "HF\u2022pyridine",
-        "HF\u2022Py",
-        "Py\u2022HF"
+        "HF•pyridine",
+        "HF•Py",
+        "Py•HF"
     ],
     "ZTQSAGDEMFDKMZ-UHFFFAOYSA-N": [
         "butyraldehyde",
@@ -3373,9 +3373,9 @@
         "borane"
     ],
     "LNAMMBFJMYMQTO-UHFFFAOYSA-N": [
-        "Pd₂dba₃\u2022CHCl₃",
+        "Pd₂dba₃•CHCl₃",
         "Pd₂dba₃.CHCl₃",
-        "Pd₂dba₃\u00b7CHCl₃"
+        "Pd₂dba₃·CHCl₃"
     ],
     "CPELXLSAUQHCOX-UHFFFAOYSA-N": [
         "hydrobromic acid",
@@ -3386,9 +3386,9 @@
         "p-bromoaniline"
     ],
     "PIAOLBVUVDXHHL-VOTSOKGWSA-N": [
-        "trans-\u03b2-nitrostyrene",
+        "trans-β-nitrostyrene",
         "(E)-(2-nitrovinyl)benzene",
-        "(E)-\u03b2-nitrostyrene"
+        "(E)-β-nitrostyrene"
     ],
     "DIOHEXPTUTVCNX-UHFFFAOYSA-N": [
         "PhNTf₂",
@@ -3458,12 +3458,12 @@
         "HPPh₂"
     ],
     "RMNIZOOYFMNEJJ-UHFFFAOYSA-K": [
-        "K₃PO₄\u2022H₂O",
+        "K₃PO₄•H₂O",
         "K₃PO₄.H₂O",
         "potassium phosphate tribasic monohydrate"
     ],
     "XTVVROIMIGLXTD-UHFFFAOYSA-N": [
-        "Cu(NO₃)₂\u20223H₂O",
+        "Cu(NO₃)₂•3H₂O",
         "Cu(NO₃)₂"
     ],
     "DNJIEGIFACGWOD-UHFFFAOYSA-N": [
@@ -3484,18 +3484,18 @@
     ],
     "XZMCDFZZKTWFGF-UHFFFAOYSA-N": [
         "cyanamide",
-        "CH₂N2",
+        "CH₂N₂",
         "NH₂CN"
     ],
     "JHBZAAACZVPPRQ-UHFFFAOYSA-L": [
-        "TMPMgCl\u2022LiCl",
-        "TMPMgCl\u00b7LiCl",
+        "TMPMgCl•LiCl",
+        "TMPMgCl·LiCl",
         "TMPMgCl.LiCl"
     ],
     "PGRFXXCKHGIFSV-UHFFFAOYSA-N": [
         "perfluorobutyl iodide",
-        "C4F9I",
-        "n-C4F9I"
+        "C₄F₉I",
+        "n-C₄F₉I"
     ],
     "SEEYREPSKCQBBF-UHFFFAOYSA-N": [
         "N-methylmaleimide",
@@ -3535,7 +3535,7 @@
     "RWSOTUBLDIXVET-UHFFFAOYSA-N": [
         "thiol",
         "TRIP thiol",
-        "H2S"
+        "H₂S"
     ],
     "MPPPKRYCTPRNTB-UHFFFAOYSA-N": [
         "1-bromobutane",
@@ -3548,7 +3548,7 @@
         "Hoveyda-Grubbs catalyst"
     ],
     "UFHFLCQGNIYNRP-VVKOMZTBSA-N": [
-        "D2",
+        "D₂",
         "deuterium"
     ],
     "HIDBROSJWZYGSZ-UHFFFAOYSA-N": [
@@ -3569,7 +3569,7 @@
     ],
     "YZUPZGFPHUVJKC-UHFFFAOYSA-N": [
         "Amberlyst 15",
-        "Amberlyst\u2122 15",
+        "Amberlyst™ 15",
         "1-bromo-2-methoxyethane"
     ],
     "KYVBNYUBXIEUFW-UHFFFAOYSA-N": [
@@ -3591,7 +3591,7 @@
         "p-chloroaniline"
     ],
     "XYLMUPLGERFSHI-UHFFFAOYSA-N": [
-        "\u03b1-methylstyrene",
+        "α-methylstyrene",
         "prop-1-en-2-ylbenzene"
     ],
     "PXBFMLJZNCDSMP-UHFFFAOYSA-N": [
@@ -3632,12 +3632,12 @@
         "TMDS"
     ],
     "MYSMMEUXKHJYKH-UHFFFAOYSA-O": [
-        "PCy₃\u2022HBF₄",
-        "PCy₃\u00b7HBF₄",
+        "PCy₃•HBF₄",
+        "PCy₃·HBF₄",
         "(Cy)₃P.HBF₄"
     ],
     "IMEVSAIFJKKDAP-UHFFFAOYSA-N": [
-        "4,4\u2019-dimethoxy-2,2\u2019-bipyridine",
+        "4,4’-dimethoxy-2,2’-bipyridine",
         "4,4'-dimethoxy-2,2'-bipyridine",
         "4,4'-dimethoxy-2,2'-bipyridine L1"
     ],
@@ -3663,7 +3663,7 @@
         "2-bromoacetonitrile"
     ],
     "BEAZKUGSCHFXIQ-UHFFFAOYSA-L": [
-        "Zn(OAc)₂\u20222H₂O",
+        "Zn(OAc)₂•2H₂O",
         "Zn(OAc)₂.2H₂O",
         "zinc acetate dihydrate"
     ],
@@ -3712,7 +3712,7 @@
     "PNPBGYBHLCEVMK-UHFFFAOYSA-N": [
         "Grubbs catalyst",
         "Grubbs I",
-        "Grubbs\u2019 catalyst"
+        "Grubbs’ catalyst"
     ],
     "CFOAUYCPAUGDFF-UHFFFAOYSA-N": [
         "TosMIC",
@@ -3782,7 +3782,7 @@
     "SSJXIUAHEKJCMH-PHDIDXHHSA-N": [
         "trans-1,2-diaminocyclohexane",
         "(1R,2R)-Cyclohexane-1,2-diamine",
-        "(\u00b1)-trans-1,2-diaminocyclohexane"
+        "(±)-trans-1,2-diaminocyclohexane"
     ],
     "FJDJVBXSSLDNJB-LNTINUHCSA-N": [
         "Co(acac)₃"
@@ -3798,7 +3798,7 @@
         "cyclohexanol"
     ],
     "AOPCKOPZYFFEDA-UHFFFAOYSA-N": [
-        "Ni(NO₃)₂\u20226H₂O",
+        "Ni(NO₃)₂•6H₂O",
         "Ni(NO₃)₂.6H₂O"
     ],
     "CRWVOXFUXPYTRK-UHFFFAOYSA-N": [
@@ -3808,7 +3808,7 @@
     "BKBKEFQIOUYLBC-UHFFFAOYSA-N": [
         "tetrabutylammonium hexafluorophosphate",
         "TBAPF₆",
-        "TBABPh4"
+        "TBABPh₄"
     ],
     "JBWKIWSBJXDJDT-UHFFFAOYSA-N": [
         "trityl chloride",
@@ -3860,7 +3860,7 @@
         "cyclohexane-1,3-dione"
     ],
     "SXTLQDJHRPXDSB-UHFFFAOYSA-N": [
-        "Cu(NO₃)₂\u20223H₂O",
+        "Cu(NO₃)₂•3H₂O",
         "Cu(NO₃)₂.3H₂O"
     ],
     "WRQNANDWMGAFTP-UHFFFAOYSA-N": [
@@ -3875,7 +3875,7 @@
         "3DPAFIPN"
     ],
     "BFFWGFMAXHCLDV-UHFFFAOYSA-N": [
-        "Ni(BF₄)₂\u20226H₂O",
+        "Ni(BF₄)₂•6H₂O",
         "Ni(BF₄)₂.6H₂O",
         "Nickel (II) tetrafluoborate hexahydrate"
     ],
@@ -3886,7 +3886,7 @@
     "NTPLXRHDUXRPNE-UHFFFAOYSA-N": [
         "4-methoxyacetophenone",
         "1-(4-methoxyphenyl)ethan-1-one",
-        "4\u2019-methoxyacetophenone"
+        "4’-methoxyacetophenone"
     ],
     "HSWZLYXRAOXOLL-UHFFFAOYSA-N": [
         "NIXANTPHOS"
@@ -3951,7 +3951,7 @@
         "9-fluorenylmethyl chloroformate"
     ],
     "CVVFEJJXIBBZNQ-GOSISDBHSA-N": [
-        "KC8"
+        "KC₈"
     ],
     "GBHCABUWWQUMAJ-UHFFFAOYSA-N": [
         "HEH"
@@ -3962,14 +3962,14 @@
         "Bu₄NOH"
     ],
     "ZGHLCBJZQLNUAZ-UHFFFAOYSA-N": [
-        "Na₂S\u20229H₂O",
+        "Na₂S•9H₂O",
         "sodium sulfide nonahydrate",
         "Na₂S.9H₂O"
     ],
     "MIOPJNTWMNEORI-UHFFFAOYSA-N": [
         "10-camphorsulfonic acid",
         "camphor sulfonic acid",
-        "(\u00b1)-10-camphorsulfonic acid"
+        "(±)-10-camphorsulfonic acid"
     ],
     "NXLNNXIXOYSCMB-UHFFFAOYSA-N": [
         "4-nitrophenyl chloroformate",
@@ -4003,8 +4003,8 @@
         "1,3-dibromopropane"
     ],
     "WUKANDNCRFGEHC-UHFFFAOYSA-N": [
-        "EDCI\u2022HCl",
-        "EDCI\u00b7HCl"
+        "EDCI•HCl",
+        "EDCI·HCl"
     ],
     "HLCPWBZNUKCSBN-UHFFFAOYSA-N": [
         "2-aminobenzonitrile",
@@ -4012,7 +4012,7 @@
     ],
     "QKNYBSVHEMOAJP-UHFFFAOYSA-N": [
         "Tris-HCl",
-        "Tris\u2022HCl"
+        "Tris•HCl"
     ],
     "KZBUYRJDOAKODT-UHFFFAOYSA-N": [
         "Cl₂",
@@ -4027,7 +4027,7 @@
     ],
     "XHLHPRDBBAGVEG-UHFFFAOYSA-N": [
         "1-tetralone",
-        "\u03b1-tetralone",
+        "α-tetralone",
         "3,4-dihydronaphthalen-1(2H)-one"
     ],
     "HYZJCKYKOHLVJF-UHFFFAOYSA-N": [
@@ -4050,7 +4050,7 @@
         "HCTU"
     ],
     "PODWXQQNRWNDGD-UHFFFAOYSA-L": [
-        "Na₂S₂O₃\u20225H₂O",
+        "Na₂S₂O₃•5H₂O",
         "sodium thiosulfate pentahydrate",
         "Na₂S₂O₃.5H₂O"
     ],
@@ -4107,7 +4107,7 @@
         "Et₃N.3HF"
     ],
     "QGUAJWGNOXCYJF-UHFFFAOYSA-N": [
-        "Co(NO₃)₂\u20226H₂O",
+        "Co(NO₃)₂•6H₂O",
         "Co(NO₃)₂.6H₂O"
     ],
     "RWZYAGGXGHYGMB-UHFFFAOYSA-N": [
@@ -4130,7 +4130,7 @@
         "ammonium thiocyanate"
     ],
     "YYIPMHNWLBURMF-UHFFFAOYSA-N": [
-        "CoCl₂\u20226H₂O"
+        "CoCl₂•6H₂O"
     ],
     "YDHABVNRCBNRNZ-UHFFFAOYSA-M": [
         "AgClO₄",
@@ -4164,7 +4164,7 @@
     ],
     "ZFLFDFBRILYRIT-UHFFFAOYSA-N": [
         "Jones reagent",
-        "Jones\u2019 reagent"
+        "Jones’ reagent"
     ],
     "DFRHTHSZMBROSH-UHFFFAOYSA-N": [
         "ferrocene",
@@ -4278,7 +4278,7 @@
     ],
     "PIAOLBVUVDXHHL-UHFFFAOYSA-N": [
         "nitrostyrene",
-        "\u03b2-nitrostyrene"
+        "β-nitrostyrene"
     ],
     "LEQAOMBKQFMDFZ-UHFFFAOYSA-N": [
         "glyoxal"
@@ -4322,7 +4322,7 @@
         "methylene blue"
     ],
     "TYLYVJBCMQFRCB-UHFFFAOYSA-K": [
-        "RhCl₃\u20223H₂O"
+        "RhCl₃•3H₂O"
     ],
     "BHNHHSOHWZKFOX-UHFFFAOYSA-N": [
         "2-methylindole",
@@ -4377,8 +4377,8 @@
         "o-tolualdehyde"
     ],
     "JGZKUKYUQJUUNE-UHFFFAOYSA-L": [
-        "MgBr₂\u2022OEt₂",
-        "MgBr₂\u2022Et₂O",
+        "MgBr₂•OEt₂",
+        "MgBr₂•Et₂O",
         "magnesium bromide diethyl etherate"
     ],
     "OZGSEIVTQLXWRO-UHFFFAOYSA-N": [
@@ -4438,7 +4438,7 @@
     ],
     "SLRCCWJSBJZJBV-ZQDZILKHSA-N": [
         "(-)-sparteine",
-        "(\u2212)-sparteine",
+        "(−)-sparteine",
         "sparteine"
     ],
     "VYFOAVADNIHPTR-UHFFFAOYSA-N": [
@@ -4450,7 +4450,7 @@
         "cesium hydroxide"
     ],
     "BLQJIBCZHWBKSL-UHFFFAOYSA-L": [
-        "MgI2",
+        "MgI₂",
         "magnesium iodide"
     ],
     "BWHOZHOGCMHOBV-BQYQJAHWSA-N": [
@@ -4460,7 +4460,7 @@
     ],
     "IQDGSYLLQPDQDV-UHFFFAOYSA-N": [
         "dimethylamine hydrochloride",
-        "Me₂NH\u00b7HCl"
+        "Me₂NH·HCl"
     ],
     "XJLXINKUBYWONI-NNYOXOHSSA-O": [
         "NADP+"
@@ -4471,7 +4471,7 @@
     ],
     "UDYFLDICVHJSOY-UHFFFAOYSA-N": [
         "sulfur trioxide pyridine complex",
-        "SO₃\u2022pyridine"
+        "SO₃•pyridine"
     ],
     "XAEBTCPOZVEMHR-UHFFFAOYSA-N": [
         "potassium tert-butoxide"
@@ -4494,10 +4494,10 @@
     ],
     "IFPWCRBNZXUWGC-UHFFFAOYSA-M": [
         "AuCl(PPh₃)",
-        "AuCl\u2022PPh₃"
+        "AuCl•PPh₃"
     ],
     "JGPSMWXKRPZZRG-UHFFFAOYSA-N": [
-        "Zn(NO₃)₂\u20226H₂O",
+        "Zn(NO₃)₂•6H₂O",
         "Zn(NO₃)₂.6H₂O",
         "zinc nitrate hexahydrate"
     ],
@@ -4542,7 +4542,7 @@
         "2,3-dimethylbuta-1,3-diene"
     ],
     "KPZYAGQLBFUTMA-UHFFFAOYSA-K": [
-        "K₃PO₄\u20223H₂O",
+        "K₃PO₄•3H₂O",
         "K₃PO₄.3H₂O",
         "Potassium phosphate tribasic trihydrate"
     ],
@@ -4560,7 +4560,7 @@
     ],
     "HTJWUNNIRKDDIV-UHFFFAOYSA-N": [
         "CataCXium A",
-        "cataCXium\u2122 A",
+        "cataCXium™ A",
         "butyl di-1-adamantylphosphine"
     ],
     "OLNJUISKUQQNIM-UHFFFAOYSA-N": [
@@ -4613,7 +4613,7 @@
         "p-cyanobenzaldehyde"
     ],
     "WSSMOXHYUFMBLS-UHFFFAOYSA-L": [
-        "FeCl₂\u20224H₂O",
+        "FeCl₂•4H₂O",
         "FeCl₂.4H₂O"
     ],
     "GZTNBKQTTZSQNS-UHFFFAOYSA-N": [
@@ -4651,7 +4651,7 @@
     "JZJWCDQGIPQBAO-UHFFFAOYSA-N": [
         "4-iodoacetophenone",
         "1-(4-iodophenyl)ethan-1-one",
-        "4\u2019-iodoacetophenone"
+        "4’-iodoacetophenone"
     ],
     "AXAZMDOAUQTMOW-UHFFFAOYSA-N": [
         "dimethylzinc"
@@ -4684,7 +4684,7 @@
     ],
     "XJIQVZMZXHEYOY-UHFFFAOYSA-N": [
         "Red-Al",
-        "Red-Al\u2122"
+        "Red-Al™"
     ],
     "VFTFKUDGYRBSAL-UHFFFAOYSA-N": [
         "15-crown-5",
@@ -4696,7 +4696,7 @@
     "OKKJLVBELUTLKV-VMNATFBRSA-N": [
         "MeOD",
         "CH₃OD",
-        "methanol-d1"
+        "methanol-d₁"
     ],
     "KXKVLQRXCPHEJC-UHFFFAOYSA-N": [
         "methyl acetate",
@@ -4744,10 +4744,10 @@
     ],
     "ZBQUMMFUJLOTQC-UHFFFAOYSA-L": [
         "Ni(dppp)Cl₂",
-        "NiCl₂\u2022dppp"
+        "NiCl₂•dppp"
     ],
     "JBWYRBLDOOOJEU-UHFFFAOYSA-N": [
-        "4,4\u2019-dimethoxytrityl chloride",
+        "4,4’-dimethoxytrityl chloride",
         "DMTrCl",
         "DMT-Cl"
     ],
@@ -4844,7 +4844,7 @@
     ],
     "NQMRYBIKMRVZLB-UHFFFAOYSA-N": [
         "methylamine hydrochloride",
-        "MeNH₂\u2022HCl",
+        "MeNH₂•HCl",
         "MeNH₂.HCl"
     ],
     "ZQEBQGAAWMOMAI-ZETCQYMHSA-N": [
@@ -4924,7 +4924,7 @@
         "iodobenzene diacetic acid"
     ],
     "CESXSDZNZGSWSP-UHFFFAOYSA-L": [
-        "Mn(OAc)₂\u20224H₂O",
+        "Mn(OAc)₂•4H₂O",
         "Mn(OAc)₂.4H₂O"
     ],
     "YCBJOQUNPLTBGG-UHFFFAOYSA-N": [
@@ -4955,7 +4955,7 @@
     ],
     "JECYUBVRTQDVAT-UHFFFAOYSA-N": [
         "2-hydroxyacetophenone",
-        "2\u2019-hydroxyacetophenone",
+        "2’-hydroxyacetophenone",
         "1-(2-hydroxyphenyl)ethan-1-one"
     ],
     "MNDIARAMWBIKFW-UHFFFAOYSA-N": [
@@ -5032,7 +5032,7 @@
         "1H-indene-1,3(2H)-dione"
     ],
     "HFSRCEJMTLMDLI-UHFFFAOYSA-N": [
-        "NaBPh4",
+        "NaBPh₄",
         "sodium tetraphenylborate"
     ],
     "VKIJXFIYBAYHOE-VOTSOKGWSA-N": [
@@ -5050,11 +5050,11 @@
     ],
     "PBQZQTQFQFYBNJ-UHFFFAOYSA-N": [
         "N-methoxybenzamide",
-        "N\u2010methoxybenzamide",
+        "N‐methoxybenzamide",
         "N-methoxybenzamide 1"
     ],
     "ZTWIEIFKPFJRLV-UHFFFAOYSA-K": [
-        "RuCl₃\u20223H₂O",
+        "RuCl₃•3H₂O",
         "RuCl₃.3H₂O"
     ],
     "ASMQGLCHMVWBQR-UHFFFAOYSA-N": [
@@ -5124,7 +5124,7 @@
     ],
     "DGVVWUTYPXICAM-UHFFFAOYSA-N": [
         "2-mercaptoethanol",
-        "\u03b2-mercaptoethanol",
+        "β-mercaptoethanol",
         "2-Me"
     ],
     "YIIMEMSDCNDGTB-UHFFFAOYSA-N": [
@@ -5141,14 +5141,14 @@
         "2-iodopyridine"
     ],
     "JDQHPOVUCKSJFJ-UHFFFAOYSA-O": [
-        "HBF₄\u2022Et₂O",
-        "HBF₄\u2022OEt₂",
+        "HBF₄•Et₂O",
+        "HBF₄•OEt₂",
         "HBF₄.Et₂O"
     ],
     "NYCMEGXYAKNZKB-UHFFFAOYSA-N": [
         "IMes.HCl",
-        "IMes\u00b7HCl",
-        "IMes\u2022HCl"
+        "IMes·HCl",
+        "IMes•HCl"
     ],
     "KEQGZUUPPQEDPF-UHFFFAOYSA-N": [
         "DCDMH",
@@ -5203,8 +5203,8 @@
         "2-methyl-1H-imidazole"
     ],
     "RVRDLMCWUILSAH-UHFFFAOYSA-J": [
-        "K2PtCl₄",
-        "K2[PtCl₄]"
+        "K₂PtCl₄",
+        "K₂[PtCl₄]"
     ],
     "XWGJFPHUCFXLBL-UHFFFAOYSA-N": [
         "rongalite"
@@ -5315,7 +5315,7 @@
     "BUZYGTVTZYSBCU-UHFFFAOYSA-N": [
         "4-chloroacetophenone",
         "1-(4-chlorophenyl)ethan-1-one",
-        "4\u2019-chloroacetophenone"
+        "4’-chloroacetophenone"
     ],
     "DPZNOMCNRMUKPS-UHFFFAOYSA-N": [
         "1,3-dimethoxybenzene"
@@ -5374,7 +5374,7 @@
         "CCl₃COCl"
     ],
     "HNNUTDROYPGBMR-UHFFFAOYSA-L": [
-        "PdI2",
+        "PdI₂",
         "palladium(II) iodide"
     ],
     "KBPLFHHGFOOTCA-UHFFFAOYSA-N": [
@@ -5398,8 +5398,8 @@
     ],
     "AQLJVWUFPCUVLO-UHFFFAOYSA-N": [
         "urea hydrogen peroxide",
-        "urea\u2022H₂O₂",
-        "urea\u00b7H₂O₂"
+        "urea•H₂O₂",
+        "urea·H₂O₂"
     ],
     "ABFPKTQEQNICFT-UHFFFAOYSA-M": [
         "2-chloro-1-methylpyridinium iodide",
@@ -5451,7 +5451,7 @@
     ],
     "YTZKOQUCBOVLHL-UHFFFAOYSA-N": [
         "tert-butylbenzene",
-        "tBuC6H5"
+        "tBuC₆H₅"
     ],
     "WJFKNYWRSNBZNX-UHFFFAOYSA-N": [
         "phenothiazine",
@@ -5541,11 +5541,11 @@
     ],
     "IOLQWGVDEFWYNP-UHFFFAOYSA-N": [
         "ethyl 2-bromo-2-methylpropanoate",
-        "ethyl \u03b1-bromoisobutyrate",
+        "ethyl α-bromoisobutyrate",
         "Ethyl 2-bromo-2-methylpropionate"
     ],
     "NBGOSNNAAHDRLK-UHFFFAOYSA-N": [
-        "Re2O7"
+        "Re₂O₇"
     ],
     "WRMNZCZEMHIOCP-UHFFFAOYSA-N": [
         "2-phenylethanol",
@@ -5577,10 +5577,10 @@
     "BAWFJGJZGIEFAR-NNYOXOHSSA-N": [
         "Co-1",
         "NAD+",
-        "\u03b2-NAD+"
+        "β-NAD+"
     ],
     "BIZCJSDBWZTASZ-UHFFFAOYSA-N": [
-        "I2O₅",
+        "I₂O₅",
         "iodine pentoxide"
     ],
     "KDHWCFCNNGUJCP-UHFFFAOYSA-N": [
@@ -5592,7 +5592,7 @@
     ],
     "AYRVGWHSXIMRAB-UHFFFAOYSA-M": [
         "sodium acetate trihydrate",
-        "NaOAc\u20223H₂O"
+        "NaOAc•3H₂O"
     ],
     "GOYDNIKZWGIXJT-UHFFFAOYSA-N": [
         "1,2-difluorobenzene",
@@ -5601,7 +5601,7 @@
     ],
     "FKHIFSZMMVMEQY-UHFFFAOYSA-N": [
         "Florisil",
-        "Florisil\u00ae"
+        "Florisil®"
     ],
     "HXJUTPCZVOIRIF-UHFFFAOYSA-N": [
         "sulfolane"
@@ -5618,14 +5618,14 @@
     "VNWKTOKETHGBQD-UHFFFAOYSA-N": [
         "graphene oxide",
         "methane",
-        "CH4"
+        "CH₄"
     ],
     "QWTBDIBOOIAZEF-UHFFFAOYSA-N": [
         "2-cyanoethyl N,N-diisopropylchlorophosphoramidite",
         "2-cyanoethyl-N,N-diisopropylchlorophosphoramidite"
     ],
     "OKJPEAGHQZHRQV-UHFFFAOYSA-N": [
-        "CHI3",
+        "CHI₃",
         "iodoform"
     ],
     "PPWNCLVNXGCGAF-UHFFFAOYSA-N": [
@@ -5680,7 +5680,7 @@
         "1-bromobut-2-yne"
     ],
     "RSIJVJUOQBWMIM-UHFFFAOYSA-L": [
-        "Na₂SO₄\u202210H₂O",
+        "Na₂SO₄•10H₂O",
         "sodium sulfate decahydrate",
         "Na₂SO₄.10H₂O"
     ],
@@ -5698,7 +5698,7 @@
     ],
     "PXGOKWXKJXAPGV-UHFFFAOYSA-N": [
         "F",
-        "F2",
+        "F₂",
         "(R)-F"
     ],
     "HGBOYTHUEUWSSQ-UHFFFAOYSA-N": [
@@ -5738,9 +5738,9 @@
         "ODE"
     ],
     "PBVAJRFEEOIAGW-UHFFFAOYSA-N": [
-        "TCEP\u00b7HCl",
+        "TCEP·HCl",
         "TCEP.HCl",
-        "TCEP\u2022HCl"
+        "TCEP•HCl"
     ],
     "HNJBEVLQSNELDL-UHFFFAOYSA-N": [
         "2-pyrrolidinone",
@@ -5771,7 +5771,7 @@
     ],
     "WZMUUWMLOCZETI-UHFFFAOYSA-N": [
         "ammonia-borane",
-        "NH₃\u2022BH₃",
+        "NH₃•BH₃",
         "NH₃.BH₃"
     ],
     "QGLWBTPVKHMVHM-KTKRTIGZSA-N": [
@@ -5788,7 +5788,7 @@
         "methyliminodiacetic acid"
     ],
     "WPFGFHJALYCVMO-UHFFFAOYSA-L": [
-        "Rb2CO₃"
+        "Rb₂CO₃"
     ],
     "PYWVYCXTNDRMGF-UHFFFAOYSA-N": [
         "Rhodamine B"
@@ -5861,7 +5861,7 @@
     ],
     "GTDQGKWDWVUKTI-UHFFFAOYSA-N": [
         "2-aminoacetophenone",
-        "2\u2019-amino acetophenone",
+        "2’-amino acetophenone",
         "1-(2-aminophenyl)ethan-1-one"
     ],
     "VLVCDUSVTXIWGW-UHFFFAOYSA-N": [
@@ -5890,7 +5890,7 @@
     "GNKZMNRKLCTJAY-UHFFFAOYSA-N": [
         "1-(p-tolyl)ethan-1-one",
         "4-methylacetophenone",
-        "4\u2019-methylacetophenone"
+        "4’-methylacetophenone"
     ],
     "KVNRLNFWIYMESJ-UHFFFAOYSA-N": [
         "butyronitrile",
@@ -5917,7 +5917,7 @@
     "ZWVHTXAYIKBMEE-UHFFFAOYSA-N": [
         "2-hydroxyacetophenone",
         "2-hydroxy-1-phenylethan-1-one",
-        "\u03b1-hydroxyacetophenone"
+        "α-hydroxyacetophenone"
     ],
     "DRZBLHZZDMCPGX-VXKWHMMOSA-N": [
         "(R,R)-QuinoxP*"
@@ -6115,9 +6115,9 @@
         "methyl oxalyl chloride"
     ],
     "GQIGHOCYKUBBOE-UHFFFAOYSA-N": [
-        "3,3\u2019,5,5\u2019-tetra-tert-butyldiphenoquinone",
+        "3,3’,5,5’-tetra-tert-butyldiphenoquinone",
         "3,3',5,5'-tetra-tert-butyldiphenoquinone",
-        "3,3\u2019,5,5\u2019-tetra-tert-butyl-diphenoquinone"
+        "3,3’,5,5’-tetra-tert-butyl-diphenoquinone"
     ],
     "VXWVFZFZYXOBTA-UHFFFAOYSA-N": [
         "5-bromoindole",
@@ -6200,7 +6200,7 @@
     ],
     "RQEUFEKYXDPUSK-ZETCQYMHSA-N": [
         "(S)-1-phenylethylamine",
-        "(S)-\u03b1-methylbenzylamine",
+        "(S)-α-methylbenzylamine",
         "(S)-1-phenylethan-1-amine"
     ],
     "UCFSYHMCKWNKAH-UHFFFAOYSA-N": [
@@ -6233,7 +6233,7 @@
         "biphenylboronic acid"
     ],
     "XFHGDBFMJCLEOW-UHFFFAOYSA-N": [
-        "HBF₄\u2022OEt₂",
+        "HBF₄•OEt₂",
         "HBF₄.OEt₂"
     ],
     "IDASOVSVRKONFS-UHFFFAOYSA-N": [
@@ -6299,8 +6299,8 @@
         "benzene-1,4-diamine"
     ],
     "PTRATZCAGVBFIQ-UHFFFAOYSA-N": [
-        "5,5\u2019-dimethyl-2,2\u2019-bipyridine",
-        "5,5\u2019-dimethyl-2,2\u2019-bipyridyl",
+        "5,5’-dimethyl-2,2’-bipyridine",
+        "5,5’-dimethyl-2,2’-bipyridyl",
         "5,5'-dimethyl-2,2'-bipyridine"
     ],
     "VQKFNUFAXTZWDK-UHFFFAOYSA-N": [
@@ -6353,13 +6353,13 @@
         "mercury(II) acetate"
     ],
     "VBJGJHBYWREJQD-UHFFFAOYSA-M": [
-        "NaH₂PO₄\u20222H₂O",
+        "NaH₂PO₄•2H₂O",
         "NaH₂PO₄.2H₂O"
     ],
     "NBPGPQJFYXNFKN-UHFFFAOYSA-N": [
         "4,4'-dimethyl-2,2'-bipyridine",
-        "4,4\u2019-dimethyl-2,2\u2019-bipyridine",
-        "4,4\u2019-dimethyl-2,2\u2019-bipyridyl"
+        "4,4’-dimethyl-2,2’-bipyridine",
+        "4,4’-dimethyl-2,2’-bipyridyl"
     ],
     "XPFVYQJUAUNWIW-UHFFFAOYSA-N": [
         "furfuryl alcohol",
@@ -6376,7 +6376,7 @@
         "NMI"
     ],
     "UQPSGBZICXWIAG-UHFFFAOYSA-L": [
-        "NiBr₂\u20223H₂O",
+        "NiBr₂•3H₂O",
         "NiBr₂.3H₂O"
     ],
     "KQNPFQTWMSNSAP-UHFFFAOYSA-N": [
@@ -6421,7 +6421,7 @@
     "RQEUFEKYXDPUSK-SSDOTTSWSA-N": [
         "(R)-1-phenylethan-1-amine",
         "(R)-1-phenylethylamine",
-        "(R)-\u03b1-methylbenzylamine"
+        "(R)-α-methylbenzylamine"
     ],
     "XSTXAVWGXDQKEL-UHFFFAOYSA-N": [
         "trichloroethylene"
@@ -6485,7 +6485,7 @@
     "WACNXHCZHTVBJM-UHFFFAOYSA-N": [
         "pentafluorobenzene",
         "1,2,3,4,5-pentafluorobenzene",
-        "C6HF5"
+        "C₆HF₅"
     ],
     "PENAXHPKEVTBLF-UHFFFAOYSA-L": [
         "allylpalladium(II) chloride dimer",
@@ -6540,7 +6540,7 @@
         "2-iodoxybenzoic acid"
     ],
     "UCMIRNVEIXFBKS-UHFFFAOYSA-N": [
-        "\u03b2-alanine",
+        "β-alanine",
         "3-aminopropanoic acid"
     ],
     "AFMPMSCZPVNPEM-UHFFFAOYSA-N": [
@@ -6553,7 +6553,7 @@
     "NOOLISFMXDJSKH-KXUCPTDWSA-N": [
         "L-menthol",
         "(-)-menthol",
-        "(\u2212)-menthol"
+        "(−)-menthol"
     ],
     "AQNQQHJNRPDOQV-UHFFFAOYSA-N": [
         "bromocyclohexane",
@@ -6564,7 +6564,7 @@
         "(R)-3,5-xylyl-BINAP"
     ],
     "ZUDYPQRUOYEARG-UHFFFAOYSA-L": [
-        "Ba(OH)₂\u20228H₂O",
+        "Ba(OH)₂•8H₂O",
         "Ba(OH)₂.8H₂O",
         "barium hydroxide octahydrate"
     ],
@@ -6596,7 +6596,7 @@
     ],
     "JEHUZVBIUCAMRZ-UHFFFAOYSA-N": [
         "BNDHP",
-        "rac-1,1\u2019-Binaphthyl-2,2\u2019-diyl hydrogenphosphate",
+        "rac-1,1’-Binaphthyl-2,2’-diyl hydrogenphosphate",
         "1,1'-binaphthyl-2,2'-diyl hydrogenphosphate"
     ],
     "KDIZBQIJCLJRPG-UHFFFAOYSA-N": [
@@ -6666,9 +6666,9 @@
         "4-Phenyltoluene"
     ],
     "CWHRHCATIKFSND-UHFFFAOYSA-L": [
-        "Pd(dppf)Cl₂ \u2022 CH₂Cl₂",
-        "Pd(dppf)Cl₂ \u00b7 CH₂Cl₂",
-        "Pd(dppf)Cl₂ \u2022 DCM"
+        "Pd(dppf)Cl₂ • CH₂Cl₂",
+        "Pd(dppf)Cl₂ · CH₂Cl₂",
+        "Pd(dppf)Cl₂ • DCM"
     ],
     "GJNGXPDXRVXSEH-UHFFFAOYSA-N": [
         "4-chlorobenzonitrile"
@@ -6688,9 +6688,9 @@
         "chlorotrimethylstannane"
     ],
     "MWVTWFVJZLCBMC-UHFFFAOYSA-N": [
-        "4,4\u2019-bipyridine",
+        "4,4’-bipyridine",
         "4,4'-bipyridine",
-        "4,4\u2019-bipyridyl"
+        "4,4’-bipyridyl"
     ],
     "XFNJVJPLKCPIBV-UHFFFAOYSA-N": [
         "1,3-diaminopropane",
@@ -6850,7 +6850,7 @@
         "tetramethylammonium fluoride"
     ],
     "RQEUFEKYXDPUSK-UHFFFAOYSA-N": [
-        "\u03b1-methylbenzylamine",
+        "α-methylbenzylamine",
         "1-phenylethylamine",
         "1-phenylethanamine"
     ],
@@ -6890,7 +6890,7 @@
         "3,6-di-tertbutyl-9-mesityl-10-phenylacridinium tetrafluoroborate"
     ],
     "YKFLAYDHMOASIY-UHFFFAOYSA-N": [
-        "\u03b3-terpinene"
+        "γ-terpinene"
     ],
     "GUJOJGAPFQRJSV-UHFFFAOYSA-N": [
         "montmorillonite KSF",
@@ -6905,7 +6905,7 @@
     "SQHSJJGGWYIFCD-UHFFFAOYSA-N": [
         "dimethyl (1-diazo-2-oxopropyl)phosphonate",
         "dimethyl 1-diazo-2-oxopropylphosphonate",
-        "Ohira\u2013Bestmann reagent"
+        "Ohira–Bestmann reagent"
     ],
     "YLRBJYMANQKEAW-UHFFFAOYSA-N": [
         "4-bromobenzyl bromide",
@@ -6922,7 +6922,7 @@
     "LRIUKPUCKCECPT-UHFFFAOYSA-N": [
         "HTIB",
         "[hydroxy(tosyloxy)iodo]benzene",
-        "Koser\u2019s reagent"
+        "Koser’s reagent"
     ],
     "TUXYZHVUPGXXQG-UHFFFAOYSA-N": [
         "4-bromobenzoic acid",
@@ -6950,7 +6950,7 @@
     ],
     "XKBGEWXEAPTVCK-UHFFFAOYSA-M": [
         "Aliquat 336",
-        "Aliquat\u2122 336",
+        "Aliquat™ 336",
         "methyl trioctylammonium chloride"
     ],
     "KGCNVGDHOSFKFT-UHFFFAOYSA-N": [
@@ -6958,7 +6958,7 @@
         "nitrosonium tetrafluoroborate"
     ],
     "QLCSVHHLGMUVKK-UHFFFAOYSA-L": [
-        "K2OsO₂(OH)₄"
+        "K₂OsO₂(OH)₄"
     ],
     "WXNZTHHGJRFXKQ-UHFFFAOYSA-N": [
         "4-chlorophenol",
@@ -7069,9 +7069,9 @@
         "4-pyridinecarboxylic acid"
     ],
     "WPZFLQRLSGVIAA-UHFFFAOYSA-N": [
-        "Na₂WO4\u20222H₂O",
+        "Na₂WO₄•2H₂O",
         "sodium tungstate dihydrate",
-        "Na₂WO4.2H₂O"
+        "Na₂WO₄.2H₂O"
     ],
     "WERYXYBDKMZEQL-UHFFFAOYSA-N": [
         "1,4-butanediol",
@@ -7138,16 +7138,16 @@
         "2-(trimethylsilyl)ethoxymethyl chloride"
     ],
     "WEHCCWCYFYMBQX-UHFFFAOYSA-L": [
-        "ZnCl₂\u2022TMEDA"
+        "ZnCl₂•TMEDA"
     ],
     "GQPLMRYTRLFLPF-UHFFFAOYSA-N": [
-        "N2O"
+        "N₂O"
     ],
     "CUEYNOAJNUCBAP-UHFFFAOYSA-N": [
         "L13"
     ],
     "FJUZEZRZKVMAMD-UHFFFAOYSA-N": [
-        "molecular sieves 4\u00c5",
+        "molecular sieves 4Å",
         "molecular sieves 4A"
     ],
     "GOUHYARYYWKXHS-UHFFFAOYSA-N": [
@@ -7167,7 +7167,7 @@
     "GRTGGSXWHGKRSB-UHFFFAOYSA-N": [
         "dichloromethyl methyl ether",
         "1,1-Dichlorodimethyl ether",
-        "\u03b1,\u03b1-dichloromethyl methyl ether"
+        "α,α-dichloromethyl methyl ether"
     ],
     "YVXHZKKCZYLQOP-UHFFFAOYSA-N": [
         "1-heptyne",
@@ -7237,7 +7237,7 @@
     "CPKHFNMJTBLKLK-UHFFFAOYSA-N": [
         "triisopropylsilanethiol",
         "TIPS-SH",
-        "TIPS\u2013SH"
+        "TIPS–SH"
     ],
     "PQXKHYXIUOZZFA-UHFFFAOYSA-M": [
         "LiF"
@@ -7326,7 +7326,7 @@
     ],
     "YFHNDHXQDJQEEE-UHFFFAOYSA-N": [
         "hydrazine acetate",
-        "N2H4\u2022AcOH"
+        "N₂H₄•AcOH"
     ],
     "MTZQAGJQAFMTAQ-UHFFFAOYSA-N": [
         "ethyl benzoate"
@@ -7348,7 +7348,7 @@
         "ethyl (2-bromomethyl)acrylate"
     ],
     "QAHVHSLSRLSVGS-UHFFFAOYSA-N": [
-        "H2NSO₂Cl",
+        "H₂NSO₂Cl",
         "sulfamoyl chloride",
         "ClSO₂NH₂"
     ],
@@ -7363,7 +7363,7 @@
     "XXXHSQBVHSJQKS-UHFFFAOYSA-N": [
         "O-benzoylhydroxylamine",
         "O-benzoylhydroxylmorpholine",
-        "O\u2010 benzoylhydroxylamine"
+        "O‐ benzoylhydroxylamine"
     ],
     "NOOLISFMXDJSKH-UHFFFAOYSA-N": [
         "menthol",
@@ -7422,7 +7422,7 @@
         "CuMoO"
     ],
     "KQHRHDAVLSRYNA-UHFFFAOYSA-N": [
-        "Co(BF₄)₂\u20226H₂O",
+        "Co(BF₄)₂•6H₂O",
         "Co(BF₄)₂.6H₂O"
     ],
     "OVWPJGBVJCTEBJ-UHFFFAOYSA-K": [
@@ -7478,7 +7478,7 @@
         "2-(phenylethynyl)aniline 2a"
     ],
     "PFYXSUNOLOJMDX-UHFFFAOYSA-N": [
-        "N,N\u2019-disuccinimidyl carbonate",
+        "N,N’-disuccinimidyl carbonate",
         "DSC",
         "disuccinimidyl carbonate"
     ],
@@ -7494,7 +7494,7 @@
     "XTKBMZQCDBHHKY-UHFFFAOYSA-N": [
         "1-ethynyl-4-(trifluoromethyl)benzene",
         "4-trifluoromethylphenylacetylene",
-        "4-ethynyl-\u03b1,\u03b1,\u03b1-trifluorotoluene"
+        "4-ethynyl-α,α,α-trifluorotoluene"
     ],
     "LDCRTTXIJACKKU-ONEGZZNKSA-N": [
         "dimethyl fumarate"
@@ -7629,9 +7629,9 @@
         "phenanthrene-9,10-dione"
     ],
     "CYQAYERJWZKYML-UHFFFAOYSA-N": [
-        "P4S10",
+        "P₄S₁₀",
         "phosphorus pentasulfide",
-        "P2S5"
+        "P₂S₅"
     ],
     "RGLYKWWBQGJZGM-ISLYRVAYSA-N": [
         "DES"
@@ -7705,9 +7705,9 @@
         "cycloheptanone"
     ],
     "JRHPOFJADXHYBR-HTQZYQBOSA-N": [
-        "trans-N,N\u2019-dimethylcyclohexane-1,2-diamine",
-        "rac-trans-N,N\u2019-dimethylcyclohexane-1,2-diamine",
-        "trans-N,N\u2019-dimethyl-1,2-cyclohexanediamine"
+        "trans-N,N’-dimethylcyclohexane-1,2-diamine",
+        "rac-trans-N,N’-dimethylcyclohexane-1,2-diamine",
+        "trans-N,N’-dimethyl-1,2-cyclohexanediamine"
     ],
     "LYPGDCWPTHTUDO-UHFFFAOYSA-M": [
         "sodium methanesulfinate",
@@ -7715,7 +7715,7 @@
         "CH₃SO₂Na"
     ],
     "MLIYPCQSOXNTLJ-UHFFFAOYSA-N": [
-        "RuH2(CO)(PPh₃)₃"
+        "RuH₂(CO)(PPh₃)₃"
     ],
     "BYGWNWAFXUPZHI-UHFFFAOYSA-N": [
         "4-methoxybenzenediazonium tetrafluoroborate",
@@ -7728,7 +7728,7 @@
     ],
     "HYDZPXNVHXJHBG-UHFFFAOYSA-N": [
         "O-benzylhydroxylamine hydrochloride",
-        "BnONH₂\u2022HCl"
+        "BnONH₂•HCl"
     ],
     "CWERGRDVMFNCDR-UHFFFAOYSA-N": [
         "thioglycolic acid",
@@ -7741,7 +7741,7 @@
         "o-iodonitrobenzene"
     ],
     "CNFDGXZLMLFIJV-UHFFFAOYSA-L": [
-        "MnCl₂\u20224H₂O",
+        "MnCl₂•4H₂O",
         "MnCl₂.4H₂O"
     ],
     "JKUYRAMKJLMYLO-UHFFFAOYSA-N": [
@@ -7752,7 +7752,7 @@
     "ZTUJDPKOHPKRMO-UHFFFAOYSA-N": [
         "trifluoroethylamine hydrochloride",
         "2,2,2-trifluoroethylamine hydrochloride",
-        "CF₃CH₂NH₂\u00b7HCl"
+        "CF₃CH₂NH₂·HCl"
     ],
     "LFZJRTMTKGYJRS-UHFFFAOYSA-N": [
         "1-chloro-4-ethynylbenzene",
@@ -7773,7 +7773,7 @@
         "norbornadiene"
     ],
     "MZFXHSQFQLKKFD-UHFFFAOYSA-M": [
-        "KF\u20222H₂O",
+        "KF•2H₂O",
         "potassium fluoride dihydrate",
         "KF.2H₂O"
     ],
@@ -7792,8 +7792,8 @@
         "cyclopentene"
     ],
     "HAXFWIACAGNFHA-UHFFFAOYSA-N": [
-        "2,2\u2019-dithiodipyridine",
-        "2,2\u2019-dipyridyl disulfide",
+        "2,2’-dithiodipyridine",
+        "2,2’-dipyridyl disulfide",
         "1,2-di(pyridin-2-yl)disulfane"
     ],
     "LGZFJHSOBYVDLA-JTQLQIEISA-N": [
@@ -7861,7 +7861,7 @@
         "2-methyl-1-methoxy-1-(trimethylsiloxy)propene"
     ],
     "VBVBHWZYQGJZLR-UHFFFAOYSA-I": [
-        "SbF5",
+        "SbF₅",
         "antimony pentafluoride"
     ],
     "XDJAAZYHCCRJOK-UHFFFAOYSA-N": [
@@ -7948,7 +7948,7 @@
     ],
     "WDUDHEOUGWAKFD-UHFFFAOYSA-N": [
         "DtBPF",
-        "1,1\u2019-bis(di-tert-butylphosphino)ferrocene"
+        "1,1’-bis(di-tert-butylphosphino)ferrocene"
     ],
     "YOWQWFMSQCOSBA-UHFFFAOYSA-N": [
         "2-methoxypropene",
@@ -7997,7 +7997,7 @@
         "4-fluorobenzoyl chloride"
     ],
     "GSYNTTDHMKSMFY-UHFFFAOYSA-N": [
-        "SF5Cl"
+        "SF₅Cl"
     ],
     "HVCNXQOWACZAFN-UHFFFAOYSA-N": [
         "N-Ethylmorpholine",
@@ -8012,7 +8012,7 @@
         "Weinreb amide"
     ],
     "OINWSEZDZKWQBP-UHFFFAOYSA-N": [
-        "EDTA\u20222Na"
+        "EDTA•2Na"
     ],
     "RQFUZUMFPRMVDX-UHFFFAOYSA-N": [
         "3-bromopropan-1-ol",
@@ -8026,10 +8026,10 @@
     "TXFPEBPIARQUIG-UHFFFAOYSA-N": [
         "4-hydroxyacetophenone",
         "1-(4-hydroxyphenyl)ethan-1-one",
-        "4\u2019-hydroxyacetophenone"
+        "4’-hydroxyacetophenone"
     ],
     "QROGIFZRVHSFLM-QHHAFSJGSA-N": [
-        "trans-\u03b2-methylstyrene",
+        "trans-β-methylstyrene",
         "(E)-prop-1-en-1-ylbenzene"
     ],
     "BGUWFUQJCDRPTL-UHFFFAOYSA-N": [
@@ -8107,7 +8107,7 @@
     "FXJVNINSOKCNJP-UHFFFAOYSA-N": [
         "p-toluenesulfinic acid",
         "4-methylbenzenesulfinic acid",
-        "p-\u00ad\u2010toluenesulfinic acid"
+        "p-­‐toluenesulfinic acid"
     ],
     "OJUGVDODNPJEEC-UHFFFAOYSA-N": [
         "phenylglyoxal",
@@ -8123,7 +8123,7 @@
         "potassium phthalimide"
     ],
     "RAFNCPHFRHZCPS-UHFFFAOYSA-N": [
-        "1,1\u2019-thiocarbonyldiimidazole",
+        "1,1’-thiocarbonyldiimidazole",
         "thiocarbonyldiimidazole",
         "TCDI"
     ],
@@ -8137,27 +8137,27 @@
         "BTF"
     ],
     "RAQQOHVXCGCKBW-UHFFFAOYSA-J": [
-        "K2OSO₄\u20222H₂O",
-        "K2OSO₄.2H₂O"
+        "K₂OSO₄•2H₂O",
+        "K₂OSO₄.2H₂O"
     ],
     "MYAJTCUQMQREFZ-UHFFFAOYSA-K": [
         "TPPTS"
     ],
     "XMPZLAQHPIBDSO-UHFFFAOYSA-N": [
-        "Ar2"
+        "Ar₂"
     ],
     "GNBHRKFJIUUOQI-UHFFFAOYSA-N": [
         "fluorescein"
     ],
     "GEPJPYNDFSOARB-UHFFFAOYSA-N": [
-        "P(4-FC6H4)₃",
+        "P(4-FC₆H₄)₃",
         "tris(4-fluorophenyl)phosphine"
     ],
     "UKYGKELSBAWRAN-UHFFFAOYSA-N": [
         "NaBEt₃H"
     ],
     "PIMNFNXBTGPCIL-UHFFFAOYSA-N": [
-        "2\u2019-bromoacetophenone",
+        "2’-bromoacetophenone",
         "1-(2-bromophenyl)ethan-1-one",
         "2'-bromoacetophenone"
     ],
@@ -8167,7 +8167,7 @@
         "1-(4-aminophenyl)ethan-1-one"
     ],
     "YEJRWHAVMIAJKC-UHFFFAOYSA-N": [
-        "\u03b3-butyrolactone",
+        "γ-butyrolactone",
         "butyrolactone"
     ],
     "YAJYJWXEWKRTPO-UHFFFAOYSA-N": [
@@ -8191,9 +8191,9 @@
         "ethyl-2,3-butadienoate"
     ],
     "BDOSMKKIYDKNTQ-UHFFFAOYSA-N": [
-        "\u03b2-CD",
+        "β-CD",
         "CD",
-        "\u03b1-CD"
+        "α-CD"
     ],
     "OREAFAJWWJHCOT-UHFFFAOYSA-L": [
         "dimethylmalonate"
@@ -8204,7 +8204,7 @@
         "Samarium triflate"
     ],
     "CGJSNKHFIBINMR-UHFFFAOYSA-N": [
-        "Fe2(CO)₉"
+        "Fe₂(CO)₉"
     ],
     "ZMXDDKWLCZADIW-YYWVXINBSA-N": [
         "DMF-d₇",
@@ -8212,7 +8212,7 @@
     ],
     "VHHHONWQHHHLTI-UHFFFAOYSA-N": [
         "hexachloroethane",
-        "C2Cl6",
+        "C₂Cl₆",
         "Perchloroethane"
     ],
     "IIYFAKIEWZDVMP-UHFFFAOYSA-N": [
@@ -8256,8 +8256,8 @@
         "hydrazine hydrochloride 2"
     ],
     "BJXDNOXSOZQEMY-UHFFFAOYSA-N": [
-        "SIPr\u2022HCl",
-        "SIPr\u00b7HCl",
+        "SIPr•HCl",
+        "SIPr·HCl",
         "SIPr/HCl"
     ],
     "SWKPKONEIZGROQ-UHFFFAOYSA-N": [
@@ -8273,7 +8273,7 @@
     ],
     "VRGCYEIGVVTZCC-UHFFFAOYSA-N": [
         "o-chloranil",
-        "o\u2010chloranil"
+        "o‐chloranil"
     ],
     "QWVGKYWNOKOFNN-UHFFFAOYSA-N": [
         "o-cresol",
@@ -8307,7 +8307,7 @@
         "PTS"
     ],
     "BHHYHSUAOQUXJK-UHFFFAOYSA-L": [
-        "ZnF2",
+        "ZnF₂",
         "zinc fluoride"
     ],
     "HNYOPLTXPVRDBG-UHFFFAOYSA-N": [
@@ -8343,7 +8343,7 @@
         "phenylsulfinic acid"
     ],
     "OEERDTKOVZFOHF-UHFFFAOYSA-J": [
-        "NaAuCl₄\u20222H₂O",
+        "NaAuCl₄•2H₂O",
         "NaAuCl₄.2H₂O"
     ],
     "UZIXCCMXZQWTPB-UHFFFAOYSA-N": [
@@ -8427,12 +8427,12 @@
         "1,2-diiodoethane"
     ],
     "NKQGOEGCKHXNEP-UHFFFAOYSA-N": [
-        "Fe(BF₄)₂\u20226H₂O",
+        "Fe(BF₄)₂•6H₂O",
         "Fe(BF₄)₂.6H₂O",
         "iron(II) tetrafluoroborate hexahydrate"
     ],
     "YJCZGTAEFYFJRJ-UHFFFAOYSA-N": [
-        "K2S"
+        "K₂S"
     ],
     "HCIBTBXNLVOFER-UHFFFAOYSA-N": [
         "diphenylcyclopropenone",
@@ -8516,13 +8516,13 @@
     ],
     "KGKAYWMGPDWLQZ-UHFFFAOYSA-N": [
         "1,2-bis(bromomethyl)benzene",
-        "\u03b1,\u03b1\u2019-dibromo-o-xylene",
-        "\u03b1,\u03b1\u2032-dibromo-o-xylene"
+        "α,α’-dibromo-o-xylene",
+        "α,α′-dibromo-o-xylene"
     ],
     "IYUKFAFDFHZKPI-DFWYDOINSA-N": [
         "L-alanine methyl ester hydrochloride",
         "alanine methyl ester hydrochloride",
-        "H-L-Ala-OMe\u00b7HCl"
+        "H-L-Ala-OMe·HCl"
     ],
     "NPXOKRUENSOPAO-UHFFFAOYSA-N": [
         "Raney-Ni"
@@ -8565,9 +8565,9 @@
         "1-benzylindoline-2,3-dione"
     ],
     "LIKBJVNGSGBSGK-UHFFFAOYSA-N": [
-        "Fe2O₃",
-        "\u03b1-Fe2O₃",
-        "CoFe2O4"
+        "Fe₂O₃",
+        "α-Fe₂O₃",
+        "CoFe₂O₄"
     ],
     "RXJKFRMDXUJTEX-UHFFFAOYSA-N": [
         "PEt₃",
@@ -8593,7 +8593,7 @@
         "4-fluorobenzonitrile"
     ],
     "OKIZCWYLBDKLSU-UHFFFAOYSA-M": [
-        "Me4NCl",
+        "Me₄NCl",
         "tetramethylammonium chloride"
     ],
     "RMBAVIFYHOYIFM-UHFFFAOYSA-M": [
@@ -8624,8 +8624,8 @@
         "(R,R)-7a"
     ],
     "IGKDMMUNXOVTMR-DFWYDOINSA-N": [
-        "Gn\u2022HCl",
-        "Gn\u00b7HCl",
+        "Gn•HCl",
+        "Gn·HCl",
         "Gn.HCl"
     ],
     "LXCFILQKKLGQFO-UHFFFAOYSA-N": [
@@ -8676,14 +8676,14 @@
         "benzo[d][1,3]dioxol-5-ol"
     ],
     "SYBXSZMNKDOUCA-UHFFFAOYSA-J": [
-        "Rh2(OAC)₄",
+        "Rh₂(OAC)₄",
         "dirhodium(II) tetraacetate",
         "Rhodium(II) acetate"
     ],
     "CRXFROMHHBMNAB-UHFFFAOYSA-N": [
         "methyl isocyanoacetate",
         "methyl 2-isocyanoacetate",
-        "methyl \u03b1-isocyanoacetate"
+        "methyl α-isocyanoacetate"
     ],
     "KZSNJWFQEVHDMF-BYPYZUCNSA-N": [
         "L-valine",
@@ -8738,9 +8738,9 @@
         "NH₂SO₃H"
     ],
     "YQALRAGCVWJXGB-UHFFFAOYSA-M": [
-        "AuCl\u2022SMe₂",
-        "AuCl\u2022Me₂S",
-        "Me₂S\u2022AuCl"
+        "AuCl•SMe₂",
+        "AuCl•Me₂S",
+        "Me₂S•AuCl"
     ],
     "IPWBFGUBXWMIPR-UHFFFAOYSA-N": [
         "1-bromo-2-fluorobenzene",
@@ -8761,7 +8761,7 @@
     "DQPBABKTKYNPMH-UHFFFAOYSA-N": [
         "hydroxylamine-O-sulfonic acid",
         "NH₂OSO₃H",
-        "H2NOSO₃H"
+        "H₂NOSO₃H"
     ],
     "SDXAWLJRERMRKF-UHFFFAOYSA-N": [
         "3,5-dimethylpyrazole",
@@ -8796,7 +8796,7 @@
         "trichloroethanol"
     ],
     "DSFFTJWVPXAHPD-UHFFFAOYSA-N": [
-        "H5IO6",
+        "H₅IO₆",
         "orthoperiodic acid"
     ],
     "CMKBCTPCXZNQKX-UHFFFAOYSA-N": [
@@ -8829,7 +8829,7 @@
     ],
     "YMOONIIMQBGTDU-VOTSOKGWSA-N": [
         "(E)-(2-bromovinyl)benzene",
-        "(E)-\u03b2-bromostyrene"
+        "(E)-β-bromostyrene"
     ],
     "WZJYKHNJTSNBHV-UHFFFAOYSA-N": [
         "benzo[h]quinoline"
@@ -8858,7 +8858,7 @@
         "m-hydroxybenzaldehyde"
     ],
     "CDKCEZNPAYWORX-UHFFFAOYSA-N": [
-        "4,4\u2019-di-tert-butylbiphenyl",
+        "4,4’-di-tert-butylbiphenyl",
         "4,4'-di-tert-butylbiphenyl",
         "4,4'-di-tert-butyl-1,1'-biphenyl"
     ],
@@ -8899,7 +8899,7 @@
     ],
     "RFVHVYKVRGKLNK-UHFFFAOYSA-N": [
         "4,4'-dimethoxybenzophenone",
-        "4,4\u2019-dimethoxybenzophenone",
+        "4,4’-dimethoxybenzophenone",
         "bis(4-methoxyphenyl)methanone"
     ],
     "YONPGGFAJWQGJC-UHFFFAOYSA-K": [
@@ -9126,7 +9126,7 @@
         "diethyl (cyanomethyl)phosphonate"
     ],
     "RCNRJBWHLARWRP-UHFFFAOYSA-N": [
-        "Karstedt\u2019s catalyst",
+        "Karstedt’s catalyst",
         "Karstedt's catalyst",
         "Karstedt catalyst"
     ],
@@ -9222,7 +9222,7 @@
         "chloro(dimethyl)phenylsilane"
     ],
     "DDAPSNKEOHDLKB-UHFFFAOYSA-N": [
-        "(\u00b1)-BINAM",
+        "(±)-BINAM",
         "R-(+)-BINAM",
         "BINAM"
     ],
@@ -9251,15 +9251,15 @@
     ],
     "JWTPSIXYXYNAOU-UHFFFAOYSA-N": [
         "ethyl 2-diazo-3-oxobutanoate",
-        "ethyl \u03b1-diazoacetoacetate"
+        "ethyl α-diazoacetoacetate"
     ],
     "FBXVOTBTGXARNA-UHFFFAOYSA-N": [
-        "Bi(NO₃)₃\u20225H₂O",
+        "Bi(NO₃)₃•5H₂O",
         "Bi(NO₃)₃.5H₂O"
     ],
     "OQJBFFCUFALWQL-UHFFFAOYSA-N": [
         "ADDP",
-        "1,1\u2019-(azodicarbonyl)dipiperidine",
+        "1,1’-(azodicarbonyl)dipiperidine",
         "1,1'-(azodicarbonyl)dipiperidine"
     ],
     "VMGSQCIDWAUGLQ-UHFFFAOYSA-N": [
@@ -9293,7 +9293,7 @@
     ],
     "FBYIXFBIARQMJJ-UHFFFAOYSA-N": [
         "Cu(BF₄)₂.6H₂O",
-        "Cu(BF₄)₂\u20226H₂O"
+        "Cu(BF₄)₂•6H₂O"
     ],
     "XELZGAJCZANUQH-UHFFFAOYSA-N": [
         "Sephadex LH-20"
@@ -9336,7 +9336,7 @@
     "MHDVGSVTJDSBDK-UHFFFAOYSA-N": [
         "dibenzyl ether",
         "benzyl ether",
-        "Bn2O"
+        "Bn₂O"
     ],
     "MMHFQKUQSDMGSY-UHFFFAOYSA-N": [
         "2-isocyanobiphenyl",
@@ -9392,7 +9392,7 @@
         "tetrakis(dimethylamino)ethylene"
     ],
     "CBNBGETWKBUTEL-UHFFFAOYSA-K": [
-        "K₃PO₄\u20227H₂O",
+        "K₃PO₄•7H₂O",
         "K₃PO₄.7H₂O"
     ],
     "SOWBFZRMHSNYGE-UHFFFAOYSA-N": [
@@ -9442,7 +9442,7 @@
         "pyrazole-3-amine"
     ],
     "YSKOYVQYUJUXCN-UHFFFAOYSA-I": [
-        "LaCl₃\u20222LiCl"
+        "LaCl₃•2LiCl"
     ],
     "QGZKDVFQNNGYKY-UHFFFAOYSA-O": [
         "ammonium",
@@ -9456,7 +9456,7 @@
     "YQYGPGKTNQNXMH-UHFFFAOYSA-N": [
         "4-nitroacetophenone",
         "1-(4-nitrophenyl)ethan-1-one",
-        "4\u2019-nitroacetophenone"
+        "4’-nitroacetophenone"
     ],
     "ISAKRJDGNUQOIC-UHFFFAOYSA-N": [
         "uracil"
@@ -9519,7 +9519,7 @@
         "potassium ethoxide"
     ],
     "QARVLSVVCXYDNA-RALIUCGRSA-N": [
-        "C6d₅Br",
+        "C₆d₅Br",
         "bromobenzene-d₅"
     ],
     "JRBPAEWTRLWTQC-UHFFFAOYSA-N": [
@@ -9615,7 +9615,7 @@
     "CMSYDJVRTHCWFP-UHFFFAOYSA-N": [
         "PPh₃.HBr",
         "triphenyl phosphonium bromide",
-        "PPh₃\u00b7HBr"
+        "PPh₃·HBr"
     ],
     "RJUIDDKTATZJFE-NSCUHMNNSA-N": [
         "crotonyl chloride",
@@ -9645,11 +9645,11 @@
         "Ac-(L)-Phe-OH"
     ],
     "XYYVDQWGDNRQDA-UHFFFAOYSA-K": [
-        "HAuCl₄\u20223H₂O",
+        "HAuCl₄•3H₂O",
         "HAuCl₄.3H₂O"
     ],
     "YMOONIIMQBGTDU-UHFFFAOYSA-N": [
-        "\u03b2-bromostyrene",
+        "β-bromostyrene",
         "(2-bromovinyl)benzene",
         "1-Bromo-2-phenylethene"
     ],
@@ -9683,8 +9683,8 @@
     ],
     "RQXPGOCXZHCXDG-UHFFFAOYSA-N": [
         "(3,3,3-trifluoroprop-1-en-2-yl)benzene",
-        "\u03b1-trifluoromethyl styrene",
-        "\u03b1-(trifluoromethyl)styrene"
+        "α-trifluoromethyl styrene",
+        "α-(trifluoromethyl)styrene"
     ],
     "OBKXEAXTFZPCHS-UHFFFAOYSA-N": [
         "4-phenylbutanoic acid",
@@ -9706,7 +9706,7 @@
     "LUYQYZLEHLTPBH-UHFFFAOYSA-N": [
         "perfluorobutanesulfonyl fluoride",
         "nonafluorobutanesulfonyl fluoride",
-        "C4F9SO₂F"
+        "C₄F₉SO₂F"
     ],
     "LJQLCJWAZJINEB-UHFFFAOYSA-N": [
         "[Ir]PF₆",
@@ -9821,7 +9821,7 @@
         "1-phenyl-1-propanol"
     ],
     "KWVVTSALYXIJSS-UHFFFAOYSA-L": [
-        "AgF2",
+        "AgF₂",
         "silver (II) fluoride"
     ],
     "KFDVPJUYSDEJTH-UHFFFAOYSA-N": [
@@ -9891,7 +9891,7 @@
     "MFFXVVHUKRKXCI-UHFFFAOYSA-N": [
         "ethyl iodoacetate",
         "ethyl 2-iodoacetate",
-        "Ethyl\u00a0iodoacetate"
+        "Ethyl iodoacetate"
     ],
     "TVZPLCNGKSPOJA-UHFFFAOYSA-N": [
         "Zn-Cu",
@@ -9913,12 +9913,12 @@
     ],
     "UEUXEKPTXMALOB-UHFFFAOYSA-J": [
         "EDTA tetrasodium salt",
-        "Na4EDTA",
+        "Na₄EDTA",
         "Trilon B"
     ],
     "APOYTRAZFJURPB-UHFFFAOYSA-N": [
         "Deoxo-Fluor",
-        "Deoxo-Fluor\u2122",
+        "Deoxo-Fluor™",
         "BAST"
     ],
     "JKTYGPATCNUWKN-UHFFFAOYSA-N": [
@@ -10005,11 +10005,11 @@
     ],
     "HORQAOAYAYGIBM-UHFFFAOYSA-N": [
         "2,4-dinitrophenylhydrazine",
-        "Brady\u2019s reagent",
+        "Brady’s reagent",
         "(2,4-dinitrophenyl)hydrazine"
     ],
     "CSUANDLOYLVZIL-UHFFFAOYSA-L": [
-        "Lindlar\u2019s catalyst",
+        "Lindlar’s catalyst",
         "Lindlar's catalyst"
     ],
     "KNDOFJFSHZCKGT-UHFFFAOYSA-N": [
@@ -10022,7 +10022,7 @@
         "diisopropylcarbamoyl chloride"
     ],
     "GFYXELHUDBJJEV-UHFFFAOYSA-O": [
-        "H3PO₂"
+        "H₃PO₂"
     ],
     "YMVFJGSXZNNUDW-UHFFFAOYSA-N": [
         "4-chlorobenzylamine",
@@ -10103,7 +10103,7 @@
     "XFKYKTBPRBZDFG-UHFFFAOYSA-N": [
         "aminoacetonitrile hydrochloride",
         "2-Aminoacetonitrile hydrochloride",
-        "\u03b1-aminoacetonitrile hydrochloride"
+        "α-aminoacetonitrile hydrochloride"
     ],
     "YKUOFMNGWLZXHA-UHFFFAOYSA-N": [
         "1,2-bis(4-methoxyphenyl)ethyne",
@@ -10131,7 +10131,7 @@
         "chromium hexacarbonyl"
     ],
     "IAQLJCYTGRMXMA-UHFFFAOYSA-M": [
-        "LiOAc\u20222H₂O",
+        "LiOAc•2H₂O",
         "lithium acetate dihydrate",
         "LiOAc.2H₂O"
     ],
@@ -10160,7 +10160,7 @@
     "RXYPXQSKLGGKOL-UHFFFAOYSA-N": [
         "1,4-dimethylpiperazine",
         "N,N'-dimethylpiperazine",
-        "N,N\u2019-dimethylpiperazine"
+        "N,N’-dimethylpiperazine"
     ],
     "OYPRJOBELJOOCE-UHFFFAOYSA-N": [
         "CA",
@@ -10180,7 +10180,7 @@
         "diketene"
     ],
     "UKCIUOYPDVLQFW-UHFFFAOYSA-K": [
-        "InCl₃\u20224H₂O"
+        "InCl₃•4H₂O"
     ],
     "POPACFLNWGUDSR-UHFFFAOYSA-N": [
         "methoxytrimethylsilane",
@@ -10196,7 +10196,7 @@
     ],
     "IMHDGJOMLMDPJN-UHFFFAOYSA-N": [
         "biphenyl-2,2'-diol",
-        "2,2\u2019-biphenol",
+        "2,2’-biphenol",
         "biphenol"
     ],
     "NGKSKVYWPINGLI-UHFFFAOYSA-N": [
@@ -10209,7 +10209,7 @@
     ],
     "WPTCSQBWLUUYDV-UHFFFAOYSA-N": [
         "2,2'-biquinoline",
-        "2,2\u2019-biquinoline"
+        "2,2’-biquinoline"
     ],
     "URYYVOIYTNXXBN-UPHRSURJSA-N": [
         "cyclooctene",
@@ -10234,7 +10234,7 @@
     ],
     "DWUAXVRBGZTBMN-FQEVSTJZSA-N": [
         "diphenylprolinol TMS ether",
-        "\u03b1,\u03b1-L-diphenylprolinol trimethylsilyl ether",
+        "α,α-L-diphenylprolinol trimethylsilyl ether",
         "diphenylprolinol trimethylsilyl ether"
     ],
     "PYYBXMVTBWYBDY-ZLMJYOPTSA-N": [
@@ -10293,7 +10293,7 @@
     ],
     "VQBRSCDCSOKQHR-UHFFFAOYSA-N": [
         "(1-cyclopropylvinyl)benzene",
-        "\u03b1-cyclopropylstyrene"
+        "α-cyclopropylstyrene"
     ],
     "CFNSRIIHFLPQCE-UHFFFAOYSA-N": [
         "N-(trifluoromethylthio)phthalimide",
@@ -10339,11 +10339,11 @@
     "MZRSAJZDYIISJW-UHFFFAOYSA-N": [
         "(benzoylmethylene)triphenylphosphorane",
         "1-phenyl-2-(triphenylphosphoranylidene)ethanone",
-        "\u03b1-(triphenylphosphoranylidene)acetophenone"
+        "α-(triphenylphosphoranylidene)acetophenone"
     ],
     "XLSMFKSTNGKWQX-UHFFFAOYSA-N": [
         "hydroxyacetone",
-        "\u03b1-hydroxy acetone",
+        "α-hydroxy acetone",
         "hydroxyl acetone"
     ],
     "CVCOWPSAQGLCKM-UHFFFAOYSA-N": [
@@ -10452,7 +10452,7 @@
         "3-bromo-3,3-difluoropropene"
     ],
     "TWQULNDIKKJZPH-UHFFFAOYSA-K": [
-        "Li3PO₄",
+        "Li₃PO₄",
         "lithium phosphate"
     ],
     "PVBRSNZAOAJRKO-UHFFFAOYSA-N": [
@@ -10487,7 +10487,7 @@
         "sodium phenolate"
     ],
     "RMIBJVUYNZSLSD-UHFFFAOYSA-N": [
-        "Martin\u2019s sulfurane",
+        "Martin’s sulfurane",
         "Martin sulfurane"
     ],
     "FCJJZKCJURDYNF-UHFFFAOYSA-N": [
@@ -10495,8 +10495,8 @@
         "ethyl but-2-ynoate"
     ],
     "XQGPKZUNMMFTAL-UHFFFAOYSA-L": [
-        "K2HPO₄\u20223H₂O",
-        "K2HPO₄.3H₂O"
+        "K₂HPO₄•3H₂O",
+        "K₂HPO₄.3H₂O"
     ],
     "AETFKBFYWGEUOV-UHFFFAOYSA-N": [
         "3CzClIPN"
@@ -10575,7 +10575,7 @@
         "NADPH"
     ],
     "MFUVDXOKPBAHMC-UHFFFAOYSA-N": [
-        "Mg(NO₃)₂\u20226H₂O",
+        "Mg(NO₃)₂•6H₂O",
         "Mg(NO₃)₂.6H₂O"
     ],
     "BDOLXPFAFMNDOK-UHFFFAOYSA-N": [
@@ -10653,7 +10653,7 @@
     ],
     "CIUQDSCDWFSTQR-UHFFFAOYSA-N": [
         "phenyl",
-        "phenyl-\u03bb 2"
+        "phenyl-λ 2"
     ],
     "XGPOMXSYOKFBHS-UHFFFAOYSA-M": [
         "sodium trifluoromethanesulfonate",
@@ -10692,10 +10692,10 @@
     ],
     "WQRWNOKNRHCLHV-TWGQIWQCSA-N": [
         "(Z)-2-bromo-3-phenylacrylaldehyde",
-        "Z-\u03b1-bromocinnamaldehyde"
+        "Z-α-bromocinnamaldehyde"
     ],
     "SPTMROWPYQRZSX-UHFFFAOYSA-N": [
-        "\u03b2-ICD"
+        "β-ICD"
     ],
     "DTRVWRJNHJVAQQ-GFCCVEGCSA-N": [
         "(R)-Rh4",
@@ -10750,7 +10750,7 @@
         "methyl 2-phenylacetate"
     ],
     "XNAKKTLRTNNKAS-UHFFFAOYSA-N": [
-        "HB(C6F5)₂"
+        "HB(C₆F₅)₂"
     ],
     "QUGUFLJIAFISSW-UHFFFAOYSA-N": [
         "1,4-difluorobenzene"
@@ -10763,7 +10763,7 @@
         "3-bromoaniline"
     ],
     "BBMHARZCALWXSL-UHFFFAOYSA-M": [
-        "NaH₂PO₄\u2022H₂O",
+        "NaH₂PO₄•H₂O",
         "NaH₂PO₄.H₂O",
         "sodium dihydrogen phosphate monohydrate"
     ],
@@ -10821,7 +10821,7 @@
         "1,2,4-TCB"
     ],
     "MGJKQDOBUOMPEZ-UHFFFAOYSA-N": [
-        "N, N\u2019-Dimethyl urea",
+        "N, N’-Dimethyl urea",
         "1,3-dimethyl urea",
         "dimethylurea"
     ],
@@ -10910,8 +10910,8 @@
         "2-phenylethynyl bromobenzene"
     ],
     "BUJKNFNMGRYZBV-UHFFFAOYSA-K": [
-        "Yb(OTf)₃\u2022xH₂O",
-        "Yb(OTf)₃\u2022H₂O",
+        "Yb(OTf)₃•xH₂O",
+        "Yb(OTf)₃•H₂O",
         "Yb(OTf)₃.H₂O"
     ],
     "KTZUEEIBRDOPPX-UHFFFAOYSA-M": [
@@ -10925,7 +10925,7 @@
         "1-(3-bromophenyl)ethanone"
     ],
     "QOYRNHQSZSCVOW-UHFFFAOYSA-N": [
-        "Cd(NO₃)₂\u20224H₂O",
+        "Cd(NO₃)₂•4H₂O",
         "cadmium nitrate tetrahydrate"
     ],
     "DEVHCWHUQVZNMT-UHFFFAOYSA-N": [
@@ -11065,7 +11065,7 @@
     "LOTKRQAVGJMPNV-UHFFFAOYSA-N": [
         "1-fluoro-2,4-dinitrobenzene",
         "2,4-dinitrofluorobenzene",
-        "2,4-dinitro\u2014fluorobenzene"
+        "2,4-dinitro—fluorobenzene"
     ],
     "ASHGTJPOSUFTGB-UHFFFAOYSA-N": [
         "3-methoxyphenol"
@@ -11088,7 +11088,7 @@
     ],
     "IXQYBUDWDLYNMA-UHFFFAOYSA-N": [
         "[BMIM]PF₆",
-        "BMIM\u2022PF₆",
+        "BMIM•PF₆",
         "bmimPF₆"
     ],
     "JEAMWPJHRQVNFY-UHFFFAOYSA-N": [
@@ -11118,7 +11118,7 @@
     "ANOOTOPTCJRUPK-UHFFFAOYSA-N": [
         "1-iodohexane",
         "iodohexane",
-        "nC6H13I"
+        "nC₆H₁₃I"
     ],
     "HXZILEQYFQYQCE-UHFFFAOYSA-N": [
         "2-methyl-1,3-cyclopentanedione",
@@ -11150,7 +11150,7 @@
     "JJYKJUXBWFATTE-SECBINFHSA-N": [
         "(R)-MTPA",
         "(R)-3,3,3-trifluoro-2-methoxy-2-phenylpropanoic acid",
-        "(R)-(+)-\u03b1-methoxy-\u03b1-trifluoromethylphenylacetic acid"
+        "(R)-(+)-α-methoxy-α-trifluoromethylphenylacetic acid"
     ],
     "HHVIBTZHLRERCL-UHFFFAOYSA-N": [
         "dimethyl sulfone"
@@ -11162,7 +11162,7 @@
     "RWXWQJYJWJNJNW-UHFFFAOYSA-N": [
         "1,3-bis(3,5-bis(trifluoromethyl)phenyl)thiourea",
         "1,3-bis[3,5-bis(trifluoromethyl) phenyl]thiourea",
-        "Schreiner\u2019s thiourea"
+        "Schreiner’s thiourea"
     ],
     "FOBPTJZYDGNHLR-UHFFFAOYSA-N": [
         "P2",
@@ -11200,7 +11200,7 @@
     ],
     "ORQBXQOJMQIAOY-UHFFFAOYSA-N": [
         "NO",
-        "NO\u2022"
+        "NO•"
     ],
     "IOEJYZSZYUROLN-UHFFFAOYSA-M": [
         "sodium diethyldithiocarbamate",
@@ -11208,7 +11208,7 @@
     ],
     "RBZMSGOBSOCYHR-UHFFFAOYSA-N": [
         "1,4-bis(bromomethyl)benzene",
-        "\u03b1,\u03b1\u2019-dibromo-p-xylene"
+        "α,α’-dibromo-p-xylene"
     ],
     "LZCMQBRCQWOSHZ-UHFFFAOYSA-N": [
         "2-bromo-2,2-difluoroacetic acid",
@@ -11251,13 +11251,13 @@
         "1-butyl-3-methylimidazolium bromide"
     ],
     "DXKGMXNZSJMWAF-UHFFFAOYSA-N": [
-        "CuFe2O4"
+        "CuFe₂O₄"
     ],
     "ARCFYUDCVYJQRN-YNPJMWHASA-N": [
         "(DHQD)₂AQN"
     ],
     "YWVYZMVYXAVAKS-UHFFFAOYSA-N": [
-        "Py\u2022TfOH"
+        "Py•TfOH"
     ],
     "NBIIXXVUZAFLBC-UHFFFAOYSA-K": [
         "phosphate",
@@ -11276,14 +11276,14 @@
     ],
     "MHHJQVRGRPHIMR-UHFFFAOYSA-N": [
         "1-phenylprop-2-en-1-ol",
-        "\u03b1-vinylbenzyl alcohol"
+        "α-vinylbenzyl alcohol"
     ],
     "MYHOHFDYWMPGJY-UHFFFAOYSA-N": [
         "pentafluorobenzoyl chloride",
         "2,3,4,5,6-pentafluorobenzoyl chloride"
     ],
     "GBFHNZZOZWQQPA-UHFFFAOYSA-J": [
-        "H2PtCl6"
+        "H₂PtCl₆"
     ],
     "VZCYOOQTPOCHFL-OWOJBTEDSA-N": [
         "fumaric acid"
@@ -11302,16 +11302,16 @@
     ],
     "LFSAPCRASZRSKS-UHFFFAOYSA-N": [
         "2-methylcyclohexanone",
-        "\u03b1-methyl cyclohexanone",
+        "α-methyl cyclohexanone",
         "2-methylcyclohexan-1-one"
     ],
     "GVNLHDQZDCFJSP-UHFFFAOYSA-N": [
-        "H₂O\u2022B(C6F5)₃",
-        "B(C6F5)₃\u2022H₂O",
-        "B(C6F5)₃.xH₂O"
+        "H₂O•B(C₆F₅)₃",
+        "B(C₆F₅)₃•H₂O",
+        "B(C₆F₅)₃.xH₂O"
     ],
     "KLDYQWXVZLHTKT-UHFFFAOYSA-N": [
-        "tris(2,2\u2019-bipyridine)ruthenium(II) hexafluorophosphate",
+        "tris(2,2’-bipyridine)ruthenium(II) hexafluorophosphate",
         "tris(2,2'-bipyridine)ruthenium(II) hexafluorophosphate"
     ],
     "ASUDFOJKTJLAIK-UHFFFAOYSA-N": [
@@ -11320,7 +11320,7 @@
         "2-methoxyethanamine"
     ],
     "MEYVLGVRTYSQHI-UHFFFAOYSA-L": [
-        "CoSO₄\u20227H₂O"
+        "CoSO₄•7H₂O"
     ],
     "BLFRQYKZFKYQLO-UHFFFAOYSA-N": [
         "4-amino-1-butanol",
@@ -11334,14 +11334,14 @@
     ],
     "QMABMHJGSFUTPF-UHFFFAOYSA-N": [
         "4,4',4''-tri-tert-butyl-2,2':6',2''-terpyridine",
-        "4,4\u2019,4\u201d-tri-tert-butyl-2,2\u2019:6\u2019,2\u201d-terpyridine",
+        "4,4’,4”-tri-tert-butyl-2,2’:6’,2”-terpyridine",
         "tBu₃-terpy"
     ],
     "VDULOAUXSMYUMG-UHFFFAOYSA-N": [
         "2-phenylquinazolin-4(3H)-one"
     ],
     "FUBACIUATZGHAC-UHFFFAOYSA-N": [
-        "ZrOCl₂\u20228H₂O",
+        "ZrOCl₂•8H₂O",
         "ZrOCl₂.8H₂O",
         "zirconyl chloride octahydrate"
     ],
@@ -11374,7 +11374,7 @@
         "3-fluoroaniline"
     ],
     "NKIVVMOIGINFTB-UHFFFAOYSA-M": [
-        "Schwartz\u2019s reagent",
+        "Schwartz’s reagent",
         "zirconocene hydrochloride"
     ],
     "ZEAUJQWDPKRESH-KAMYIIQDSA-N": [
@@ -11404,8 +11404,8 @@
     ],
     "ZNKXTIAQRUWLRL-UHFFFAOYSA-M": [
         "sodium hydrosulfide hydrate",
-        "NaHS\u2022nH₂O",
-        "NaSH\u2022nH₂O"
+        "NaHS•nH₂O",
+        "NaSH•nH₂O"
     ],
     "YZWKKMVJZFACSU-UHFFFAOYSA-N": [
         "1-bromopentane",
@@ -11495,13 +11495,13 @@
     ],
     "OPYHNLNYCRZOGY-UHFFFAOYSA-N": [
         "iodopentafluorobenzene",
-        "C6F5I",
+        "C₆F₅I",
         "pentafluoroiodobenzene"
     ],
     "PAORVUMOXXAMPL-SECBINFHSA-N": [
         "(S)-3,3,3-trifluoro-2-methoxy-2-phenylpropanoyl chloride",
-        "(S)-(+)-\u03b1-methoxy-\u03b1-(trifluoromethyl)phenylacetyl chloride",
-        "(S)-(+)-\u03b1-methoxy-\u03b1-trifluoromethylphenylacetyl chloride"
+        "(S)-(+)-α-methoxy-α-(trifluoromethyl)phenylacetyl chloride",
+        "(S)-(+)-α-methoxy-α-trifluoromethylphenylacetyl chloride"
     ],
     "NPKSPKHJBVJUKB-UHFFFAOYSA-N": [
         "N-phenylglycine",
@@ -11518,7 +11518,7 @@
     ],
     "HHAISVSEJFEWBZ-UHFFFAOYSA-N": [
         "1-(4-(trifluoromethyl)phenyl)ethan-1-one",
-        "4\u2019-(trifluoromethyl)acetophenone",
+        "4’-(trifluoromethyl)acetophenone",
         "4-(trifluoromethyl)acetophenone"
     ],
     "OGMADIBCHLQMIP-UHFFFAOYSA-N": [
@@ -11572,7 +11572,7 @@
         "Miyake Phenoxazine"
     ],
     "AETKQQBRKSELEL-ZHACJKMWSA-N": [
-        "2\u2019-hydroxychalcone",
+        "2’-hydroxychalcone",
         "(E)-1-(2-hydroxyphenyl)-3-phenylprop-2-en-1-one",
         "2'-hydroxychalcone"
     ],
@@ -11591,7 +11591,7 @@
     ],
     "XNFNGGQRDXFYMM-PPHPATTJSA-N": [
         "L-tryptophan methyl ester hydrochloride",
-        "H-Trp-OMe\u00b7HCl",
+        "H-Trp-OMe·HCl",
         "methyl L-tryptophanate hydrochloride"
     ],
     "VZOPRCCTKLAGPN-UHFFFAOYSA-L": [
@@ -11696,7 +11696,7 @@
     "XQJAHBHCLXUGEP-UHFFFAOYSA-N": [
         "2-bromo-1-(4-methoxyphenyl)ethanone",
         "2-bromo-1-(4-methoxyphenyl)ethan-1-one",
-        "2-bromo-4\u2019-methoxyacetophenone"
+        "2-bromo-4’-methoxyacetophenone"
     ],
     "IKSNDOVDVVPSMA-UHFFFAOYSA-N": [
         "4-(trifluoromethyl)benzyl bromide",
@@ -11807,7 +11807,7 @@
         "(4-chlorophenyl)magnesium bromide"
     ],
     "DBDCQCFMFYPMNY-UHFFFAOYSA-N": [
-        "Cu(hfacac)₂\u2022H₂O",
+        "Cu(hfacac)₂•H₂O",
         "Cu(hfacac)₂.xH₂O",
         "Cu(hfacac)₂.H₂O"
     ],
@@ -11822,7 +11822,7 @@
     "SZYJELPVAFJOGJ-UHFFFAOYSA-N": [
         "trimethylamine hydrochloride",
         "Me₃N.HCl",
-        "Me₃N\u00b7HCl"
+        "Me₃N·HCl"
     ],
     "BZXQRXJJJUZZAJ-UHFFFAOYSA-N": [
         "2,4,6-trimethylphenylboronic acid",
@@ -11837,13 +11837,13 @@
         "m-aminophenol"
     ],
     "IGKDMMUNXOVTMR-UHFFFAOYSA-N": [
-        "Gn\u2022HCl",
-        "Gn\u00b7HCl",
+        "Gn•HCl",
+        "Gn·HCl",
         "Gn.HCl"
     ],
     "OTMSDBZUPAUEDD-UHFFFAOYSA-N": [
         "ethane",
-        "C2H6",
+        "C₂H₆",
         "dimethyl"
     ],
     "VSCBATMPTLKTOV-UHFFFAOYSA-N": [
@@ -11882,12 +11882,12 @@
     ],
     "JXHZRQHZVYDRGX-UHFFFAOYSA-M": [
         "NaHSO₄.H₂O",
-        "NaHSO₄\u2022H₂O",
-        "NaHSO₄\u25aaH₂O"
+        "NaHSO₄•H₂O",
+        "NaHSO₄▪H₂O"
     ],
     "XJRCNGBGCSKINT-UHFFFAOYSA-N": [
-        "SIMes\u2022HCl",
-        "SIMes\u00b7HCl"
+        "SIMes•HCl",
+        "SIMes·HCl"
     ],
     "IJDNQMDRQITEOD-UHFFFAOYSA-N": [
         "diethyl",
@@ -11963,7 +11963,7 @@
         "1-methylpyrazole-4-boronic acid pinacol ester"
     ],
     "XOGGUFAVLNCTRS-UHFFFAOYSA-N": [
-        "K4[Fe(CN)₆]",
+        "K₄[Fe(CN)₆]",
         "potassium hexacyanoferrate(II)"
     ],
     "MVLGANVFCMOJHR-UHFFFAOYSA-N": [
@@ -11980,7 +11980,7 @@
         "tert-butyldimethylsilylacetylene"
     ],
     "AGWVYHGCCFEXGL-UHFFFAOYSA-L": [
-        "ZnBr₂\u2022TMEDA"
+        "ZnBr₂•TMEDA"
     ],
     "LXXNWCFBZHKFPT-UHFFFAOYSA-N": [
         "ethyl 2-mercaptopropionate",
@@ -11995,7 +11995,7 @@
         "o-tolunitrile"
     ],
     "WVMHLYQJPRXKLC-UHFFFAOYSA-N": [
-        "BH₃\u2022NMe₃",
+        "BH₃•NMe₃",
         "trimethylamine borane"
     ],
     "YASYEJJMZJALEJ-UHFFFAOYSA-N": [
@@ -12015,11 +12015,11 @@
         "4-acetylbenzonitrile"
     ],
     "DDSZKRBYFPATLS-UHFFFAOYSA-T": [
-        "(NH₄)₆Mo7O₂4\u20224H₂O",
-        "(NH₄)₆Mo7O₂4\u00b74H₂O"
+        "(NH₄)₆Mo₇O₂₄•4H₂O",
+        "(NH₄)₆Mo₇O₂₄·4H₂O"
     ],
     "ZLKNPIVTWNMMMH-UHFFFAOYSA-N": [
-        "1,1\u2019-sulfonyldiimidazole",
+        "1,1’-sulfonyldiimidazole",
         "N,N'-sulfuryldiimidazole"
     ],
     "LLKYUHGUYSLMPA-UHFFFAOYSA-N": [
@@ -12029,8 +12029,8 @@
     ],
     "LWPXTYZKAWSRIP-UHFFFAOYSA-M": [
         "SIPr.HCl",
-        "SIPr\u00b7HCl",
-        "SIPr\u2022HCl"
+        "SIPr·HCl",
+        "SIPr•HCl"
     ],
     "YUQUNWNSQDULTI-UHFFFAOYSA-N": [
         "2-bromobenzenethiol",
@@ -12085,7 +12085,7 @@
     "KLNPVNZJCWIQSK-UHFFFAOYSA-N": [
         "B2",
         "(S)-B2",
-        "B2(neo)₂"
+        "B₂(neo)₂"
     ],
     "RWPGFSMJFRPDDP-UHFFFAOYSA-L": [
         "potassium metabisulfite",
@@ -12117,8 +12117,8 @@
     ],
     "CVRIWLRSJCDOOX-UHFFFAOYSA-N": [
         "N, N'-ditosylhydrazine",
-        "N,N\u2019-ditosylhydrazine",
-        "N\u2019,N-ditosylhydrazine"
+        "N,N’-ditosylhydrazine",
+        "N’,N-ditosylhydrazine"
     ],
     "PPQNQXQZIWHJRB-UHFFFAOYSA-N": [
         "MC"
@@ -12157,7 +12157,7 @@
     ],
     "AKEBROIVCDHVSD-UHFFFAOYSA-N": [
         "KBF₄",
-        "KB(C6F5)₄",
+        "KB(C₆F₅)₄",
         "potassium tetrafluoroborate"
     ],
     "QDZKGEASJJIEKQ-UHFFFAOYSA-L": [
@@ -12192,7 +12192,7 @@
     ],
     "WCQOBLXWLRDEQA-UHFFFAOYSA-N": [
         "acetamidine hydrochloride",
-        "acetamidin\u00b7HCl",
+        "acetamidin·HCl",
         "acetamidine HCl"
     ],
     "CERQOIWHTDAKMF-UHFFFAOYSA-N": [
@@ -12255,7 +12255,7 @@
         "4-trifluoromethoxyphenylboronic acid"
     ],
     "XLYOFNOQVPJJNP-UHFFFAOYSA-M": [
-        "R\u2019OH",
+        "R’OH",
         "OH",
         "hydroxide"
     ],
@@ -12283,7 +12283,7 @@
         "diphenylphosphinic acid"
     ],
     "GQIRIWDEZSKOCN-UHFFFAOYSA-N": [
-        "Ghosez\u2019s reagent",
+        "Ghosez’s reagent",
         "1-chloro-N,N,2-trimethyl-1-propenylamine",
         "1-chloro-N,N,2-trimethylprop-1-en-1-amine"
     ],
@@ -12344,7 +12344,7 @@
         "diazoacetophenone"
     ],
     "JELYSHJWTNQCEG-UHFFFAOYSA-K": [
-        "CuSO₄\u20225 H₂O",
+        "CuSO₄•5 H₂O",
         "CuSO₄.5 H₂O"
     ],
     "JHVLLYQQQYIWKX-UHFFFAOYSA-N": [
@@ -12452,7 +12452,7 @@
     "FTDUHBOCJSQEKS-UHFFFAOYSA-N": [
         "dimethylamine-borane",
         "dimethylamine borane",
-        "Me₂NH\u00b7BH₃"
+        "Me₂NH·BH₃"
     ],
     "VNNDVNZCGCCIPA-FDGPNNRMSA-N": [
         "Mn(acac)₂"
@@ -12465,7 +12465,7 @@
     "VTWKXBJHBHYJBI-SOFGYWHQSA-N": [
         "benzaldehyde oxime",
         "benzaldoxime",
-        "\u03b1-benzaldoxime"
+        "α-benzaldoxime"
     ],
     "HDNRAPAFJLXKBV-UHFFFAOYSA-N": [
         "1-ethyl-4-methoxybenzene",
@@ -12477,8 +12477,8 @@
     ],
     "HBWBVIDKBKOVEX-UHFFFAOYSA-N": [
         "dimethyl [2,2'-bipyridine]-4,4'-dicarboxylate",
-        "4,4\u2019-bis(methoxycarbonly)-2,2\u2019-bipyridine",
-        "4,4\u2019-Dimethoxycarbonyl-2,2\u2019-bipyridine"
+        "4,4’-bis(methoxycarbonly)-2,2’-bipyridine",
+        "4,4’-Dimethoxycarbonyl-2,2’-bipyridine"
     ],
     "KIALCSMRIHRFPL-UHFFFAOYSA-N": [
         "DPAP"
@@ -12505,7 +12505,7 @@
     ],
     "YPGCWEMNNLXISK-UHFFFAOYSA-N": [
         "2-phenylpropanoic acid",
-        "\u03b1-methylphenylacetic acid",
+        "α-methylphenylacetic acid",
         "2-phenylpropionic acid"
     ],
     "SMCLTAARQYTXLW-UHFFFAOYSA-N": [
@@ -12536,7 +12536,7 @@
         "N-Tosylphenyltriazole"
     ],
     "MCQRPQCQMGVWIQ-UHFFFAOYSA-N": [
-        "BH₃\u2022DMS",
+        "BH₃•DMS",
         "BH₃.DMS",
         "BMS"
     ],
@@ -12631,9 +12631,9 @@
         "3-methylpyridine"
     ],
     "RSUHWMSTWSSNOW-IBGZPJMESA-N": [
-        "(S)-(\\u2212)-\u03b1,\u03b1-diphenyl-2-pyrrolidinemethanol trimethylsilyl ether",
+        "(S)-(\\u2212)-α,α-diphenyl-2-pyrrolidinemethanol trimethylsilyl ether",
         "(S)-2-(diphenyl(trimethylsilyloxy)methyl)pyrrolidine",
-        "(S)-(\u2013)-\u03b1,\u03b1-diphenyl-2-pyrrolidinemethanol trimethylsilyl ether"
+        "(S)-(–)-α,α-diphenyl-2-pyrrolidinemethanol trimethylsilyl ether"
     ],
     "KZZHPWMVEVZEFG-UHFFFAOYSA-N": [
         "N-Boc-aniline",
@@ -12666,7 +12666,7 @@
         "pyrazine"
     ],
     "AFQSOHSPTULSFS-FGSKAQBVSA-N": [
-        "Rh(acac)(C2H4)₂"
+        "Rh(acac)(C₂H₄)₂"
     ],
     "VDQQJMHXZCMNMU-UHFFFAOYSA-N": [
         "1-Phenylpyrrolidine",
@@ -12724,13 +12724,13 @@
         "4-hydroxythiophenol"
     ],
     "INLSCIDXDUXGTI-UHFFFAOYSA-N": [
-        "EDC\u2022HCl",
-        "EDC\u00b7HCl",
+        "EDC•HCl",
+        "EDC·HCl",
         "EDC*HCl"
     ],
     "DRKHIWKXLZCAKP-UHFFFAOYSA-N": [
         "2,2'-dibromobiphenyl",
-        "2,2\u2019-dibromobiphenyl",
+        "2,2’-dibromobiphenyl",
         "2,2'-dibromo-1,1'-biphenyl"
     ],
     "WQZGKKKJIJFFOK-SVZMEOIVSA-N": [
@@ -12861,7 +12861,7 @@
     "ZGEYCCHDTIDZAE-UHFFFAOYSA-N": [
         "Dowex 50",
         "Dowex-50",
-        "Dowex\u00ae 50"
+        "Dowex® 50"
     ],
     "WEHWNAOGRSTTBQ-UHFFFAOYSA-N": [
         "dipropylamine",
@@ -12907,7 +12907,7 @@
     "VCOONNWIINSFBA-UHFFFAOYSA-N": [
         "bis(4-methoxyphenyl)amine",
         "4,4'-dimethoxydiphenylamine",
-        "4,4\u2019-dimethoxydiphenylamine"
+        "4,4’-dimethoxydiphenylamine"
     ],
     "TUAMRELNJMMDMT-UHFFFAOYSA-N": [
         "3,5-dimethylphenol"
@@ -12939,7 +12939,7 @@
     ],
     "BULLJMKUVKYZDJ-UHFFFAOYSA-N": [
         "perfluorohexyl iodide",
-        "C6F13I",
+        "C₆F₁₃I",
         "1,1,1,2,2,3,3,4,4,5,5,6,6-tridecafluoro-6-iodohexane"
     ],
     "JAMFGQBENKSWOF-UHFFFAOYSA-N": [
@@ -12969,7 +12969,7 @@
     "QSKPIOLLBIHNAC-UHFFFAOYSA-N": [
         "chloroacetaldehyde",
         "2-chloroacetaldehyde",
-        "\u03b1-chloroaldehyde"
+        "α-chloroaldehyde"
     ],
     "OVQABVAKPIYHIG-UHFFFAOYSA-N": [
         "dibenzenesulfonimide",
@@ -12982,11 +12982,11 @@
     "NZYOAGBNMCVQIV-UHFFFAOYSA-N": [
         "chloramine-T trihydrate",
         "Chloramine T trihydrate",
-        "Chloramine-T\u20223H₂O"
+        "Chloramine-T•3H₂O"
     ],
     "CKOFTLIGGWQUIB-UHFFFAOYSA-N": [
-        "CuCO₃\u2022Cu(OH)₂",
-        "Cu(OH)₂\u2022CuCO₃",
+        "CuCO₃•Cu(OH)₂",
+        "Cu(OH)₂•CuCO₃",
         "basic copper carbonate"
     ],
     "SEULWJSKCVACTH-UHFFFAOYSA-N": [
@@ -13004,7 +13004,7 @@
     "LLPWGHLVUPBSLP-IJLUTSLNSA-N": [
         "3,4,6-tri-O-acetyl-D-galactal",
         "tri-O-acetyl-D-galactal",
-        "3,4,6-tri-O-acetyl-\u03b4-galactal"
+        "3,4,6-tri-O-acetyl-δ-galactal"
     ],
     "DODCBMODXGJOKD-RGMNGODLSA-N": [
         "L-leucine methyl ester hydrochloride",
@@ -13016,7 +13016,7 @@
         "FA/TEA"
     ],
     "HCJWWBBBSCXJMS-UHFFFAOYSA-J": [
-        "Li2CuCl₄"
+        "Li₂CuCl₄"
     ],
     "LDZLXQFDGRCELX-UHFFFAOYSA-N": [
         "4-phenylbutan-1-ol",
@@ -13078,12 +13078,12 @@
         "m-difluorobenzene"
     ],
     "YYYOQURZQWIILK-UHFFFAOYSA-N": [
-        "2,2\u2019-dithiobis(benzenamine)",
+        "2,2’-dithiobis(benzenamine)",
         "2,2'-diaminodiphenyldisulfide",
-        "2,2\u2019-dithiodianiline"
+        "2,2’-dithiodianiline"
     ],
     "SRXJYTZCORKVNA-UHFFFAOYSA-N": [
-        "\u03b1-bromostyrene",
+        "α-bromostyrene",
         "(1-bromovinyl)benzene"
     ],
     "MBIZFBDREVRUHY-UHFFFAOYSA-N": [
@@ -13126,7 +13126,7 @@
         "1-chloro-3-methoxybenzene"
     ],
     "IGTBJBHOQXYDMM-JOECBHQBSA-N": [
-        "Rh2(S-DOSP)₄"
+        "Rh₂(S-DOSP)₄"
     ],
     "WTEPWWCRWNCUNA-UHFFFAOYSA-M": [
         "benzyltriphenylphosphonium bromide"
@@ -13180,7 +13180,7 @@
         "5-methyl-2-phenyl-2,4-dihydro-3H-pyrazole-3-one"
     ],
     "BQZGVMWPHXIKEQ-UHFFFAOYSA-L": [
-        "FeI2"
+        "FeI₂"
     ],
     "WNZQDUSMALZDQF-UHFFFAOYSA-N": [
         "phthalide",
@@ -13244,9 +13244,9 @@
         "(S, RS)-P5"
     ],
     "MJRFDVWKTFJAPF-UHFFFAOYSA-K": [
-        "IrCl₃\u2022H₂O",
-        "IrCl₃\u2022nH₂O",
-        "IrCl₃\u2022xH₂O"
+        "IrCl₃•H₂O",
+        "IrCl₃•nH₂O",
+        "IrCl₃•xH₂O"
     ],
     "QNTSFZXGLAHYLC-UHFFFAOYSA-N": [
         "methyl 4-acetylbenzoate"
@@ -13319,7 +13319,7 @@
         "tetrabutylammonium dihydrogen phosphate"
     ],
     "WHELTKFSBJNBMQ-UHFFFAOYSA-N": [
-        "tris(2,2\u2019-bipyridyl)ruthenium(II) chloride hexahydrate",
+        "tris(2,2’-bipyridyl)ruthenium(II) chloride hexahydrate",
         "tris(2,2'-bipyridyl)ruthenium(ii) chloride hexahydrate"
     ],
     "RBIGKSZIQCTIJF-UHFFFAOYSA-N": [
@@ -13376,8 +13376,8 @@
         "N-(Methoxymethyl)-N-(trimethylsilylmethyl)bezylamine"
     ],
     "JMQRNHTTZWNLMH-UHFFFAOYSA-M": [
-        "IMes\u2022CuCl",
-        "IMes\u00b7CuCl"
+        "IMes•CuCl",
+        "IMes·CuCl"
     ],
     "FJLFSYRGFJDJMQ-UHFFFAOYSA-N": [
         "1-bromo-4-(methylsulfonyl)benzene",
@@ -13399,7 +13399,7 @@
         "2,6-dichlorobenzaldehyde"
     ],
     "TUFGVZMNGTYAQD-UHFFFAOYSA-N": [
-        "Comins\u2019 reagent",
+        "Comins’ reagent",
         "N-(5-chloro-2-pyridyl)triflimide",
         "N-(5-chloro-2-pyridyl)bis(trifluoromethanesulfonimide)"
     ],
@@ -13433,7 +13433,7 @@
         "guanidinium carbonate"
     ],
     "GFHNAMRJFCEERV-UHFFFAOYSA-L": [
-        "CoCl₂\u20226H₂O",
+        "CoCl₂•6H₂O",
         "cobalt(II) chloride hexahydrate",
         "cobalt chloride hexahydrate"
     ],
@@ -13470,7 +13470,7 @@
     "BAYUSCHCCGXLAY-UHFFFAOYSA-N": [
         "1-(3-methoxyphenyl)ethan-1-one",
         "3-methoxyacetophenone",
-        "3\u2019-methoxyacetophenone"
+        "3’-methoxyacetophenone"
     ],
     "LXUNZSDDXMPKLP-UHFFFAOYSA-N": [
         "2-methylbenzenethiol",
@@ -13515,7 +13515,7 @@
     "FFKZOUIEAHOBHW-UHFFFAOYSA-N": [
         "N-methyl-N-nitroso-p-toluenesulfonamide",
         "Diazald",
-        "Diazald\u2122"
+        "Diazald™"
     ],
     "KQNBRMUBPRGXSL-UHFFFAOYSA-N": [
         "4-chlorobenzyl bromide",
@@ -13525,7 +13525,7 @@
         "Ir[dF(CF₃)ppy]₂(bpy)PF₆"
     ],
     "ABLZXFCXXLZCGV-UHFFFAOYSA-N": [
-        "H3PO₃",
+        "H₃PO₃",
         "phosphonic acid",
         "chiral phosphonic acid"
     ],
@@ -13542,7 +13542,7 @@
         "cyclopropyl-phenyl-ketone"
     ],
     "VWYGTDAUKWEPCZ-UHFFFAOYSA-L": [
-        "CuCl₂\u2022H₂O",
+        "CuCl₂•H₂O",
         "CuCl₂.H₂O"
     ],
     "UAQFYIRWWLYXDV-UHFFFAOYSA-N": [
@@ -13562,7 +13562,7 @@
     "FMZSAFIGGZOVJQ-UHFFFAOYSA-N": [
         "4-fluorobenzenediazonium tetrafluoroborate",
         "4-fluorobenzene-diazonium tetrafluoroborate",
-        "4-fluorobenzenediazonium tetra\u2014fluoroborate"
+        "4-fluorobenzenediazonium tetra—fluoroborate"
     ],
     "YPKBCLZFIYBSHK-UHFFFAOYSA-N": [
         "5-methyl-1H-indole",
@@ -13581,12 +13581,12 @@
         "mesityl carbonyl chloride"
     ],
     "XROWMBWRMNHXMF-UHFFFAOYSA-J": [
-        "TiF4",
+        "TiF₄",
         "titanium tetrafluoride"
     ],
     "KWXGJTSJUKTDQU-UHFFFAOYSA-N": [
         "perfluorooctyl iodide",
-        "C8F17I",
+        "C₈F₁₇I",
         "1,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8-heptadecafluoro-8-iodooctane"
     ],
     "BSDGZUDFPKIYQG-UHFFFAOYSA-N": [
@@ -13628,13 +13628,13 @@
         "bis(4-chlorophenyl) disulfide"
     ],
     "WQRWNOKNRHCLHV-UHFFFAOYSA-N": [
-        "\u03b1-bromocinnamaldehyde",
+        "α-bromocinnamaldehyde",
         "2-bromocinnamaldehyde",
         "2-Br cinnamaldehyde"
     ],
     "AMCNGINELBODDW-UHFFFAOYSA-N": [
-        "Super Hydride\u2122",
-        "Super-Hydride\u2122",
+        "Super Hydride™",
+        "Super-Hydride™",
         "Superhydride"
     ],
     "CKGKXGQVRVAKEA-UHFFFAOYSA-N": [
@@ -13652,7 +13652,7 @@
     "BPBNKCIVWFCMJY-UHFFFAOYSA-N": [
         "4-ethynyl-1,1'-biphenyl",
         "4-ethynylbiphenyl",
-        "4-ethynyl-1,1\u2019-biphenyl"
+        "4-ethynyl-1,1’-biphenyl"
     ],
     "BAYGVMXZJBFEMB-UHFFFAOYSA-N": [
         "4-(trifluoromethyl)phenol",
@@ -13674,7 +13674,7 @@
         "1,2,3,4-tetrahydro-2-methylquinoline"
     ],
     "HNPSIPDUKPIQMN-UHFFFAOYSA-N": [
-        "\u03b2-zeolite",
+        "β-zeolite",
         "zeolite",
         "Cu(I)-zeolite"
     ],
@@ -13729,7 +13729,7 @@
         "4-fluoroanisole"
     ],
     "JGDITNMASUZKPW-UHFFFAOYSA-K": [
-        "AlCl₃\u20226H₂O",
+        "AlCl₃•6H₂O",
         "AlCl₃.6H₂O",
         "aluminum chloride hexahydrate"
     ],
@@ -13765,7 +13765,7 @@
         "1-bromo-2-chloroethane"
     ],
     "KPGXUAIFQMJJFB-UHFFFAOYSA-H": [
-        "WCl6"
+        "WCl₆"
     ],
     "SRSXLGNVWSONIS-UHFFFAOYSA-N": [
         "benzenesulfonic acid"
@@ -13783,7 +13783,7 @@
     "UOPFIWYXBIHPIP-NHCUHLMSSA-N": [
         "(R,R)-TsDPEN",
         "(R,R)-N-(p-tolylsulfonyl)-1,2-diphenylethylendiamine",
-        "(1\u2019R,2\u2019R)-TsDPEN"
+        "(1’R,2’R)-TsDPEN"
     ],
     "VFGRNTYELNYSKJ-UHFFFAOYSA-N": [
         "6-amino-1,3-dimethylpyrimidine-2,4-dione",
@@ -13803,8 +13803,8 @@
         "N-Benzoylmorpholine"
     ],
     "FDEIWTXVNPKYDL-UHFFFAOYSA-N": [
-        "Na₂MoO4\u20222H₂O",
-        "Na₂MoO4. 2H₂O",
+        "Na₂MoO₄•2H₂O",
+        "Na₂MoO₄. 2H₂O",
         "sodium molybdate dihydrate"
     ],
     "JMJRYTGVHCAYCT-UHFFFAOYSA-N": [
@@ -13817,7 +13817,7 @@
     ],
     "OBWFJXLKRAFEDI-UHFFFAOYSA-N": [
         "methyl cyanoformate",
-        "Mander\u2019s reagent"
+        "Mander’s reagent"
     ],
     "DYRDKSSFIWVSNM-UHFFFAOYSA-N": [
         "3-oxo-N-phenylbutanamide",
@@ -13847,8 +13847,8 @@
         "(E)-but-2-enoic acid"
     ],
     "ZADYMNAVLSWLEQ-UHFFFAOYSA-N": [
-        "Florisil\u2122",
-        "Florisil\u00ae"
+        "Florisil™",
+        "Florisil®"
     ],
     "RKVHNYJPIXOHRW-UHFFFAOYSA-N": [
         "2-cyanoethyl N,N,N',N'-tetraisopropylphosphorodiamidite",
@@ -13892,7 +13892,7 @@
     ],
     "QOTQFLOTGBBMEX-UHFFFAOYSA-N": [
         "5-methylfuran-2(3H)-one",
-        "\u03b1-angelica lactone",
+        "α-angelica lactone",
         "5-methyl 2(3H)-furanone"
     ],
     "UEBSWKNVDRJVHN-UHFFFAOYSA-N": [
@@ -13918,7 +13918,7 @@
         "alkaline phosphatase"
     ],
     "XUWHAWMETYGRKB-UHFFFAOYSA-N": [
-        "\u03b4-valerolactam",
+        "δ-valerolactam",
         "piperidin-2-one",
         "2-piperidone"
     ],
@@ -13977,7 +13977,7 @@
         "1-phenylethan-1-one oxime"
     ],
     "WAZPLXZGZWWXDQ-UHFFFAOYSA-N": [
-        "NMO\u2022H₂O",
+        "NMO•H₂O",
         "NMO.H₂O",
         "4-methyl-morpholine-4-oxide monohydrate"
     ],
@@ -14041,12 +14041,12 @@
         "bis(4-chlorophenyl)methanone"
     ],
     "JBKVHLHDHHXQEQ-UHFFFAOYSA-N": [
-        "\u03b5-caprolactam",
+        "ε-caprolactam",
         "caprolactam",
         "azepan-2-one"
     ],
     "LXGCMJBNHPPNBQ-UHFFFAOYSA-N": [
-        "L-Selectride\u2122",
+        "L-Selectride™",
         "L-Selectride"
     ],
     "IXOZZKPZLXAEAX-UHFFFAOYSA-N": [
@@ -14058,14 +14058,14 @@
         "4-allyl-2-methoxyphenol"
     ],
     "LTSUHJWLSNQKIP-UHFFFAOYSA-J": [
-        "SnBr4",
+        "SnBr₄",
         "tin(IV) bromide"
     ],
     "XWALNWXLMVGSFR-BROHZWGRSA-N": [
         "MA"
     ],
     "NTZLHPNHFGZOII-UHFFFAOYSA-N": [
-        "Pd/Al2O₃"
+        "Pd/Al₂O₃"
     ],
     "RTLUPHDWSUGAOS-UHFFFAOYSA-N": [
         "4-iodopyridine"
@@ -14129,7 +14129,7 @@
     ],
     "FCSHMCFRCYZTRQ-UHFFFAOYSA-N": [
         "1,3-diphenylthiourea",
-        "N,N\u2019-diphenylthiourea",
+        "N,N’-diphenylthiourea",
         "N,N'-diphenylthiocarbamide"
     ],
     "OUMKBAHMPRLISR-UHFFFAOYSA-N": [
@@ -14170,7 +14170,7 @@
         "(R,R)-BDPP"
     ],
     "LSJNBGSOIVSBBR-UHFFFAOYSA-N": [
-        "SOF2"
+        "SOF₂"
     ],
     "SCAKFUJVCFIFOX-UHFFFAOYSA-N": [
         "N-(phenylthio)succinimide",
@@ -14212,7 +14212,7 @@
     ],
     "ISPYRSDWRDQNSW-UHFFFAOYSA-L": [
         "MnSO₄.H₂O",
-        "MnSO₄\u2022H₂O",
+        "MnSO₄•H₂O",
         "manganese sulfate monohydrate"
     ],
     "HJIAMFHSAAEUKR-UHFFFAOYSA-N": [
@@ -14241,7 +14241,7 @@
         "1,3,5-tris(bromomethyl)-benzene"
     ],
     "SWCIQHXIXUMHKA-UHFFFAOYSA-N": [
-        "Al(NO₃)₃\u20229H₂O"
+        "Al(NO₃)₃•9H₂O"
     ],
     "ACWQBUSCFPJUPN-HWKANZROSA-N": [
         "tiglic aldehyde",
@@ -14255,8 +14255,8 @@
         "NiBr₂(PPh₃)₂"
     ],
     "LPTITAGPBXDDGR-IBEHDNSVSA-N": [
-        "\u03b2-D-glucose pentaacetate",
-        "1,2,3,4,6-penta-O-acetyl-\u03b2-D-glucopyranose"
+        "β-D-glucose pentaacetate",
+        "1,2,3,4,6-penta-O-acetyl-β-D-glucopyranose"
     ],
     "QRLBICHXRCOJDU-UHFFFAOYSA-N": [
         "methylphenylsilane"
@@ -14366,14 +14366,14 @@
     ],
     "BTCSSZJGUNDROE-UHFFFAOYSA-N": [
         "4-aminobutanoic acid",
-        "\u03b3-aminobutyric acid",
+        "γ-aminobutyric acid",
         "4-aminobutyric acid"
     ],
     "IGLNJRXAVVLDKE-UHFFFAOYSA-N": [
         "RB"
     ],
     "IGTBJBHOQXYDMM-MSZWWGBCSA-N": [
-        "Rh2(R-DOSP)₄"
+        "Rh₂(R-DOSP)₄"
     ],
     "GASXLROKFOTRGN-UHFFFAOYSA-N": [
         "(R)-Fesulphos",
@@ -14713,9 +14713,9 @@
         "methyl 2-oxocyclopentanecarboxylate"
     ],
     "VLUMOWNVWOXZAU-VQHVLOKHSA-N": [
-        "\u03b1-methyl-trans-cinnamaldehyde",
+        "α-methyl-trans-cinnamaldehyde",
         "(E)-2-methyl-3-phenylacrylaldehyde",
-        "\u03b1-methylcinnamaldehyde"
+        "α-methylcinnamaldehyde"
     ],
     "DREPONDJUKIQLX-UHFFFAOYSA-N": [
         "diethyl vinylphosphonate",
@@ -14739,7 +14739,7 @@
         "9-azabicyclo[3.3.1]nonane N-oxyl"
     ],
     "VCVGZXDBBBZKDX-UHFFFAOYSA-N": [
-        "N,N\u2013Diisopropyloxamoyl chloride S1",
+        "N,N–Diisopropyloxamoyl chloride S1",
         "N,N-Diisopropyloxamoyl chloride S1"
     ],
     "IYXUFOCLMOXQSL-UHFFFAOYSA-N": [
@@ -14747,8 +14747,8 @@
         "difluoroacetic anhydride 1"
     ],
     "FHKLOBNGYGFRSF-UHFFFAOYSA-N": [
-        "NaClO\u20225H₂O",
-        "NaOCl\u20225H₂O"
+        "NaClO•5H₂O",
+        "NaOCl•5H₂O"
     ],
     "MKRVHLWAVKJBFN-UHFFFAOYSA-N": [
         "diphenylzinc"
@@ -14776,11 +14776,11 @@
     ],
     "DWPLEOPKBWNPQV-UHFFFAOYSA-N": [
         "1-(2-methoxyphenyl)ethan-1-one",
-        "2\u2019-methoxyacetophenone",
+        "2’-methoxyacetophenone",
         "1-(2-methoxyphenyl)ethanone"
     ],
     "YXWWHNCQZBVZPV-UHFFFAOYSA-N": [
-        "2\u2019-methylacetophenone",
+        "2’-methylacetophenone",
         "1-(o-tolyl)ethan-1-one",
         "2-methylacetophenone"
     ],
@@ -14792,7 +14792,7 @@
         "DMPO"
     ],
     "KGHYGBGIWLNFAV-UHFFFAOYSA-N": [
-        "N,N\u2019-di-tert-butylethylenediamine",
+        "N,N’-di-tert-butylethylenediamine",
         "N, N'-ditertbutylethane-1,2-diamine",
         "di-tert-butyl-ethylenediamine"
     ],
@@ -14801,12 +14801,12 @@
         "PdCl₂(dppe)"
     ],
     "UZVCFUCLTZPZQD-UHFFFAOYSA-J": [
-        "Rh2(TPA)₄"
+        "Rh₂(TPA)₄"
     ],
     "FPWNLURCHDRMHC-UHFFFAOYSA-N": [
         "4-chloro-1,1'-biphenyl",
         "4-chlorobiphenyl",
-        "4-chloro-1,1\u2019-biphenyl"
+        "4-chloro-1,1’-biphenyl"
     ],
     "ZHXUWDPHUQHFOV-UHFFFAOYSA-N": [
         "2,5-dibromopyridine"
@@ -14847,7 +14847,7 @@
         "difluoroacetic acid"
     ],
     "COGMCBFILULEOS-UHFFFAOYSA-M": [
-        "SIMes\u2022HCl",
+        "SIMes•HCl",
         "SIMes.HCl",
         "1,3-bis(2,4,6-trimethylphenyl)imidazolinium chloride"
     ],
@@ -14874,7 +14874,7 @@
         "ethoxyethyne"
     ],
     "VVDUZZGYBOWDSQ-UHFFFAOYSA-M": [
-        "Eschenmoser\u2019s salt",
+        "Eschenmoser’s salt",
         "N,N-dimethylmethyleneiminium iodide",
         "Eschenmoser's salt"
     ],
@@ -14935,7 +14935,7 @@
     ],
     "VWGJFGJEXBXEDJ-UHFFFAOYSA-N": [
         "Herrmann-Beller palladacycle",
-        "Herrmann\u2019s palladacycle"
+        "Herrmann’s palladacycle"
     ],
     "BGECSWGTDIXGJY-QDPGVEIFSA-N": [
         "L1c"
@@ -14955,7 +14955,7 @@
     "IWBOPFCKHIJFMS-UHFFFAOYSA-N": [
         "1,8-diamino-3,6-dioxaoctane",
         "1,2-bis(2-aminoethoxy)ethane",
-        "2,2\u2019-(ethylenedioxy)bis(ethylamine)"
+        "2,2’-(ethylenedioxy)bis(ethylamine)"
     ],
     "MXSVLWZRHLXFKH-UHFFFAOYSA-N": [
         "triphenylborane"
@@ -14988,7 +14988,7 @@
     "WLTCKEHCTUYJGI-UHFFFAOYSA-N": [
         "diethyl 2-aminomalonate",
         "diethyl aminomalonate",
-        "diethyl \u03b1-aminomalonate 7"
+        "diethyl α-aminomalonate 7"
     ],
     "RYFCSKVXWRJEOB-UHFFFAOYSA-N": [
         "dibenzyl malonate"
@@ -15012,7 +15012,7 @@
         "n-hexanoyl chloride"
     ],
     "UNMYWSMUMWPJLR-UHFFFAOYSA-L": [
-        "CaI2"
+        "CaI₂"
     ],
     "QWMJEUJXWVZSAG-UHFFFAOYSA-N": [
         "4-vinylphenylboronic acid",
@@ -15060,7 +15060,7 @@
     "JBBKWIFIXPBQGZ-UHFFFAOYSA-N": [
         "benzyl diazoacetate",
         "benzyl-2-diazoacetate",
-        "benzyl \u03b1-diazoacetate"
+        "benzyl α-diazoacetate"
     ],
     "OCJBOOLMMGQPQU-UHFFFAOYSA-N": [
         "1,4-dichlorobenzene",
@@ -15119,7 +15119,7 @@
         "2,4-dinitrobenzoic acid"
     ],
     "CZJUDVGPNLFUHC-UHFFFAOYSA-N": [
-        "Rh2(TPA)₄"
+        "Rh₂(TPA)₄"
     ],
     "CMPNAJZXUCOAPV-UHFFFAOYSA-N": [
         "tert-butyl((1-ethoxyvinyl)oxy)dimethylsilane",
@@ -15247,9 +15247,9 @@
         "3-furfural"
     ],
     "XKAUHHTXJNCNME-UHFFFAOYSA-N": [
-        "N,N\u2019-bis(tert-butoxycarbonyl)imidazolidine-2-thione",
-        "N,N\u2019-di(tert-butoxycarbonyl)imidazolidine-2-thione",
-        "N,N\u2019-Bis-Boc-imidazolidine-2-thione"
+        "N,N’-bis(tert-butoxycarbonyl)imidazolidine-2-thione",
+        "N,N’-di(tert-butoxycarbonyl)imidazolidine-2-thione",
+        "N,N’-Bis-Boc-imidazolidine-2-thione"
     ],
     "VMKIXWAFFVLJCK-UHFFFAOYSA-N": [
         "tert-butyl 3-oxoazetidine-1-carboxylate",
@@ -15266,7 +15266,7 @@
     "KMQLIDDEQAJAGJ-UHFFFAOYSA-N": [
         "4-oxo-4-phenylbutanoic acid",
         "3-benzoylpropionic acid",
-        "\u03b2-benzoyl propionic acid"
+        "β-benzoyl propionic acid"
     ],
     "SPSSDDOTEZKOOV-UHFFFAOYSA-N": [
         "2,3-dichloroquinoxaline"
@@ -15288,7 +15288,7 @@
     ],
     "IGVNJALYNQVQIT-UHFFFAOYSA-N": [
         "tert-butyl 2-bromo-2-methylpropanoate",
-        "tert-butyl \u03b1-bromoisobutyrate"
+        "tert-butyl α-bromoisobutyrate"
     ],
     "JOXIMZWYDAKGHI-UHFFFAOYSA-M": [
         "tosylate",
@@ -15319,7 +15319,7 @@
     ],
     "KIPSRYDSZQRPEA-UHFFFAOYSA-N": [
         "2,2,2-trifluoroethylamine",
-        "N2CHCF₃",
+        "N₂CHCF₃",
         "CF₃CH₂NH₂"
     ],
     "ITDYEQDMIWYKGE-UHFFFAOYSA-N": [
@@ -15355,7 +15355,7 @@
     "DFSGPCZWEQJJID-UHFFFAOYSA-N": [
         "phenylethyl azide 2p",
         "(2-azidoethyl)benzene",
-        "(2\u2010azidoethyl)benzene"
+        "(2‐azidoethyl)benzene"
     ],
     "MNQLVKDZYHGRNW-UHFFFAOYSA-N": [
         "diazoacetonitrile",
@@ -15381,7 +15381,7 @@
     "QMVPMAAFGQKVCJ-UHFFFAOYSA-N": [
         "citronellol",
         "3,7-dimethyloct-6-en-1-ol",
-        "\u03b2-citronellol"
+        "β-citronellol"
     ],
     "KLXJPQNHFFMLIG-UHFFFAOYSA-N": [
         "1-ethoxy-2,2,2-trifluoroethanol",
@@ -15419,7 +15419,7 @@
     ],
     "KQJQPCJDKBKSLV-UHFFFAOYSA-N": [
         "1-bromo-3-vinylbenzene",
-        "\u03b2-bromostyrene",
+        "β-bromostyrene",
         "3-bromostyrene"
     ],
     "XSGHLZBESSREDT-UHFFFAOYSA-N": [
@@ -15428,7 +15428,7 @@
         "methylenecyclopropane 1"
     ],
     "VOXZDWNPVJITMN-ZBRFXRBCSA-N": [
-        "\u03b2-Estradiol",
+        "β-Estradiol",
         "estradiol",
         "E2"
     ],
@@ -15437,7 +15437,7 @@
         "trisyl chloride"
     ],
     "UQCWXKSHRQJGPH-UHFFFAOYSA-M": [
-        "TBAF\u2022H₂O",
+        "TBAF•H₂O",
         "tetrabutylammonium fluoride hydrate",
         "TBAF.H₂O"
     ],
@@ -15447,7 +15447,7 @@
     ],
     "ADOHASQZJSJZBT-SANMLTNESA-N": [
         "Fmoc-Trp(Boc)-OH",
-        "Fmoc\u2013Trp(Boc)\u2013OH",
+        "Fmoc–Trp(Boc)–OH",
         "Fmoc-L-Trp(Boc)-OH"
     ],
     "GWHOGODUVLQCEB-UHFFFAOYSA-N": [
@@ -15514,7 +15514,7 @@
         "ethyl (S)-lactate"
     ],
     "WCWCUPRJZURESW-UHFFFAOYSA-K": [
-        "HAuCl₄\u20224H₂O"
+        "HAuCl₄•4H₂O"
     ],
     "KVTHPKXDLVYNCH-UHFFFAOYSA-N": [
         "(2-iodoethyl)benzene",
@@ -15550,7 +15550,7 @@
     ],
     "DDZWOTNZLQMMLD-UHFFFAOYSA-N": [
         "2-chloro-3-phenylpropanal",
-        "\u03b1-Chloro aldehyde"
+        "α-Chloro aldehyde"
     ],
     "PABWNBRGHOAFHW-UHFFFAOYSA-N": [
         "[bis(difluoroacetoxy)iodo]benzene"
@@ -15573,7 +15573,7 @@
     ],
     "FSPSELPMWGWDRY-UHFFFAOYSA-N": [
         "1-(m-tolyl)ethan-1-one",
-        "3\u2019-methylacetophenone",
+        "3’-methylacetophenone",
         "3-methylacetophenone"
     ],
     "QZNQSIHCDAGZIA-UHFFFAOYSA-N": [
@@ -15610,7 +15610,7 @@
     "SUGXZLKUDLDTKX-UHFFFAOYSA-N": [
         "2-Nitroacetophenone",
         "o-nitroacetophenone",
-        "2\u2019-nitroacetophenone"
+        "2’-nitroacetophenone"
     ],
     "PDDXOPNEMCREGN-UHFFFAOYSA-N": [
         "phosphomolybdic acid"
@@ -15652,7 +15652,7 @@
     ],
     "RHPVVNRNAHRJOQ-UHFFFAOYSA-N": [
         "di-p-tolylamine",
-        "p,p\u2019-ditolylamine"
+        "p,p’-ditolylamine"
     ],
     "SIAVMDKGVRXFAX-UHFFFAOYSA-N": [
         "4-carboxyphenylboronic acid",
@@ -15689,7 +15689,7 @@
         "diethyl 2-benzylidenemalonate"
     ],
     "XDJHFHZVOVAZDF-AHRKCFNPSA-M": [
-        "AD-mix-\u03b1",
+        "AD-mix-α",
         "AD-mix-\\u03b1"
     ],
     "JWZODIRSJJQOKY-UHFFFAOYSA-N": [
@@ -15711,7 +15711,7 @@
         "BrCFHCO(OEt)₂"
     ],
     "MFLMBWASGCAJGO-UHFFFAOYSA-L": [
-        "Na₂CO₃\u2022H₂O₂",
+        "Na₂CO₃•H₂O₂",
         "Na₂CO₃.1.5H₂O₂"
     ],
     "VXAOEHNEGSMNAU-UHFFFAOYSA-N": [
@@ -15774,8 +15774,8 @@
         "copper(II) acetylacetonate"
     ],
     "IPLONMMJNGTUAI-UHFFFAOYSA-M": [
-        "LiBr\u2022H₂O",
-        "LiBr\u00b7H₂O"
+        "LiBr•H₂O",
+        "LiBr·H₂O"
     ],
     "IHZAEIHJPNTART-UHFFFAOYSA-N": [
         "CFBr₃",
@@ -15808,7 +15808,7 @@
         "N-formylsaccharin"
     ],
     "GAEKPEKOJKCEMS-UHFFFAOYSA-N": [
-        "\u03b3-valerolactone",
+        "γ-valerolactone",
         "5-methyldihydrofuran-2(3H)-one"
     ],
     "GFNKTLQTQSALEJ-UHFFFAOYSA-N": [
@@ -15818,7 +15818,7 @@
     ],
     "OHZAHWOAMVVGEL-UHFFFAOYSA-N": [
         "2,2'-bithiophene",
-        "2,2\u2019-bithiophene",
+        "2,2’-bithiophene",
         "bithiophene"
     ],
     "ARAINKADEARZLZ-ZHACJKMWSA-N": [
@@ -15830,7 +15830,7 @@
     ],
     "ZJVAWPKTWVFKHG-UHFFFAOYSA-N": [
         "1-(4-methoxyphenyl)propan-1-one",
-        "4\u2019-methoxypropiophenone",
+        "4’-methoxypropiophenone",
         "4-methoxypropiophenone"
     ],
     "VOHWEKIUKSUIDT-UHFFFAOYSA-N": [
@@ -15851,7 +15851,7 @@
         "adamantyl azide"
     ],
     "WWUSOISWGYNXKX-UHFFFAOYSA-N": [
-        "(pin)B\u2013B(dan)",
+        "(pin)B–B(dan)",
         "Bpin-Bdan",
         "2-(4,4,5,5-tetramethyl-1,3,2-dioxaborolan-2-yl)-2,3-dihydro-1H-naphtho[1,8-de][1,3,2]diazaborinine"
     ],
@@ -15895,7 +15895,7 @@
         "N-allylbenzamide 1"
     ],
     "QROGIFZRVHSFLM-UHFFFAOYSA-N": [
-        "\u03b2-methylstyrene",
+        "β-methylstyrene",
         "methylstyrene"
     ],
     "BVXOPEOQUQWRHQ-UHFFFAOYSA-N": [
@@ -15912,7 +15912,7 @@
         "PFBA"
     ],
     "LBAQSKZHMLAFHH-UHFFFAOYSA-N": [
-        "HCl\u2022Et₂O",
+        "HCl•Et₂O",
         "HCl.Et₂O",
         "diethyl ether hydrochloride"
     ],
@@ -15922,7 +15922,7 @@
     ],
     "JUHORIMYRDESRB-UHFFFAOYSA-N": [
         "DBED",
-        "N,N\u2019-dibenzylethylenediamine"
+        "N,N’-dibenzylethylenediamine"
     ],
     "ADJJLNODXLXTIH-UHFFFAOYSA-N": [
         "1-adamantanethiol",
@@ -15953,7 +15953,7 @@
     ],
     "NHBKFPDJMAEDOS-UHFFFAOYSA-N": [
         "trifluoromethyl 4-methylbenzenesulfonate",
-        "1-azido-1\u03bbd][1,2]iodaoxol-3(1H)-one"
+        "1-azido-1λd][1,2]iodaoxol-3(1H)-one"
     ],
     "YXZFFTJAHVMMLF-UHFFFAOYSA-N": [
         "1-bromo-3-methylbutane",
@@ -15995,7 +15995,7 @@
         "4-trifluoromethylpyridine"
     ],
     "LGCKLDWLSVFMGL-UHFFFAOYSA-J": [
-        "K2PdCl₄"
+        "K₂PdCl₄"
     ],
     "MEXUFEQDCXZEON-UHFFFAOYSA-N": [
         "BCF"
@@ -16024,7 +16024,7 @@
         "(bromomethylene)dibenzene"
     ],
     "SHALBPKEGDBVKK-VOTSOKGWSA-N": [
-        "Danishefsky\u2019s diene",
+        "Danishefsky’s diene",
         "1-methoxy-3-trimethylsiloxy-1,3-butadiene",
         "trans-1-methoxy-3-trimethylsiloxy-1,3-butadiene"
     ],
@@ -16093,7 +16093,7 @@
     "JFCHSQDLLFJHOA-UHFFFAOYSA-N": [
         "dimethylsulfamoyl chloride",
         "N,N-dimethylsulfamoyl chloride",
-        "N,N-\u00ad\u2010dimethylsulfamoyl chloride"
+        "N,N-­‐dimethylsulfamoyl chloride"
     ],
     "PUPZLCDOIYMWBV-UHFFFAOYSA-N": [
         "BD",
@@ -16121,9 +16121,9 @@
         "1-methoxy-4-(3,3,3-trifluoroprop-1-en-2-yl)benzene"
     ],
     "IVPQRWLSGJFSTC-UHFFFAOYSA-M": [
-        "CuI\u2022P(OEt)₃",
-        "CuI\u2022(EtO)₃P",
-        "CuI\u00b7(EtO)₃P"
+        "CuI•P(OEt)₃",
+        "CuI•(EtO)₃P",
+        "CuI·(EtO)₃P"
     ],
     "MUXOBHXGJLMRAB-UHFFFAOYSA-N": [
         "dimethyl succinate"
@@ -16142,7 +16142,7 @@
     ],
     "KCKZIWSINLBROE-UHFFFAOYSA-N": [
         "2-tetralone",
-        "\u03b2-tetralone",
+        "β-tetralone",
         "3,4-dihydronaphthalen-2(1H)-one"
     ],
     "KMFJVYMFCAIRAN-UHFFFAOYSA-N": [
@@ -16150,7 +16150,7 @@
         "methyl-3-bromobenzoate"
     ],
     "OZJPLYNZGCXSJM-UHFFFAOYSA-N": [
-        "\u03b4-valerolactone",
+        "δ-valerolactone",
         "tetrahydro-2H-pyran-2-one",
         "valerolactone"
     ],
@@ -16352,7 +16352,7 @@
     ],
     "UIMPAOAAAYDUKQ-UHFFFAOYSA-N": [
         "4,4'-dimethoxy-1,1'-biphenyl",
-        "4,4\u2019-Dimethoxybiphenyl",
+        "4,4’-Dimethoxybiphenyl",
         "4,4'-Dimethoxybiphenyl"
     ],
     "ALGQVMMYDWQDEC-OWOJBTEDSA-N": [
@@ -16373,7 +16373,7 @@
         "TMSCH₂CN"
     ],
     "RMTGLTCLJRSHSB-UHFFFAOYSA-L": [
-        "NiCl₂\u2022Phen",
+        "NiCl₂•Phen",
         "phen/NiCl₂",
         "Ni(phen)Cl₂"
     ],
@@ -16436,10 +16436,10 @@
     "ZQLLPWMNXQYESO-UHFFFAOYSA-N": [
         "2,2-difluorovinyl tosylate",
         "2,2-difluorovinyl-4-methylbenzenesulfonate",
-        "2,2\u2010difluorovinyl tosylate"
+        "2,2‐difluorovinyl tosylate"
     ],
     "PAPBSGBWRJIAAV-UHFFFAOYSA-N": [
-        "\u03b5-caprolactone",
+        "ε-caprolactone",
         "caprolactone",
         "oxepan-2-one"
     ],
@@ -16463,18 +16463,18 @@
     ],
     "JCWIWBWXCVGEAN-UHFFFAOYSA-L": [
         "PdCl₂.dppf",
-        "PdCl₂\u2022dppf"
+        "PdCl₂•dppf"
     ],
     "CYOMBOLDXZUMBU-UHFFFAOYSA-K": [
         "CrCl₃(THF)₃"
     ],
     "PAORVUMOXXAMPL-UHFFFAOYSA-N": [
         "(S)-MTPA chloride",
-        "(S)- or (R)-(+)-\u03b1-methoxy-\u03b1-trifluoromethylphenylacetyl chloride",
+        "(S)- or (R)-(+)-α-methoxy-α-trifluoromethylphenylacetyl chloride",
         "(R)- or (S)-MTPA chloride"
     ],
     "LSQARZALBDFYQZ-UHFFFAOYSA-N": [
-        "4,4\u2019-difluorobenzophenone",
+        "4,4’-difluorobenzophenone",
         "bis(4-fluorophenyl)methanone",
         "4,4'-difluorobenzophenone"
     ],
@@ -16488,7 +16488,7 @@
         "2-cyanothiophene"
     ],
     "VCIOOYXESNFDKX-UHFFFAOYSA-M": [
-        "tris(2,2\u2019-bipyridyl)dichlororuthenium(II) hexahydrate",
+        "tris(2,2’-bipyridyl)dichlororuthenium(II) hexahydrate",
         "tris(2,2'-bipyridyl)dichlororuthenium(II) hexahydrate"
     ],
     "AYFJBMBVXWNYLT-UHFFFAOYSA-N": [
@@ -16590,7 +16590,7 @@
     "PBTPREHATAFBEN-UHFFFAOYSA-N": [
         "dipyrromethane",
         "di(1H-pyrrol-2-yl)methane",
-        "2,2\u2019-dipyrromethane"
+        "2,2’-dipyrromethane"
     ],
     "QVHJQCGUWFKTSE-RXMQYKEDSA-N": [
         "Boc-D-Ala-OH",
@@ -16609,15 +16609,15 @@
     "XDXCBCXNCQGZPG-UHFFFAOYSA-N": [
         "1-(2-iodophenyl)ethan-1-one",
         "2'-iodoacetophenone",
-        "2\u2019-iodoacetophenone"
+        "2’-iodoacetophenone"
     ],
     "LWJYMKDMGMOTSB-UHFFFAOYSA-L": [
-        "SnCl₂\u2022H₂O",
+        "SnCl₂•H₂O",
         "SnCl₂.H₂O"
     ],
     "DPMGLJUMNRDNMX-VXGBXAGGSA-N": [
         "(S,S)-t-Bu-Box",
-        "2,2\u2019-isopropylidenebis[(4S)-4-tert-butyl-2-oxazoline]",
+        "2,2’-isopropylidenebis[(4S)-4-tert-butyl-2-oxazoline]",
         "(4S,4'S)-2,2'-(propane-2,2-diyl)bis(4-(tert-butyl)-4,5-dihydrooxazole)"
     ],
     "OQPRTUBCROVGHA-UHFFFAOYSA-M": [
@@ -16625,11 +16625,11 @@
         "benzylzinc(II) bromide"
     ],
     "WLRQNTYCIFESRH-KJWGIZLLSA-N": [
-        "Crabtree\u2019s catalyst"
+        "Crabtree’s catalyst"
     ],
     "JJYKJUXBWFATTE-UHFFFAOYSA-N": [
-        "(R)-Mosher\u2019s acid",
-        "(S)-Mosher\u2019s acid",
+        "(R)-Mosher’s acid",
+        "(S)-Mosher’s acid",
         "MTPA"
     ],
     "MRBKEAMVRSLQPH-UHFFFAOYSA-N": [
@@ -16654,8 +16654,8 @@
         "triisobutylamine"
     ],
     "CRCZMUGSQXVQMM-UHFFFAOYSA-L": [
-        "NiI2\u2022xH₂O",
-        "NiI2.xH₂O"
+        "NiI₂•xH₂O",
+        "NiI₂.xH₂O"
     ],
     "HONIICLYMWZJFZ-UHFFFAOYSA-N": [
         "azetidine"
@@ -16677,15 +16677,15 @@
     "XEKTVXADUPBFOA-UHFFFAOYSA-N": [
         "bromopentafluorobenzene",
         "1-bromo-2,3,4,5,6-pentafluorobenzene",
-        "C6F5Br"
+        "C₆F₅Br"
     ],
     "ODCCJTMPMUFERV-UHFFFAOYSA-N": [
         "di-tert-butyl carbonate"
     ],
     "OXHOPZLBSSTTBU-UHFFFAOYSA-N": [
         "1,3-bis(bromomethyl)benzene",
-        "\u03b1,\u03b1\u2019-dibromo-m-xylene",
-        "\u03b1,\u03b1'-dibromo-m-xylene"
+        "α,α’-dibromo-m-xylene",
+        "α,α'-dibromo-m-xylene"
     ],
     "ABOYDMHGKWRPFD-UHFFFAOYSA-N": [
         "toluensulfonamide",
@@ -16715,7 +16715,7 @@
     "JJYKJUXBWFATTE-VIFPVBQESA-N": [
         "(S)-MTPA",
         "(S)-3,3,3-trifluoro-2-methoxy-2-phenylpropanoic acid",
-        "(S)-\u03b1-methoxy-\u03b1-(trifluoromethyl)phenylacetic acid"
+        "(S)-α-methoxy-α-(trifluoromethyl)phenylacetic acid"
     ],
     "YKZILVFGERURNZ-UHFFFAOYSA-N": [
         "(R)-STRIP",
@@ -16723,7 +16723,7 @@
     ],
     "NEHNMFOYXAPHSD-UHFFFAOYSA-N": [
         "citronellal",
-        "(\u00b1)-citronellal",
+        "(±)-citronellal",
         "citric"
     ],
     "NJGIAKIPSDCYAC-LURJTMIESA-N": [
@@ -16836,11 +16836,11 @@
     ],
     "VBTQNRFWXBXZQR-UHFFFAOYSA-N": [
         "N-bromoacetamide",
-        "\u03b1-bromo acetamide",
+        "α-bromo acetamide",
         "bromo acetamide"
     ],
     "AWDWVTKHJOZOBQ-UHFFFAOYSA-K": [
-        "EuCl₃\u20226H₂O",
+        "EuCl₃•6H₂O",
         "EuCl₃.6H₂O",
         "europium chloride hexahydrate"
     ],
@@ -16854,7 +16854,7 @@
     ],
     "CYTYCFOTNPOANT-UHFFFAOYSA-N": [
         "tetrachloroethylene",
-        "C2Cl₄",
+        "C₂Cl₄",
         "perchloroethylene"
     ],
     "UEQYFPCXXRUPKQ-UHFFFAOYSA-N": [
@@ -16871,7 +16871,7 @@
     ],
     "GLDQAMYCGOIJDV-UHFFFAOYSA-N": [
         "2,3-dihydroxybenzoic acid",
-        "2,3\u2010dihydroxybenzoic acid"
+        "2,3‐dihydroxybenzoic acid"
     ],
     "VKVDYPHLGLIXAG-VWPQPMDRSA-N": [
         "riboflavin tetraacetate"
@@ -16900,10 +16900,10 @@
         "10-undecene-1-ol"
     ],
     "RQQRAHKHDFPBMC-UHFFFAOYSA-L": [
-        "PbI2"
+        "PbI₂"
     ],
     "WVXJCTSZJWIBQT-UHFFFAOYSA-N": [
-        "IPy2BF₄",
+        "IPy₂BF₄",
         "bis(pyridine)iodonium(I) tetrafluoroborate",
         "Bis(pyridine)iodonium tetrafluroborate"
     ],
@@ -16936,7 +16936,7 @@
         "acrylate"
     ],
     "NYMJLNHIEKAQSD-UHFFFAOYSA-N": [
-        "GeCl₂\u2022dioxane",
+        "GeCl₂•dioxane",
         "GeCl₂.dioxane"
     ],
     "YWMRPVUMBTVUEX-UHFFFAOYSA-N": [
@@ -17059,7 +17059,7 @@
     "ZWDYRZGSCHGREX-BQYQJAHWSA-N": [
         "(E)-methyl 2-oxo-4-phenylbut-3-enoate",
         "methyl (E)-2-oxo-4-phenylbut-3-enoate",
-        "\u03b2,\u03b3-unsaturated \u03b1-ketoester"
+        "β,γ-unsaturated α-ketoester"
     ],
     "SJZKULRDWHPHGG-UHFFFAOYSA-N": [
         "1-benzyl-4-piperidone",
@@ -17089,7 +17089,7 @@
     ],
     "HTMHEICBCHCWAU-UHFFFAOYSA-O": [
         "4-acetamido-2,2,6,6-tetramethylpiperidine-1-oxoammonium tetrafluoroborate",
-        "Bobbitt\u2019s salt",
+        "Bobbitt’s salt",
         "Bobbitt's Salt"
     ],
     "ZCQWOFVYLHDMMC-UHFFFAOYSA-N": [
@@ -17108,8 +17108,8 @@
         "2-(1-methylhydrazinyl)pyridine"
     ],
     "URAZVWXGWMBUGJ-UHFFFAOYSA-N": [
-        "iPr₂NH\u00b7HCl",
-        "iPr₂NH\u2022HCl"
+        "iPr₂NH·HCl",
+        "iPr₂NH•HCl"
     ],
     "DGJMPUGMZIKDRO-UHFFFAOYSA-N": [
         "cyanoacetamide",
@@ -17233,7 +17233,7 @@
         "vinyltriethoxysilane"
     ],
     "KYIKRXIYLAGAKQ-UHFFFAOYSA-N": [
-        "1,1\u2019-azobis(cyclohexanecarbonitrile)",
+        "1,1’-azobis(cyclohexanecarbonitrile)",
         "ACHN",
         "1,1'-azobis(cyclohexane-1-carbonitrile)"
     ],
@@ -17263,7 +17263,7 @@
         "3,5-bis(trifluoromethyl)benzaldehyde"
     ],
     "AQTSNKXEMWZOGA-UHFFFAOYSA-L": [
-        "Herrmann\u2019s catalyst"
+        "Herrmann’s catalyst"
     ],
     "YAXWOADCWUUUNX-UHFFFAOYSA-N": [
         "tetramethylpiperidine",
@@ -17308,7 +17308,7 @@
         "sodium-2-ethyl-hexanoate"
     ],
     "IYSYLWYGCWTJSG-XFXZXTDPSA-N": [
-        "N-tert-butyl-\u03b1-phenylnitrone",
+        "N-tert-butyl-α-phenylnitrone",
         "N-tert-butyl-1-phenylmethanimine oxide"
     ],
     "VHNQIURBCCNWDN-UHFFFAOYSA-N": [
@@ -17330,7 +17330,7 @@
     ],
     "HRSADIZPZPRZEI-UHFFFAOYSA-L": [
         "Zn(OAc)₂.H₂O",
-        "Zn(OAc)₂\u2022H₂O",
+        "Zn(OAc)₂•H₂O",
         "zinc acetate monohydrate"
     ],
     "QMLPJDVGNRHGJQ-UHFFFAOYSA-N": [
@@ -17359,7 +17359,7 @@
     ],
     "BYNRYSMTUCTWQO-UHFFFAOYSA-N": [
         "2-bromo-2,2-difluoro-N-phenylacetamide",
-        "2-bromo-2,2-difluoro-N-phenylacetamide 2\u2019"
+        "2-bromo-2,2-difluoro-N-phenylacetamide 2’"
     ],
     "LRTFPLFDLJYEKT-UHFFFAOYSA-N": [
         "4-isopropylaniline",
@@ -17403,7 +17403,7 @@
         "CHCl₂COCl"
     ],
     "XMVONEAAOPAGAO-UHFFFAOYSA-N": [
-        "Na₂WO4",
+        "Na₂WO₄",
         "sodium tungstate"
     ],
     "XGNXYCFREOZBOL-UHFFFAOYSA-N": [
@@ -17480,7 +17480,7 @@
         "maleic acid"
     ],
     "CYAYKKUWALRRPA-RGDJUOJXSA-N": [
-        "2,3,4,6-tetra-O-acetyl-\u03b1-D-glucopyranosyl bromide",
+        "2,3,4,6-tetra-O-acetyl-α-D-glucopyranosyl bromide",
         "2,3,4,6-tetra-O-acetyl-alpha-D-glucopyranosyl bromide",
         "(2R,3R,4S,5R,6R)-2-(acetoxymethyl)-6-bromotetrahydro-2H-pyran-3,4,5-triyl triacetate"
     ],
@@ -17538,8 +17538,8 @@
         "ethylene sulfonyl fluoride 2a"
     ],
     "MSAWZQGWWXUOPS-UHFFFAOYSA-L": [
-        "L1\u2022NiBr₂",
-        "NiBr₂\u2022L1"
+        "L₁•NiBr₂",
+        "NiBr₂•L₁"
     ],
     "BSCCSDNZEIHXOK-UHFFFAOYSA-N": [
         "phenyl carbamate"
@@ -17603,7 +17603,7 @@
     ],
     "JUJWROOIHBZHMG-RALIUCGRSA-N": [
         "pyridine-d₅",
-        "C5d₅N"
+        "C₅d₅N"
     ],
     "BKLJUYPLUWUEOQ-UHFFFAOYSA-N": [
         "6-bromo-2-aminopyridine",
@@ -17616,9 +17616,9 @@
         "mesityl(phenyl)iodonium triflouromethanesulfonate"
     ],
     "PZDAAZQDQJGXSW-UHFFFAOYSA-N": [
-        "4,4\u2019-difluorobiphenyl",
+        "4,4’-difluorobiphenyl",
         "4,4'-difluoro-1,1'-biphenyl",
-        "4,4\u2019-difluoro-1,1\u2019-biphenyl"
+        "4,4’-difluoro-1,1’-biphenyl"
     ],
     "XQZYPMVTSDWCCE-UHFFFAOYSA-N": [
         "phthalonitrile",
@@ -17631,7 +17631,7 @@
         "m-chlorobenzoyl chloride"
     ],
     "FAMGJMYDHOESPR-UHFFFAOYSA-M": [
-        "MeLi\u2022LiBr",
+        "MeLi•LiBr",
         "MeLi.LiBr"
     ],
     "LDTMPQQAWUMPKS-OWOJBTEDSA-N": [
@@ -17739,9 +17739,9 @@
         "(bromomethyl)benzonitrile"
     ],
     "UTYXJYFJPBYDKY-UHFFFAOYSA-N": [
-        "K4[Fe(CN)₆].3H₂O",
+        "K₄[Fe(CN)₆].3H₂O",
         "potassium hexacyanoferrate (II) trihydrate",
-        "K4[Fe(CN)₆]\u20223H₂O"
+        "K₄[Fe(CN)₆]•3H₂O"
     ],
     "WPDAVTSOEQEGMS-UHFFFAOYSA-N": [
         "9,10-dihydroanthracene"
@@ -17816,8 +17816,8 @@
         "2-amino-benzo[de]isoquinoline-1,3-dione"
     ],
     "CTRICEWDSISGPV-UHFFFAOYSA-L": [
-        "CuF2\u20222H₂O",
-        "CuF2.2H₂O"
+        "CuF₂•2H₂O",
+        "CuF₂.2H₂O"
     ],
     "ORZPLLPBZHORSD-LWTKGLMZSA-K": [
         "Mn(dpm)₃"
@@ -17849,7 +17849,7 @@
     ],
     "LCFXLZAXGXOXAP-DAXSKMNVSA-N": [
         "OxymaPure",
-        "OxymaPure\u2122"
+        "OxymaPure™"
     ],
     "ZPQOPVIELGIULI-UHFFFAOYSA-N": [
         "1,3-dichlorobenzene"
@@ -17871,8 +17871,8 @@
         "chiral squaramide"
     ],
     "QKPLRMLTKYXDST-NSEZLWDYSA-N": [
-        "D-glucosamine\u00b7HCl",
-        "D-glucosamine\u2022HCl",
+        "D-glucosamine·HCl",
+        "D-glucosamine•HCl",
         "D-glucosamine hydrochloride"
     ],
     "XEKVBIXIBCYLRT-RSAXXLAASA-N": [
@@ -17990,7 +17990,7 @@
     ],
     "RZTDESRVPFKCBH-UHFFFAOYSA-N": [
         "4,4'-dimethyl-1,1'-biphenyl",
-        "4,4\u2019-Dimethylbiphenyl",
+        "4,4’-Dimethylbiphenyl",
         "4,4'-Dimethylbiphenyl"
     ],
     "SFXUWNMDTWQSHE-UHFFFAOYSA-M": [
@@ -18029,7 +18029,7 @@
         "3,5-bis(trifluoromethyl)benzoyl chloride"
     ],
     "ZZCNKSMCIZCVDR-UHFFFAOYSA-N": [
-        "BaMnO4",
+        "BaMnO₄",
         "barium manganate"
     ],
     "IBRSSZOHCGUTHI-UHFFFAOYSA-N": [
@@ -18038,7 +18038,7 @@
     "SBNYNTYNEJTMQO-UHFFFAOYSA-N": [
         "IPNBSH",
         "N-isopropylidene-N'-2-nitrobenzenesulfonyl hydrazine",
-        "N-isopropylidene-N\u2019-2-nitrobenzenesulfonyl hydrazine"
+        "N-isopropylidene-N’-2-nitrobenzenesulfonyl hydrazine"
     ],
     "QAPGHLJQIVDTPT-UHFFFAOYSA-N": [
         "tris(3-chlorophenyl)phosphine",
@@ -18120,7 +18120,7 @@
         "di(2-pyridyl)ketone"
     ],
     "CZDYPVPMEAXLPK-UHFFFAOYSA-N": [
-        "SiMe4",
+        "SiMe₄",
         "tetramethylsilane"
     ],
     "FABNGXSCLHXUOH-UHFFFAOYSA-N": [
@@ -18182,12 +18182,12 @@
         "2-(1H-indol-3-yl)ethanol"
     ],
     "HQJQYILBCQPYBI-UHFFFAOYSA-N": [
-        "4,4\u2019-dibromobiphenyl",
+        "4,4’-dibromobiphenyl",
         "4,4'-dibromo-1,1'-biphenyl",
         "4,4'-dibromobiphenyl"
     ],
     "BBZVTTKMXRPMHZ-UHFFFAOYSA-N": [
-        "iC3F7I",
+        "iC₃F₇I",
         "perfluoroisopropyl iodide",
         "2-iodoperfluoropropane"
     ],
@@ -18238,15 +18238,15 @@
         "2-naphthylsulfonyl chloride"
     ],
     "OTYBMLCTZGSZBG-UHFFFAOYSA-L": [
-        "K2SO₄",
+        "K₂SO₄",
         "potassium sulfate"
     ],
     "PQIYSSSTRHVOBW-UHFFFAOYSA-N": [
         "3-bromopropylamine hydrobromide"
     ],
     "UNCSHEXKNKZGLL-UHFFFAOYSA-N": [
-        "H2/CO",
-        "CO/H2"
+        "H₂/CO",
+        "CO/H₂"
     ],
     "ORLGLBZRQYOWNA-UHFFFAOYSA-N": [
         "4-methylpyridin-2-amine",
@@ -18254,7 +18254,7 @@
         "2-amino-4-picoline"
     ],
     "JHNLZOVBAQWGQU-UHFFFAOYSA-N": [
-        "Eaton\u2019s reagent",
+        "Eaton’s reagent",
         "Eaton's Reagent"
     ],
     "ITJHLZVYLDBFOJ-UHFFFAOYSA-N": [
@@ -18303,7 +18303,7 @@
     "UUWJBXKHMMQDED-UHFFFAOYSA-N": [
         "1-(3-chlorophenyl)ethan-1-one",
         "3-chloroacetophenone",
-        "3\u2019-chloroacetophenone"
+        "3’-chloroacetophenone"
     ],
     "RZEKVGVHFLEQIL-UHFFFAOYSA-N": [
         "celecoxib",
@@ -18335,7 +18335,7 @@
         "divinyl ketone"
     ],
     "QYPNWAJHPLUZNN-UHFFFAOYSA-M": [
-        "Vaska\u2019s catalyst",
+        "Vaska’s catalyst",
         "carbonylchlorobis(triphenylphosphine)iridium(I)"
     ],
     "MSLICLMCQYQNPK-UHFFFAOYSA-N": [
@@ -18354,7 +18354,7 @@
         "3-trifluoromethylbenzaldehyde"
     ],
     "HHDPJRSXPOGIOP-UHFFFAOYSA-L": [
-        "MnBr₂\u20224H₂O"
+        "MnBr₂•4H₂O"
     ],
     "SOSPMXMEOFGPIM-UHFFFAOYSA-N": [
         "3,5-dibromopyridine"
@@ -18399,7 +18399,7 @@
     "ARKIFHPFTHVKDT-UHFFFAOYSA-N": [
         "3-nitroacetophenone",
         "1-(3-nitrophenyl)ethan-1-one",
-        "3\u2019-nitroacetophenone"
+        "3’-nitroacetophenone"
     ],
     "CDEIGFNQWMSEKG-UHFFFAOYSA-M": [
         "HgO"
@@ -18482,7 +18482,7 @@
     ],
     "RCEYECLYTUBRRO-ZHACJKMWSA-N": [
         "(E)-2'-iodochalcone",
-        "(E)-2\u2019-iodochalcone",
+        "(E)-2’-iodochalcone",
         "E-2'-iodochalcone 1"
     ],
     "HKAWVLHXUZNLPP-HHHXNRCGSA-N": [
@@ -18538,7 +18538,7 @@
         "potassium osmate"
     ],
     "ZWPWLKXZYNXATK-UHFFFAOYSA-N": [
-        "4,4\u2019-dimethylbenzophenone",
+        "4,4’-dimethylbenzophenone",
         "di-p-tolylmethanone",
         "4,4'-dimethylbenzophenone"
     ],
@@ -18568,7 +18568,7 @@
     ],
     "JKQUXSHVQGBODD-VOTSOKGWSA-N": [
         "(E)-1-methoxy-4-(2-nitrovinyl)benzene",
-        "trans-4-methoxy-\u03b2-nitrostyrene"
+        "trans-4-methoxy-β-nitrostyrene"
     ],
     "LDYBFSGEBHSTOQ-UHFFFAOYSA-N": [
         "N-benzylprop-2-yn-1-amine",
@@ -18610,8 +18610,8 @@
     ],
     "ZODAOVNETBTTJX-UHFFFAOYSA-N": [
         "bis(4-methoxyphenyl)methanol",
-        "4,4\u2019-dimethoxydiphenylmethanol",
-        "4,4\u2019-dimethoxybenzhydrol"
+        "4,4’-dimethoxydiphenylmethanol",
+        "4,4’-dimethoxybenzhydrol"
     ],
     "BMTUFQKYWWLCLC-UHFFFAOYSA-K": [
         "tris(tetrabutylammonium) hydrogen pyrophosphate",
@@ -18636,7 +18636,7 @@
     ],
     "JSSIQFXOSWLAGA-UHFFFAOYSA-N": [
         "(r)-DTBM-MeOBIPHEP",
-        "(R)-(6,6\u2019-dimethoxybiphenyl-2,2\u2019-diyl)bis[bis(3,5-di-tert-butyl-4-methoxyp-phenyl)phosphine]",
+        "(R)-(6,6’-dimethoxybiphenyl-2,2’-diyl)bis[bis(3,5-di-tert-butyl-4-methoxyp-phenyl)phosphine]",
         "(S)-DTBM-MeOBIPHEP"
     ],
     "ZADMVBSHDANSRO-UHFFFAOYSA-N": [
@@ -18698,8 +18698,8 @@
     ],
     "VZUNGTLZRAYYDE-UHFFFAOYSA-N": [
         "1-methyl-3-nitro-1-nitrosoguanidine",
-        "N-methyl-N-nitroso-N\u2019-nitroguanidine",
-        "N-methyl-N\u2019-nitro-N-nitrosoguanidine"
+        "N-methyl-N-nitroso-N’-nitroguanidine",
+        "N-methyl-N’-nitro-N-nitrosoguanidine"
     ],
     "MYSWGUAQZAJSOK-UHFFFAOYSA-N": [
         "ciprofloxacin"
@@ -18719,7 +18719,7 @@
     "PGAVKCOVUIYSFO-XVFCMESISA-N": [
         "UTP",
         "uridine 5'-triphosphate",
-        "uridine 5\u2019-triphosphate"
+        "uridine 5’-triphosphate"
     ],
     "YNBADRVTZLEFNH-UHFFFAOYSA-N": [
         "methyl nicotinate"
@@ -18739,7 +18739,7 @@
         "1-dodecanenitrile"
     ],
     "HVOYZOQVDYHUPF-UHFFFAOYSA-N": [
-        "N,N,N\u2019-trimethylethylenediamine",
+        "N,N,N’-trimethylethylenediamine",
         "N,N,N'-trimethylethylenediamine",
         "trimethylethylenediamine"
     ],
@@ -18751,7 +18751,7 @@
         "aldehyde 2"
     ],
     "CHNLPLHJUPMEOI-UHFFFAOYSA-N": [
-        "BF₃\u2022THF",
+        "BF₃•THF",
         "BF₃.THF"
     ],
     "JYVLIDXNZAXMDK-UHFFFAOYSA-N": [
@@ -18764,7 +18764,7 @@
     ],
     "TVBIVRGNYNBFCD-UHFFFAOYSA-N": [
         "NEt₃.HOTf",
-        "Et₃N\u2022TfOH"
+        "Et₃N•TfOH"
     ],
     "HEYCQWFVCHJARW-UHFFFAOYSA-N": [
         "2-((2-azidoallyl)oxy)-1,3,5-tribromobenzene"
@@ -18791,7 +18791,7 @@
         "4-chlorophenyl trifluoromethanesulfonate"
     ],
     "IYRWEQXVUNLMAY-UHFFFAOYSA-N": [
-        "CoF2"
+        "CoF₂"
     ],
     "ZLNFACCFYUFTLD-UHFFFAOYSA-N": [
         "(4-(ethoxycarbonyl)phenyl)boronic acid",
@@ -18811,7 +18811,7 @@
         "3-fluoroiodobenzene"
     ],
     "IGELFKKMDLGCJO-UHFFFAOYSA-N": [
-        "XeF2"
+        "XeF₂"
     ],
     "XNLICIUVMPYHGG-UHFFFAOYSA-N": [
         "2-pentanone",
@@ -18861,7 +18861,7 @@
     ],
     "OZECFIJVSAYAPH-UHFFFAOYSA-N": [
         "N,N-diisopropylethylamine hydrochloride",
-        "DIPEA\u2022HCl",
+        "DIPEA•HCl",
         "diisopropylethylamine hydrochloride"
     ],
     "GCDPERPXPREHJF-UHFFFAOYSA-N": [
@@ -19093,7 +19093,7 @@
     ],
     "NHYQAKNGPZLNOH-UHFFFAOYSA-N": [
         "K-Selectride",
-        "K-Selectride\u2122"
+        "K-Selectride™"
     ],
     "JLNGEXDJAQASHD-UHFFFAOYSA-N": [
         "N,N-diethylbenzamide",
@@ -19212,8 +19212,8 @@
         "acetyltrimethylsilane"
     ],
     "XEWVCDMEDQYCHX-UHFFFAOYSA-N": [
-        "Et₃N\u2022HI",
-        "Et₃N\u00b7HI"
+        "Et₃N•HI",
+        "Et₃N·HI"
     ],
     "SBEMOANGDSSPJY-UHFFFAOYSA-N": [
         "1-Cyclohexenyloxy-trimethylsilan",
@@ -19248,7 +19248,7 @@
     "NLJMYIDDQXHKNR-UHFFFAOYSA-K": [
         "trisodium citrate dihydrate",
         "sodium citrate dihydrate",
-        "C6H5Na3O7\u20222H₂O"
+        "C₆H₅Na₃O₇•2H₂O"
     ],
     "DFPAKSUCGFBDDF-UHFFFAOYSA-N": [
         "nicotinamide"
@@ -19320,12 +19320,12 @@
     ],
     "UUNDOZHZUCBSPK-UHFFFAOYSA-N": [
         "Pd(OH)₂-C",
-        "Pd(OH)₂\u2013C"
+        "Pd(OH)₂–C"
     ],
     "WCBJRPHWASOILH-UHFFFAOYSA-N": [
         "N-(2-iodophenyl)-N-methylmethacrylamide",
         "N-(2-iodophenyl)-N-methyl-2-methylacrylamide",
-        "N-\u00ad\u2010(2-\u00ad\u2010iodoaryl)acrylamide"
+        "N-­‐(2-­‐iodoaryl)acrylamide"
     ],
     "FUMMYHVKFAHQST-UHFFFAOYSA-N": [
         "1-bromo-2,4,6-triisopropylbenzene",
@@ -19338,7 +19338,7 @@
     "IHPDTPWNFBQHEB-UHFFFAOYSA-N": [
         "1,2-diphenylethane-1,2-diol",
         "hydrobenzoin",
-        "(\u00b1)-1,2-diphenylethane-1,2-diol"
+        "(±)-1,2-diphenylethane-1,2-diol"
     ],
     "AZYGEWXDKHFOKB-UHFFFAOYSA-N": [
         "B-chlorocatecholborane",
@@ -19496,7 +19496,7 @@
     ],
     "UQJXXWHAJKRDKY-UHFFFAOYSA-N": [
         "1,3-bis(tert-butoxycarbonyl)-2-methyl-2-thiopseudourea",
-        "N,N\u2018-bis-(tert-butoxycarbonyl)-S-methylisothiourea",
+        "N,N‘-bis-(tert-butoxycarbonyl)-S-methylisothiourea",
         "1,3-bis(tert-butoxycarbonyl)-2-methyl-2-thipseudourea"
     ],
     "CDPKJZJVTHSESZ-UHFFFAOYSA-N": [
@@ -19575,12 +19575,12 @@
         "2-ethyl-1-hexylamine"
     ],
     "QMATYTFXDIWACW-UHFFFAOYSA-N": [
-        "2\u2019-fluoroacetophenone",
+        "2’-fluoroacetophenone",
         "1-(2-fluorophenyl)ethan-1-one",
         "1-(2-fluorophenyl)ethanone"
     ],
     "KIKATWFLYDKKOL-UHFFFAOYSA-N": [
-        "2,2\u2019-Bipyridine N-Oxide",
+        "2,2’-Bipyridine N-Oxide",
         "2,2'-dipyridyl N-oxide"
     ],
     "JAAJQSRLGAYGKZ-UHFFFAOYSA-N": [
@@ -19623,7 +19623,7 @@
     "MOHRGTBNEJKFMB-IBGZPJMESA-N": [
         "(S)-2-(bis(3,5-bis(trifluoromethyl)phenyl) ((trimethylsilyl)oxy)methyl) pyrrolidine",
         "(2S)-2-[Bis[3,5-bis(trifluoromethyl)phenyl]-[(trimethylsilyl)oxy]methyl]pyrrolidine",
-        "(R)-\u03b1-\u03b1-bis[3,5-bis(trifluoromethyl)phenyl]-2-pyrrolidinemethanol trimethylsilyl ether"
+        "(R)-α-α-bis[3,5-bis(trifluoromethyl)phenyl]-2-pyrrolidinemethanol trimethylsilyl ether"
     ],
     "BZQRBEVTLZHKEA-UHFFFAOYSA-L": [
         "magnesium triflate",
@@ -19643,7 +19643,7 @@
     "HFACYLZERDEVSX-UHFFFAOYSA-N": [
         "benzidine",
         "4,4'-diaminobiphenyl",
-        "4,4\u2019-diaminobiphenyl"
+        "4,4’-diaminobiphenyl"
     ],
     "YWNJQQNBJQUKME-UHFFFAOYSA-N": [
         "2-bromo-5-methylpyridine"
@@ -19726,7 +19726,7 @@
     ],
     "BSZGXCFUKRLAAN-UHFFFAOYSA-N": [
         "2-phenylprop-2-en-1-ol",
-        "\u03b2-phenyl allyl alcohol",
+        "β-phenyl allyl alcohol",
         "2-phenyl-2-propen-1-ol"
     ],
     "FGWRMMTYIZKYMA-UHFFFAOYSA-N": [
@@ -19751,7 +19751,7 @@
         "4-(difluoroiodo)toluene"
     ],
     "LNJXVUXPFZKMNF-UHFFFAOYSA-K": [
-        "IrCl₃\u20223H₂O",
+        "IrCl₃•3H₂O",
         "IrCl₃.3H₂O"
     ],
     "DSBPAFWXMCKFIM-BSOLPCOYSA-N": [
@@ -19801,7 +19801,7 @@
         "(R)-5,5-diphenyl-2-methyl-3,4-propano-1,3,2-oxazaborolidine"
     ],
     "PXJJSXABGXMUSU-UHFFFAOYSA-N": [
-        "S2Cl₂",
+        "S₂Cl₂",
         "disulfur dichloride",
         "sulfur monochloride"
     ],
@@ -19817,14 +19817,14 @@
     "HBOMLICNUCNMMY-XLPZGREQSA-N": [
         "AZT",
         "zidovudine",
-        "3\u2019-azido-3\u2019-deoxythymidine"
+        "3’-azido-3’-deoxythymidine"
     ],
     "QABLOFMHHSOFRJ-UHFFFAOYSA-N": [
         "methyl chloroacetate",
         "methyl 2-chloroacetate"
     ],
     "KMUONIBRACKNSN-UHFFFAOYSA-N": [
-        "K2Cr2O7",
+        "K₂Cr₂O₇",
         "potassium dichromate"
     ],
     "OFHHDSQXFXLTKC-UHFFFAOYSA-N": [
@@ -19850,13 +19850,13 @@
     ],
     "JSPNBERPFLONRX-VOTSOKGWSA-N": [
         "(E)-1-methyl-4-(2-nitrovinyl)benzene",
-        "trans-4-methyl-\u03b2-nitrostyrene",
+        "trans-4-methyl-β-nitrostyrene",
         "1-methyl-4-(2-nitrovinyl)benzene"
     ],
     "WCFJUSRQHZPVKY-UHFFFAOYSA-N": [
         "3-((tert-butoxycarbonyl)amino)propanoic acid",
-        "Boc-\u03b2-Ala-OH",
-        "Boc-\u03b2-alanine"
+        "Boc-β-Ala-OH",
+        "Boc-β-alanine"
     ],
     "OOLUVSIJOMLOCB-UHFFFAOYSA-N": [
         "[2.2]paracyclophane"
@@ -19876,7 +19876,7 @@
     ],
     "CYAYKKUWALRRPA-HTOAHKCRSA-N": [
         "(2R,3S,4S,5R,6R)-2-(acetoxymethyl)-6-bromotetrahydro-2H-pyran-3,4,5-triyl triacetate",
-        "2,3,4,6-tetra-O-acetyl-\u03b1-D-galactopyranosyl bromide",
+        "2,3,4,6-tetra-O-acetyl-α-D-galactopyranosyl bromide",
         "2,3,4,6-tetra-O-acetyl-alpha-D-galactopyranosyl bromide"
     ],
     "IQFYYKKMVGJFEH-XLPZGREQSA-N": [
@@ -19926,7 +19926,7 @@
         "Tm(OTf)₃"
     ],
     "YXCZINQUDVVACP-UHFFFAOYSA-N": [
-        "4-MeOC6H4N2BF₄"
+        "4-MeOC₆H₄N₂BF₄"
     ],
     "OVGORFFCBUIFIA-UHFFFAOYSA-N": [
         "PC 1",
@@ -19990,7 +19990,7 @@
     "USPWUOFNOTUBAD-UHFFFAOYSA-N": [
         "octafluorotoluene",
         "1,2,3,4,5-pentafluoro-6-(trifluoromethyl)benzene",
-        "C7F8"
+        "C₇F₈"
     ],
     "KYVBUUNCHXRYOS-UHFFFAOYSA-N": [
         "1,1-diphenylprop-1-ene",
@@ -20013,8 +20013,8 @@
     ],
     "VGIVLIHKENZQHQ-UHFFFAOYSA-N": [
         "bis(dimethylamino)methane",
-        "N,N,N\u2019,N\u2019-tetramethyldiaminomethane",
-        "N,N,N\u2019,N\u2019-tetramethylmethanediamine"
+        "N,N,N’,N’-tetramethyldiaminomethane",
+        "N,N,N’,N’-tetramethylmethanediamine"
     ],
     "NYICIIFSBJOBKE-NSCUHMNNSA-N": [
         "(E)-3-(4-methoxyphenyl)prop-2-en-1-ol"
@@ -20042,7 +20042,7 @@
     "XPDWGBQVDMORPB-UHFFFAOYSA-N": [
         "CF₃H",
         "fluoroform",
-        "CHF3"
+        "CHF₃"
     ],
     "PHSMPGGNMIPKTH-UHFFFAOYSA-K": [
         "Ce(OTf)₃"
@@ -20107,9 +20107,9 @@
         "2-bromo-benzo[d]thiazole"
     ],
     "XQFRJNBWHJMXHO-RRKCRQDMSA-N": [
-        "5-iodo-2\u2019-deoxyuridine",
+        "5-iodo-2’-deoxyuridine",
         "5-iodo-2'-deoxyuridine",
-        "2\u2019-Deoxy-5-iodouridine"
+        "2’-Deoxy-5-iodouridine"
     ],
     "FRYNVLNXFPVXQT-UHFFFAOYSA-N": [
         "1,2-bis(4-(trifluoromethyl)phenyl)ethyne",
@@ -20188,7 +20188,7 @@
     ],
     "OZVRXSGTNWILMN-UHFFFAOYSA-N": [
         "2,2'-diiodo-1,1'-biphenyl",
-        "2,2\u2019-diiodobiphenyl"
+        "2,2’-diiodobiphenyl"
     ],
     "PKUPAJQAJXVUEK-UHFFFAOYSA-N": [
         "2-phenoxyacetyl chloride",
@@ -20242,7 +20242,7 @@
     "LFQSCWFLJHTTHZ-WFVSFCRTSA-N": [
         "EtOD",
         "ethanol-OD",
-        "ethanol-d1"
+        "ethanol-d₁"
     ],
     "RIFKADJTWUGDOV-UHFFFAOYSA-N": [
         "1-cyclohexylethan-1-one",
