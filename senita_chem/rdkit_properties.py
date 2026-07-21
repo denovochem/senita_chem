@@ -1,4 +1,5 @@
 import os
+from collections import OrderedDict
 from concurrent.futures import ProcessPoolExecutor
 from math import ceil
 from typing import Dict, List, Optional
@@ -15,12 +16,42 @@ _taut_opts.tautomerRemoveSp3Stereo = False  # type: ignore[assignment]
 _taut_opts.tautomerRemoveBondStereo = False  # type: ignore[assignment]
 TAUTOMER_ENUMERATOR = rdMolStandardize.TautomerEnumerator(_taut_opts)
 
+_CACHE_MAXSIZE = 65536
+_cache: "OrderedDict[str, Optional[Dict]]" = OrderedDict()
 
-def compute_rdkit_properties(smiles: str) -> Optional[Dict]:
+
+def _cache_put(smiles: str, props: Optional[Dict]) -> None:
     """
-    Computes all RDKit physicochemical properties from a SMILES string.
+    Insert a SMILES → properties mapping into the shared cache, evicting the
+    least recently used entry when the cache is full.
 
-    Returns None if the SMILES is invalid.
+    Args:
+        smiles (str): The SMILES string to cache.
+        props (Optional[Dict]): The computed properties (or None if invalid).
+    """
+    _cache[smiles] = props
+    if len(_cache) > _CACHE_MAXSIZE:
+        _cache.popitem(last=False)
+
+
+def cache_clear() -> None:
+    """Clear the module-level LRU cache."""
+    _cache.clear()
+
+
+def _compute_rdkit_properties_impl(smiles: str) -> Optional[Dict]:
+    """
+    Compute all RDKit physicochemical properties from a SMILES string.
+
+    This is the uncached implementation used by both ``compute_rdkit_properties``
+    (single-call, cached) and ``compute_rdkit_properties_batch`` (parallel,
+    cache-aware).
+
+    Args:
+        smiles (str): A SMILES string to process.
+
+    Returns:
+        Optional[Dict]: Property dict if the SMILES is valid, otherwise None.
     """
     if not smiles or not smiles.strip():
         return None
@@ -80,24 +111,52 @@ def compute_rdkit_properties(smiles: str) -> Optional[Dict]:
     }
 
 
+def compute_rdkit_properties(smiles: str) -> Optional[Dict]:
+    """
+    Compute all RDKit physicochemical properties from a SMILES string, with
+    module-level LRU caching.
+
+    Args:
+        smiles (str): A SMILES string to process.
+
+    Returns:
+        Optional[Dict]: Property dict if the SMILES is valid, otherwise None.
+        Both valid results and None (invalid SMILES) are cached.
+    """
+    if smiles in _cache:
+        _cache.move_to_end(smiles)
+        return _cache[smiles]
+    result = _compute_rdkit_properties_impl(smiles)
+    _cache_put(smiles, result)
+    return result
+
+
 def compute_rdkit_properties_batch(
     smiles_list: List[str],
     max_workers: Optional[int] = None,
     chunksize: Optional[int] = None,
 ) -> List[Optional[Dict]]:
     """
-    Compute RDKit physicochemical properties for a list of SMILES strings in parallel.
+    Compute RDKit physicochemical properties for a list of SMILES strings in
+    parallel, with cache-aware dispatch.
 
     Uses a process pool to bypass the GIL — RDKit's Python wrappers hold the GIL
     for most operations, so threads provide little real parallelism. Separate
     processes give true CPU-level parallelism at the cost of IPC serialization.
 
+    Cache hits are served instantly from the module-level LRU cache; only cache
+    misses are dispatched to worker processes.  Results from workers are stored
+    back in the cache so subsequent calls (single or batch) benefit from prior
+    computations.
+
     Args:
-        smiles_list (List[str]): SMILES strings to process. Order is preserved in the output.
-        max_workers (Optional[int]): Maximum number of worker processes. Defaults to
-            ``min(len(smiles_list), os.cpu_count())``.
+        smiles_list (List[str]): SMILES strings to process. Order is preserved
+            in the output.
+        max_workers (Optional[int]): Maximum number of worker processes. Defaults
+            to ``min(len(misses), os.cpu_count() or 4)``.
         chunksize (Optional[int]): Number of SMILES per task chunk. Larger values
-            reduce IPC overhead. Defaults to ``ceil(len(smiles_list) / (4 * max_workers))``.
+            reduce IPC overhead. Defaults to
+            ``ceil(len(misses) / (4 * max_workers))``.
 
     Returns:
         List[Optional[Dict]]: One result per input SMILES, in the same order.
@@ -107,13 +166,34 @@ def compute_rdkit_properties_batch(
     if not smiles_list:
         return []
 
+    results: List[Optional[Dict]] = [None] * len(smiles_list)
+    misses: List[str] = []
+    miss_indices: List[int] = []
+
+    for i, smiles in enumerate(smiles_list):
+        if smiles in _cache:
+            _cache.move_to_end(smiles)
+            results[i] = _cache[smiles]
+        else:
+            misses.append(smiles)
+            miss_indices.append(i)
+
+    if not misses:
+        return results
+
     if max_workers is None:
-        max_workers = min(len(smiles_list), os.cpu_count() or 4)
+        max_workers = min(len(misses), os.cpu_count() or 4)
 
     if chunksize is None:
-        chunksize = max(1, ceil(len(smiles_list) / (4 * max_workers)))
+        chunksize = max(1, ceil(len(misses) / (4 * max_workers)))
 
     with ProcessPoolExecutor(max_workers=max_workers) as executor:
-        return list(
-            executor.map(compute_rdkit_properties, smiles_list, chunksize=chunksize)
+        computed = list(
+            executor.map(_compute_rdkit_properties_impl, misses, chunksize=chunksize)
         )
+
+    for idx, smiles, props in zip(miss_indices, misses, computed):
+        results[idx] = props
+        _cache_put(smiles, props)
+
+    return results

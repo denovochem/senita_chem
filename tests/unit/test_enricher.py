@@ -11,11 +11,11 @@ from senita_chem.enricher import enrich_compounds
 @pytest.fixture(autouse=True)
 def clear_caches() -> Iterator[None]:
     """Clear module-level LRU caches between tests."""
-    from senita_chem.enricher import _cached_compute_rdkit_properties
-    from senita_chem.iupac_naming import cached_name_smiles
+    from senita_chem.iupac_naming import cache_clear as iupac_cache_clear
+    from senita_chem.rdkit_properties import cache_clear as rdkit_cache_clear
 
-    _cached_compute_rdkit_properties.cache_clear()
-    cached_name_smiles.cache_clear()
+    rdkit_cache_clear()
+    iupac_cache_clear()
     yield
 
 
@@ -196,8 +196,9 @@ class TestEnrichCompoundsWithSmiles:
                 "senita_chem.enricher.batch_lookup_by_inchikeys", return_value={}
             ):
                 with patch(
-                    "senita_chem.iupac_naming.name_smiles", return_value="ethanol"
-                ) as mock_name:
+                    "senita_chem.enricher.batch_name_smiles",
+                    return_value={"CCO": "ethanol"},
+                ) as mock_batch:
                     results = enrich_compounds(
                         compounds=[{"smiles": "CCO", "name": ""}],
                         pubchem_method="api",
@@ -210,7 +211,7 @@ class TestEnrichCompoundsWithSmiles:
         assert record["pubchem_cid"] is None
         assert record["iupac_name"] == "ethanol"
         assert record["preferred_name"] == "ethanol"
-        mock_name.assert_called_once_with("CCO")
+        mock_batch.assert_called_once_with(["CCO"], max_workers=None, chunksize=None)
 
     def test_no_pubchem_data_multi_fragment(self, mock_rdkit_props: Dict) -> None:
         """enrich_compounds marks multi-fragment compounds as 'rdkit_only' when PubChem has no data."""
@@ -223,7 +224,8 @@ class TestEnrichCompoundsWithSmiles:
                 "senita_chem.enricher.batch_lookup_by_inchikeys", return_value={}
             ):
                 with patch(
-                    "senita_chem.iupac_naming.name_smiles", return_value="ethanol"
+                    "senita_chem.enricher.batch_name_smiles",
+                    return_value={"O.CCO": "ethanol"},
                 ):
                     results = enrich_compounds(
                         compounds=[{"smiles": "O.CCO", "name": ""}],
@@ -279,7 +281,8 @@ class TestEnrichCompoundsWithSmiles:
                 "senita_chem.enricher.batch_lookup_by_inchikeys", return_value={}
             ):
                 with patch(
-                    "senita_chem.iupac_naming.name_smiles", return_value="ethanol"
+                    "senita_chem.enricher.batch_name_smiles",
+                    return_value={"CCO": "ethanol", "O": "ethanol"},
                 ):
                     results = enrich_compounds(
                         compounds=[

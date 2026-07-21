@@ -1,8 +1,20 @@
 """Unit tests for senita_chem.rdkit_properties module."""
 
+from typing import Iterator
+
 import pytest
 
 from senita_chem.rdkit_properties import compute_rdkit_properties
+
+
+@pytest.fixture(autouse=True)
+def clear_cache() -> Iterator[None]:
+    """Clear the module-level LRU cache between tests."""
+    from senita_chem.rdkit_properties import cache_clear
+
+    cache_clear()
+    yield
+    cache_clear()
 
 
 class TestComputeRdkitProperties:

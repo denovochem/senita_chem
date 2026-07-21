@@ -1,11 +1,10 @@
 import json
 import logging
 import re
-from functools import lru_cache
 from importlib import resources
 from typing import Dict, List, Optional
 
-from senita_chem.iupac_naming import cached_name_smiles
+from senita_chem.iupac_naming import batch_name_smiles
 from senita_chem.local_pubchem_batch import batch_lookup_by_inchikeys_sqlite
 from senita_chem.pubchem_batch import batch_lookup_by_inchikeys
 from senita_chem.rdkit_properties import compute_rdkit_properties
@@ -20,12 +19,6 @@ INCHIKEY_PATTERN = re.compile(r"^[A-Z]{14}-[A-Z]{10}-[A-Z]$")
 logger = logging.getLogger(__name__)
 
 
-@lru_cache(maxsize=65536)
-def _cached_compute_rdkit_properties(smiles: str) -> Optional[Dict]:
-    """Compute RDKit properties with module-level LRU caching."""
-    return compute_rdkit_properties(smiles)
-
-
 def enrich_compounds(
     compounds: Optional[List[Dict]] = None,
     inchikeys: Optional[List[str]] = None,
@@ -33,6 +26,8 @@ def enrich_compounds(
     pubchem_method: str = "api",
     db_path: Optional[str] = None,
     precomputed_rdkit: Optional[Dict[str, Dict]] = None,
+    iupac_max_workers: Optional[int] = None,
+    iupac_chunksize: Optional[int] = None,
 ) -> Dict[str, Dict]:
     """
     Enrich compounds with RDKit properties, PubChem data, and OpenClatura IUPAC names.
@@ -43,12 +38,13 @@ def enrich_compounds(
 
     For each compound, RDKit properties are computed and a PubChem batch lookup is
     performed. When PubChem returns data, synonyms, CAS numbers, and PubChem metadata
-    are merged into the record. When PubChem has no data, OpenClatura's ``name_smiles``
-    (via the LRU-cached ``cached_name_smiles`` wrapper) is called on the canonical SMILES
-    to generate an IUPAC name, which is used as the
-    ``iupac_name``, ``preferred_name``, and sole entry in ``synonyms``. Single-fragment
-    compounds without PubChem data are marked ``enrichment_source='failed'``; multi-
-    fragment compounds are marked ``enrichment_source='rdkit_only'``.
+    are merged into the record. When PubChem has no data, IUPAC names are generated
+    in parallel via ``batch_name_smiles`` (using ``ProcessPoolExecutor``) on the
+    canonical SMILES of each compound lacking PubChem data. The generated name is used
+    as the ``iupac_name``, ``preferred_name``, and sole entry in ``synonyms``.
+    Single-fragment compounds without PubChem data are marked
+    ``enrichment_source='failed'``; multi-fragment compounds are marked
+    ``enrichment_source='rdkit_only'``.
 
     Args:
         compounds (Optional[List[Dict]]): List of dicts with ``smiles`` and ``name`` keys.
@@ -63,6 +59,12 @@ def enrich_compounds(
         precomputed_rdkit (Optional[Dict[str, Dict]]): Mapping from InChIKey to
             pre-computed RDKit properties. When provided, the RDKit computation pass
             is skipped for any compound whose InChIKey is found in this dict.
+        iupac_max_workers (Optional[int]): Maximum number of worker processes for
+            parallel IUPAC name generation. When None, defaults to
+            ``min(num_smiles, os.cpu_count() or 4)``.
+        iupac_chunksize (Optional[int]): Chunk size for IUPAC name generation.
+            When None, a reasonable default is computed from the batch size and
+            worker count.
 
     Returns:
         Dict[str, Dict]: Results keyed by InChIKey. Each value is a dict containing
@@ -125,7 +127,7 @@ def enrich_compounds(
                 continue
 
         # Fall back to computing RDKit properties
-        props: Optional[Dict] = _cached_compute_rdkit_properties(smiles)
+        props: Optional[Dict] = compute_rdkit_properties(smiles)
         if props is None:
             logger.warning(f"Invalid SMILES, skipping: {smiles[:60]}")
             continue
@@ -154,7 +156,25 @@ def enrich_compounds(
     else:
         raise ValueError(f"Invalid pubchem_method: {pubchem_method}")
 
-    # --- Step 3: Merge ---
+    # --- Step 3: Batch IUPAC name generation for compounds without PubChem data ---
+    smiles_needing_names: List[str] = []
+    for inchikey, rdkit_props in rdkit_batch.items():
+        if not pubchem_results.get(inchikey):
+            smiles = rdkit_props.get("canonical_smiles", "")
+            if smiles:
+                smiles_needing_names.append(smiles)
+
+    iupac_names: Dict[str, Optional[str]] = (
+        batch_name_smiles(
+            smiles_needing_names,
+            max_workers=iupac_max_workers,
+            chunksize=iupac_chunksize,
+        )
+        if smiles_needing_names
+        else {}
+    )
+
+    # --- Step 4: Merge ---
     for inchikey, rdkit_props in rdkit_batch.items():
         record = rdkit_props.copy()
         pubchem = pubchem_results.get(inchikey, {})
@@ -165,12 +185,9 @@ def enrich_compounds(
             record["synonyms"] = clean_synonyms_list(raw_synonyms, max_synonyms)
             record["cas"] = get_cas_nos_from_synonyms_list(raw_synonyms)
         else:
-            try:
-                generated_iupac_name = cached_name_smiles(
-                    rdkit_props["canonical_smiles"]
-                )
-            except Exception:
-                generated_iupac_name = ""
+            generated_iupac_name = (
+                iupac_names.get(rdkit_props.get("canonical_smiles", "")) or ""
+            )
 
             record["synonyms"] = [generated_iupac_name] if generated_iupac_name else []
             record["cas"] = []
