@@ -26,6 +26,7 @@
 !senita_chem/pubchem_batch.py
 !senita_chem/rdkit_properties.py
 !senita_chem/synonym_cleaning.py
+!senita_chem/iupac_naming.py
 !senita_chem/__init__.py
 
 !docs/
