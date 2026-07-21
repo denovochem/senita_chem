@@ -134,6 +134,10 @@ class TestComputeRdkitProperties:
             "num_defined_stereocenters",
             "num_undefined_stereocenters",
             "formal_charge",
+            "tautomer_inchikey",
+            "tautomer_smiles",
+            "original_canonical_smiles",
+            "original_inchikey",
         }
 
         assert result is not None

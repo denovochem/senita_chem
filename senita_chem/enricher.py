@@ -5,8 +5,7 @@ from functools import lru_cache
 from importlib import resources
 from typing import Dict, List, Optional
 
-from openclatura import name_smiles
-
+from senita_chem.iupac_naming import cached_name_smiles
 from senita_chem.local_pubchem_batch import batch_lookup_by_inchikeys_sqlite
 from senita_chem.pubchem_batch import batch_lookup_by_inchikeys
 from senita_chem.rdkit_properties import compute_rdkit_properties
@@ -45,7 +44,8 @@ def enrich_compounds(
     For each compound, RDKit properties are computed and a PubChem batch lookup is
     performed. When PubChem returns data, synonyms, CAS numbers, and PubChem metadata
     are merged into the record. When PubChem has no data, OpenClatura's ``name_smiles``
-    is called on the canonical SMILES to generate an IUPAC name, which is used as the
+    (via the LRU-cached ``cached_name_smiles`` wrapper) is called on the canonical SMILES
+    to generate an IUPAC name, which is used as the
     ``iupac_name``, ``preferred_name``, and sole entry in ``synonyms``. Single-fragment
     compounds without PubChem data are marked ``enrichment_source='failed'``; multi-
     fragment compounds are marked ``enrichment_source='rdkit_only'``.
@@ -116,16 +116,16 @@ def enrich_compounds(
         if precomputed_rdkit:
             ik = compound.get("inchikey")
             if ik and ik in precomputed_rdkit:
-                props = precomputed_rdkit[ik].copy()
-                props.setdefault("enrichment_source", "pubchem")
-                props["input_smiles"] = smiles
-                props["input_name"] = name
-                rdkit_batch[ik] = props
+                precomputed_props = precomputed_rdkit[ik].copy()
+                precomputed_props.setdefault("enrichment_source", "pubchem")
+                precomputed_props["input_smiles"] = smiles
+                precomputed_props["input_name"] = name
+                rdkit_batch[ik] = precomputed_props
                 inchikey_to_inputs.setdefault(ik, []).append(compound)
                 continue
 
         # Fall back to computing RDKit properties
-        props = _cached_compute_rdkit_properties(smiles)
+        props: Optional[Dict] = _cached_compute_rdkit_properties(smiles)
         if props is None:
             logger.warning(f"Invalid SMILES, skipping: {smiles[:60]}")
             continue
@@ -166,7 +166,9 @@ def enrich_compounds(
             record["cas"] = get_cas_nos_from_synonyms_list(raw_synonyms)
         else:
             try:
-                generated_iupac_name = name_smiles(rdkit_props["canonical_smiles"])
+                generated_iupac_name = cached_name_smiles(
+                    rdkit_props["canonical_smiles"]
+                )
             except Exception:
                 generated_iupac_name = ""
 

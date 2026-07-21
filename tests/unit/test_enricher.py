@@ -9,11 +9,13 @@ from senita_chem.enricher import enrich_compounds
 
 
 @pytest.fixture(autouse=True)
-def clear_rdkit_cache() -> Iterator[None]:
-    """Clear the module-level RDKit LRU cache between tests."""
+def clear_caches() -> Iterator[None]:
+    """Clear module-level LRU caches between tests."""
     from senita_chem.enricher import _cached_compute_rdkit_properties
+    from senita_chem.iupac_naming import cached_name_smiles
 
     _cached_compute_rdkit_properties.cache_clear()
+    cached_name_smiles.cache_clear()
     yield
 
 
@@ -194,7 +196,7 @@ class TestEnrichCompoundsWithSmiles:
                 "senita_chem.enricher.batch_lookup_by_inchikeys", return_value={}
             ):
                 with patch(
-                    "senita_chem.enricher.name_smiles", return_value="ethanol"
+                    "senita_chem.iupac_naming.name_smiles", return_value="ethanol"
                 ) as mock_name:
                     results = enrich_compounds(
                         compounds=[{"smiles": "CCO", "name": ""}],
@@ -220,7 +222,9 @@ class TestEnrichCompoundsWithSmiles:
             with patch(
                 "senita_chem.enricher.batch_lookup_by_inchikeys", return_value={}
             ):
-                with patch("senita_chem.enricher.name_smiles", return_value="ethanol"):
+                with patch(
+                    "senita_chem.iupac_naming.name_smiles", return_value="ethanol"
+                ):
                     results = enrich_compounds(
                         compounds=[{"smiles": "O.CCO", "name": ""}],
                         pubchem_method="api",
@@ -274,7 +278,9 @@ class TestEnrichCompoundsWithSmiles:
             with patch(
                 "senita_chem.enricher.batch_lookup_by_inchikeys", return_value={}
             ):
-                with patch("senita_chem.enricher.name_smiles", return_value="ethanol"):
+                with patch(
+                    "senita_chem.iupac_naming.name_smiles", return_value="ethanol"
+                ):
                     results = enrich_compounds(
                         compounds=[
                             {"smiles": "CCO", "name": "ethanol"},
