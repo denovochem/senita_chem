@@ -33,6 +33,7 @@ def enrich_compounds(
     max_synonyms: int = 75,
     pubchem_method: str = "api",
     db_path: Optional[str] = None,
+    precomputed_rdkit: Optional[Dict[str, Dict]] = None,
 ) -> Dict[str, Dict]:
     """
     Enrich compounds with RDKit properties, PubChem data, and OpenClatura IUPAC names.
@@ -51,12 +52,17 @@ def enrich_compounds(
 
     Args:
         compounds (Optional[List[Dict]]): List of dicts with ``smiles`` and ``name`` keys.
+            Entries may also contain an ``inchikey`` key and a ``precomputed_rdkit`` key
+            (used when ``precomputed_rdkit`` is provided).
         inchikeys (Optional[List[str]]): List of InChIKey strings to look up directly.
         max_synonyms (int): Maximum number of synonyms to retain after cleaning.
         pubchem_method (str): Either ``'api'`` for PubChem REST API or ``'local_db'``
             for a local SQLite database.
         db_path (Optional[str]): Path to the local PubChem SQLite database. Required
             when ``pubchem_method='local_db'``.
+        precomputed_rdkit (Optional[Dict[str, Dict]]): Mapping from InChIKey to
+            pre-computed RDKit properties. When provided, the RDKit computation pass
+            is skipped for any compound whose InChIKey is found in this dict.
 
     Returns:
         Dict[str, Dict]: Results keyed by InChIKey. Each value is a dict containing
@@ -89,7 +95,7 @@ def enrich_compounds(
     if compounds is None:
         raise ValueError("compounds must not be None after normalization.")
 
-    # --- Step 1: RDKit pass ---
+    # --- Step 1: RDKit pass (or use pre-computed properties) ---
     rdkit_batch: Dict[str, Dict] = {}
     inchikey_to_inputs: Dict[str, List[Dict]] = {}
 
@@ -106,6 +112,19 @@ def enrich_compounds(
             inchikey_to_inputs.setdefault(inchikey_only, []).append(compound)
             continue
 
+        # Try pre-computed properties first (keyed by inchikey)
+        if precomputed_rdkit:
+            ik = compound.get("inchikey")
+            if ik and ik in precomputed_rdkit:
+                props = precomputed_rdkit[ik].copy()
+                props.setdefault("enrichment_source", "pubchem")
+                props["input_smiles"] = smiles
+                props["input_name"] = name
+                rdkit_batch[ik] = props
+                inchikey_to_inputs.setdefault(ik, []).append(compound)
+                continue
+
+        # Fall back to computing RDKit properties
         props = _cached_compute_rdkit_properties(smiles)
         if props is None:
             logger.warning(f"Invalid SMILES, skipping: {smiles[:60]}")
