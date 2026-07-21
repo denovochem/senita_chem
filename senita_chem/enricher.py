@@ -5,6 +5,8 @@ from functools import lru_cache
 from importlib import resources
 from typing import Dict, List, Optional
 
+from openclatura import name_smiles
+
 from senita_chem.local_pubchem_batch import batch_lookup_by_inchikeys_sqlite
 from senita_chem.pubchem_batch import batch_lookup_by_inchikeys
 from senita_chem.rdkit_properties import compute_rdkit_properties
@@ -33,11 +35,39 @@ def enrich_compounds(
     db_path: Optional[str] = None,
 ) -> Dict[str, Dict]:
     """
-    Main entry point. Accepts either:
+    Enrich compounds with RDKit properties, PubChem data, and OpenClatura IUPAC names.
+
+    Accepts either:
       - compounds: List[{smiles, name}]
       - inchikeys: List[str]
 
-    Returns dict keyed by InChIKey.
+    For each compound, RDKit properties are computed and a PubChem batch lookup is
+    performed. When PubChem returns data, synonyms, CAS numbers, and PubChem metadata
+    are merged into the record. When PubChem has no data, OpenClatura's ``name_smiles``
+    is called on the canonical SMILES to generate an IUPAC name, which is used as the
+    ``iupac_name``, ``preferred_name``, and sole entry in ``synonyms``. Single-fragment
+    compounds without PubChem data are marked ``enrichment_source='failed'``; multi-
+    fragment compounds are marked ``enrichment_source='rdkit_only'``.
+
+    Args:
+        compounds (Optional[List[Dict]]): List of dicts with ``smiles`` and ``name`` keys.
+        inchikeys (Optional[List[str]]): List of InChIKey strings to look up directly.
+        max_synonyms (int): Maximum number of synonyms to retain after cleaning.
+        pubchem_method (str): Either ``'api'`` for PubChem REST API or ``'local_db'``
+            for a local SQLite database.
+        db_path (Optional[str]): Path to the local PubChem SQLite database. Required
+            when ``pubchem_method='local_db'``.
+
+    Returns:
+        Dict[str, Dict]: Results keyed by InChIKey. Each value is a dict containing
+        RDKit properties, PubChem data (if found), OpenClatura IUPAC name (if PubChem
+        had no data), synonyms, CAS numbers, common names, and an ``enrichment_source``
+        field indicating the provenance (``'pubchem'``, ``'rdkit_only'``, or ``'failed'``).
+
+    Raises:
+        ValueError: If neither ``compounds`` nor ``inchikeys`` is provided, if
+            ``pubchem_method`` is invalid, or if ``db_path`` is missing when
+            ``pubchem_method='local_db'``.
     """
     if compounds is None and inchikeys is None:
         raise ValueError("Provide either compounds or inchikeys.")
@@ -116,11 +146,16 @@ def enrich_compounds(
             record["synonyms"] = clean_synonyms_list(raw_synonyms, max_synonyms)
             record["cas"] = get_cas_nos_from_synonyms_list(raw_synonyms)
         else:
-            record["synonyms"] = []
+            try:
+                generated_iupac_name = name_smiles(rdkit_props["canonical_smiles"])
+            except Exception:
+                generated_iupac_name = ""
+
+            record["synonyms"] = [generated_iupac_name] if generated_iupac_name else []
             record["cas"] = []
             record["pubchem_cid"] = None
-            record["iupac_name"] = ""
-            record["preferred_name"] = ""
+            record["iupac_name"] = generated_iupac_name
+            record["preferred_name"] = generated_iupac_name
             if record.get("is_multi_fragment"):
                 record["enrichment_source"] = "rdkit_only"
             else:

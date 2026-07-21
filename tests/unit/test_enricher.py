@@ -185,7 +185,7 @@ class TestEnrichCompoundsWithSmiles:
         assert "Invalid SMILES" in caplog.text
 
     def test_no_pubchem_data_single_fragment(self, mock_rdkit_props: Dict) -> None:
-        """enrich_compounds marks single-fragment compounds as 'failed' when PubChem has no data."""
+        """enrich_compounds marks single-fragment compounds as 'failed' when PubChem has no data, using OpenClatura for IUPAC name fallback."""
         with patch(
             "senita_chem.enricher.compute_rdkit_properties",
             return_value=mock_rdkit_props,
@@ -193,18 +193,22 @@ class TestEnrichCompoundsWithSmiles:
             with patch(
                 "senita_chem.enricher.batch_lookup_by_inchikeys", return_value={}
             ):
-                results = enrich_compounds(
-                    compounds=[{"smiles": "CCO", "name": ""}],
-                    pubchem_method="api",
-                )
+                with patch(
+                    "senita_chem.enricher.name_smiles", return_value="ethanol"
+                ) as mock_name:
+                    results = enrich_compounds(
+                        compounds=[{"smiles": "CCO", "name": ""}],
+                        pubchem_method="api",
+                    )
 
         record = results[mock_rdkit_props["inchikey"]]
         assert record["enrichment_source"] == "failed"
-        assert record["synonyms"] == []
+        assert record["synonyms"] == ["ethanol"]
         assert record["cas"] == []
         assert record["pubchem_cid"] is None
-        assert record["iupac_name"] == ""
-        assert record["preferred_name"] == ""
+        assert record["iupac_name"] == "ethanol"
+        assert record["preferred_name"] == "ethanol"
+        mock_name.assert_called_once_with("CCO")
 
     def test_no_pubchem_data_multi_fragment(self, mock_rdkit_props: Dict) -> None:
         """enrich_compounds marks multi-fragment compounds as 'rdkit_only' when PubChem has no data."""
@@ -216,10 +220,11 @@ class TestEnrichCompoundsWithSmiles:
             with patch(
                 "senita_chem.enricher.batch_lookup_by_inchikeys", return_value={}
             ):
-                results = enrich_compounds(
-                    compounds=[{"smiles": "O.CCO", "name": ""}],
-                    pubchem_method="api",
-                )
+                with patch("senita_chem.enricher.name_smiles", return_value="ethanol"):
+                    results = enrich_compounds(
+                        compounds=[{"smiles": "O.CCO", "name": ""}],
+                        pubchem_method="api",
+                    )
 
         record = results[mock_rdkit_props["inchikey"]]
         assert record["enrichment_source"] == "rdkit_only"
@@ -269,13 +274,14 @@ class TestEnrichCompoundsWithSmiles:
             with patch(
                 "senita_chem.enricher.batch_lookup_by_inchikeys", return_value={}
             ):
-                results = enrich_compounds(
-                    compounds=[
-                        {"smiles": "CCO", "name": "ethanol"},
-                        {"smiles": "O", "name": "water"},
-                    ],
-                    pubchem_method="api",
-                )
+                with patch("senita_chem.enricher.name_smiles", return_value="ethanol"):
+                    results = enrich_compounds(
+                        compounds=[
+                            {"smiles": "CCO", "name": "ethanol"},
+                            {"smiles": "O", "name": "water"},
+                        ],
+                        pubchem_method="api",
+                    )
 
         assert len(results) == 2
         assert mock_rdkit_props["inchikey"] in results
