@@ -67,6 +67,10 @@ def _name_smiles_safe(smiles: str) -> Optional[str]:
         Optional[str]: The IUPAC name if conversion succeeds, otherwise None.
     """
     try:
+        if "%" in smiles:
+            return None
+        if len(smiles) > 256:
+            return None
         return name_smiles(smiles)
     except Exception:
         return None
@@ -119,7 +123,7 @@ def batch_name_smiles(
         return results
 
     if max_workers is None:
-        max_workers = min(len(misses), os.cpu_count() or 4)
+        max_workers = min(len(misses), os.cpu_count() or 8)
 
     if chunksize is None:
         chunksize = max(1, ceil(len(misses) / (4 * max_workers)))
