@@ -67,11 +67,12 @@ def _name_smiles_safe(smiles: str) -> Optional[str]:
         Optional[str]: The IUPAC name if conversion succeeds, otherwise None.
     """
     try:
-        if "%" in smiles:
-            return None
-        if len(smiles) > 256:
-            return None
-        return name_smiles(smiles)
+        return None
+        # if "%" in smiles:
+        #     return None
+        # if len(smiles) > 256:
+        #     return None
+        # return name_smiles(smiles)
     except Exception:
         return None
 
